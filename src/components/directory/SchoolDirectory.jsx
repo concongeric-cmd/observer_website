@@ -1,4 +1,5 @@
 import { useSearchParams } from 'react-router'
+import CustomSelect from '../common/CustomSelect'
 import { filterSchools, schools } from '../../data/schools'
 import useLanguage from '../../hooks/useLanguage'
 import SchoolCard from './SchoolCard'
@@ -57,42 +58,26 @@ export default function SchoolDirectory({ country }) {
             onChange={(e) => update('q', e.target.value)}
           />
         </label>
-        <label className="directory-select">
-          {pair('地区', 'Region')}
-          <select
-            aria-label={english ? 'Region' : '地区'}
-            value={filters.region}
-            onChange={(e) => update('region', e.target.value)}
-          >
-            <option value="all">
-              {english ? 'All regions / 全部地区' : '全部地区 / All regions'}
-            </option>
-            {regions.map(([id, label]) => (
-              <option key={id} value={id}>
-                {english ? label[1] : label[0]}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="directory-select">
-          {pair('教育理念', 'Approach')}
-          <select
-            aria-label={english ? 'Approach' : '教育理念'}
-            value={filters.approach}
-            onChange={(e) => update('approach', e.target.value)}
-          >
-            <option value="all">
-              {english
-                ? 'All approaches / 全部理念'
-                : '全部理念 / All approaches'}
-            </option>
-            {approaches.map(([id, label]) => (
-              <option key={id} value={id}>
-                {english ? label[1] : label[0]}
-              </option>
-            ))}
-          </select>
-        </label>
+        <CustomSelect
+          label={pair('地区', 'Region')}
+          value={filters.region}
+          placeholder={english ? 'All regions / 全部地区' : '全部地区 / All regions'}
+          options={[
+            ['all', english ? 'All regions / 全部地区' : '全部地区 / All regions'],
+            ...regions.map(([id, label]) => [id, english ? label[1] : label[0]]),
+          ]}
+          onChange={(value) => update('region', value)}
+        />
+        <CustomSelect
+          label={pair('教育理念', 'Approach')}
+          value={filters.approach}
+          placeholder={english ? 'All approaches / 全部理念' : '全部理念 / All approaches'}
+          options={[
+            ['all', english ? 'All approaches / 全部理念' : '全部理念 / All approaches'],
+            ...approaches.map(([id, label]) => [id, english ? label[1] : label[0]]),
+          ]}
+          onChange={(value) => update('approach', value)}
+        />
         <button className="directory-reset" onClick={() => setParams({})}>
           {pair('重置', 'Reset')} ↺
         </button>
