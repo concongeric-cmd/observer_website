@@ -1,4 +1,5 @@
 import { Link, useSearchParams } from 'react-router'
+import CustomSelect from '../components/common/CustomSelect'
 import { countries } from '../data/countries'
 import {
   filterMonthlyUpdates,
@@ -104,42 +105,26 @@ export default function MonthlyUpdatesPage() {
                 onChange={(e) => setFilter('month', e.target.value)}
               />
             </label>
-            <label>
-              {pair('国家', 'Country')}
-              <select
-                aria-label={english ? 'Update country' : '更新国家'}
-                value={filters.country}
-                onChange={(e) => setFilter('country', e.target.value)}
-              >
-                <option value="all">
-                  {english
-                    ? 'All countries / 全部国家'
-                    : '全部国家 / All countries'}
-                </option>
-                {countries.map((c) => (
-                  <option key={c.slug} value={c.slug}>
-                    {english ? c.name[1] : c.name[0]}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              {pair('主题', 'Topic')}
-              <select
-                aria-label={english ? 'Update topic' : '更新主题'}
-                value={filters.topic}
-                onChange={(e) => setFilter('topic', e.target.value)}
-              >
-                <option value="all">
-                  {english ? 'All topics / 全部主题' : '全部主题 / All topics'}
-                </option>
-                {updateTopics.map(([id, zh, en]) => (
-                  <option value={id} key={id}>
-                    {english ? en : zh}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <CustomSelect
+              label={pair('国家', 'Country')}
+              value={filters.country}
+              placeholder={english ? 'All countries / 全部国家' : '全部国家 / All countries'}
+              options={[
+                ['all', english ? 'All countries / 全部国家' : '全部国家 / All countries'],
+                ...countries.map((c) => [c.slug, english ? c.name[1] : c.name[0]]),
+              ]}
+              onChange={(value) => setFilter('country', value)}
+            />
+            <CustomSelect
+              label={pair('主题', 'Topic')}
+              value={filters.topic}
+              placeholder={english ? 'All topics / 全部主题' : '全部主题 / All topics'}
+              options={[
+                ['all', english ? 'All topics / 全部主题' : '全部主题 / All topics'],
+                ...updateTopics.map(([id, zh, en]) => [id, english ? en : zh]),
+              ]}
+              onChange={(value) => setFilter('topic', value)}
+            />
             <button className="directory-reset" onClick={() => setParams({})}>
               {pair('重置', 'Reset')} ↺
             </button>

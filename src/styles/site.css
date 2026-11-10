@@ -86,6 +86,8 @@
 }
 .header nav {
   display: flex;
+  flex: 1;
+  justify-content: space-evenly;
   gap: 29px;
   height: 100%;
   align-items: center;
@@ -99,6 +101,9 @@
   align-items: center;
   position: relative;
   font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #244b3c;
 }
 .header nav .pair {
   gap: 3px;
@@ -115,15 +120,19 @@
 }
 .header nav a.active:after {
   content: '';
-  height: 3px;
-  background: #355a43;
+  height: 4px;
+  background: #2d5d47;
+  border-radius: 999px;
   position: absolute;
   bottom: -1px;
-  left: 0;
-  right: 0;
+  left: 8%;
+  right: 8%;
 }
 .header nav a:hover {
-  color: #8b693c;
+  color: #1d4a3d;
+}
+.header nav a.active {
+  color: #1d4a3d;
 }
 .language-button {
   font-size: 11px;
