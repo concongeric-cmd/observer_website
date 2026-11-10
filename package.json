@@ -11,7 +11,8 @@
     "format": "prettier --write src index.html vite.config.js eslint.config.js",
     "format:check": "prettier --check src index.html vite.config.js eslint.config.js",
     "check:routes": "node scripts/check-routes.mjs",
-    "postbuild": "node scripts/create-pages-fallback.mjs"
+    "postbuild": "node scripts/create-pages-fallback.mjs",
+    "check:pages": "node scripts/check-pages-build.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.5",

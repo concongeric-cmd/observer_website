@@ -69,3 +69,11 @@ Vite uses /observer_website/ as its base, and BrowserRouter reads that base from
 Run npm run build and deploy the entire dist directory. The postbuild script creates 404.html from the app shell and adds .nojekyll. Pages uses that fallback for direct links and refreshes; it preserves the route, although the initial document response has HTTP status 404.
 
 If using GitHub Actions, upload dist after npm run build finishes. When renaming the repository or moving to a custom domain, update the Vite base accordingly.
+
+### Required repository Pages setting
+
+In GitHub Settings → Pages → Build and deployment, set Source to GitHub Actions. Do not deploy main / (root): that publishes the source index.html, which requests /src/main.jsx and cannot run without Vite.
+
+Commit and push .github/workflows/deploy.yml and the deployment fixes. The workflow installs dependencies, builds the app, verifies the output and uploads only dist. Wait for Deploy website to GitHub Pages to finish before reloading the published URL. You do not need to commit dist.
+
+Local deployment check: npm run build followed by npm run check:pages.
