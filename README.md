@@ -61,3 +61,11 @@ Build and serve dist. Configure the host to serve index.html for application rou
 Provider Types groups actual directory records by facility category, university relationship and private provision. Groups may overlap. Each classification in src/data/schools.js records its type ID, verified status, original source URL, bilingual evidence and check date; src/data/providerTypes.js supplies definitions and the verified-only selector.
 
 The same selector supplies directory badges, profile labels and type-page results. Missing or unsupported classifications display as pending and do not qualify a school for a group. Source verification does not imply a licensing audit, accreditation, for-profit status or a quality rating.
+
+## GitHub Pages deployment
+
+Vite uses /observer_website/ as its base, and BrowserRouter reads that base from import.meta.env.BASE_URL. The repository URL is https://concongeric-cmd.github.io/observer_website/. Local development is available at http://localhost:5173/observer_website/.
+
+Run npm run build and deploy the entire dist directory. The postbuild script creates 404.html from the app shell and adds .nojekyll. Pages uses that fallback for direct links and refreshes; it preserves the route, although the initial document response has HTTP status 404.
+
+If using GitHub Actions, upload dist after npm run build finishes. When renaming the repository or moving to a custom domain, update the Vite base accordingly.
