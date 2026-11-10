@@ -1,0 +1,1045 @@
+/* Home, country directories and individual school records. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.home-hero {
+  margin: 0 5%;
+  padding: 65px 0 55px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 55px;
+  border-bottom: 1px solid #d7dcd2;
+  align-items: center;
+}
+.home-hero h1 {
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  font-size: 46px;
+  letter-spacing: 1px;
+  margin: 25px 0;
+}
+.home-hero h1 .pair > span {
+  white-space: pre-line;
+}
+.home-hero h1 .pair > span:last-child {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  opacity: 0.78;
+  line-height: 1.25;
+}
+.home-hero > div > p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #62765f;
+  max-width: 550px;
+}
+.home-hero > div > p .pair {
+  gap: 12px;
+}
+.home-hero > div > p .pair > span:last-child {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.home-hero .button {
+  margin-top: 28px;
+}
+.home-scope {
+  display: block;
+  margin-top: 23px;
+  font-size: 10px;
+  color: #7c8a72;
+}
+.home-illustration {
+  background: #e9eee2;
+  border-radius: 56px 28px 56px 28px;
+  padding: 27px 28px 20px;
+  overflow: hidden;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-illustration > .eyebrow {
+  padding-left: 45px;
+  font-size: 8px;
+}
+.home-illustration > .garden {
+  margin: 4px 0 -5px;
+}
+.home-illustration > span:last-child {
+  font-size: 8px;
+  color: #758269;
+  text-align: right;
+}
+.home-purpose {
+  margin: 60px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 70px;
+}
+.home-purpose h2,
+.home-reading h2,
+.home-update h2 {
+  font-family: 'SimSun', Georgia, serif;
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 16px 0;
+}
+.home-purpose h2 .pair > span:last-child,
+.home-reading h2 .pair > span:last-child,
+.home-update h2 .pair > span:last-child {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.35;
+}
+.home-purpose > div > p,
+.home-reading > div > p,
+.home-update p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #718169;
+}
+.home-purpose > div > p .pair > span:last-child,
+.home-reading > div > p .pair > span:last-child,
+.home-update p .pair > span:last-child {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.purpose-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 23px;
+  margin-top: 30px;
+}
+.purpose-points > div {
+  border-top: 1px solid #ccd5c3;
+  padding-top: 18px;
+}
+.purpose-points > div > span {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  color: #9aae8a;
+}
+.purpose-points h3 {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 12px 0;
+}
+.purpose-points p {
+  font-size: 11px;
+  color: #7a8971;
+  line-height: 1.8;
+}
+.purpose-points p .pair > span:last-child {
+  font-size: 10px;
+}
+.country-gateways {
+  margin: 65px 5%;
+  scroll-margin-top: 30px;
+}
+.gateway-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+.country-gateway {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  padding: 32px;
+  background: #e9eedf;
+  border: 1px solid #dce4d4;
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 6px 24px #284e3f05;
+}
+.gateway-us {
+  background: #e5ece9;
+  border-color: #cdd9d2;
+}
+.country-gateway:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px #284e3f0c;
+}
+.gateway-code {
+  font-family: Georgia, serif;
+  font-size: 58px;
+  line-height: 1;
+  color: #8fa284;
+  letter-spacing: -3px;
+}
+.gateway-us .gateway-code {
+  color: #8da59b;
+}
+.country-gateway h3 {
+  font-size: 28px;
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  margin: 11px 0 18px;
+}
+.country-gateway h3 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 23px;
+  opacity: 0.8;
+}
+.country-gateway p {
+  font-size: 11px;
+  color: #78886d;
+}
+.country-gateway p .pair > span:last-child {
+  font-size: 10px;
+}
+.gateway-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 10px;
+  border-top: 1px solid #cbd6be;
+  margin-top: 25px;
+  padding-top: 18px;
+}
+.gateway-bottom strong {
+  font-size: 11px;
+  font-weight: 500;
+}
+.home-reading {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  margin: 75px 5%;
+  background: #f0f2e9;
+  padding: 40px;
+  border-radius: 28px;
+}
+.profile-preview-list > div {
+  display: grid;
+  grid-template-columns: 25px 1fr 1.2fr;
+  gap: 15px;
+  border-bottom: 1px solid #d8decf;
+  padding: 17px 0;
+  align-items: center;
+}
+.profile-preview-list > div:first-child {
+  padding-top: 0;
+}
+.profile-preview-list > div:last-child {
+  border: 0;
+}
+.profile-preview-list > div > span {
+  font-size: 9px;
+  color: #879b77;
+}
+.profile-preview-list h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.profile-preview-list p {
+  font-size: 10px;
+  color: #809075;
+}
+.home-update {
+  margin: 60px 5% 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  border-top: 1px solid #d7dcd2;
+  padding-top: 40px;
+}
+.home-update > div {
+  max-width: 700px;
+}
+.home-update .text-link {
+  flex-shrink: 0;
+}
+.country-nav {
+  display: flex;
+  gap: 4px;
+  margin: 0 5%;
+  border-bottom: 1px solid #d7dcd2;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c1cfb5 transparent;
+}
+.country-nav > a {
+  position: relative;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 78px;
+  padding: 16px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 12px 12px 0 0;
+  background: transparent;
+  text-align: center;
+  white-space: nowrap;
+}
+.country-nav > a .pair {
+  gap: 6px;
+}
+.country-nav > a .pair > span:last-child {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.country-nav > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  right: 14px;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: transparent;
+}
+.country-nav > a:hover {
+  background: #edf1e7;
+}
+.country-nav > a.active {
+  color: #2b4f3d;
+  background: transparent;
+}
+.country-nav > a.active::after {
+  background: #2b4f3d;
+}
+.country-nav > a.active .pair > span:last-child {
+  opacity: 1;
+}
+.country-intro {
+  margin: 40px 5% 35px;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #d7dcd2;
+}
+.country-intro h1,
+.country-topic-header h1 {
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  font-size: 38px;
+  margin: 17px 0;
+}
+.country-intro h1 .pair > span:last-child,
+.country-topic-header h1 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 26px;
+  opacity: 0.75;
+}
+.country-intro > p {
+  max-width: 800px;
+  font-size: 13px;
+  color: #708167;
+  line-height: 1.8;
+}
+.country-intro > p .pair > span:last-child {
+  font-size: 12px;
+}
+.country-intro-note {
+  margin-top: 20px;
+  font-size: 10px;
+  color: #8b775c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.country-intro-note:before {
+  content: '↳';
+  font-size: 25px;
+  color: #9aac8b;
+}
+.directory-section {
+  margin: 35px 5% 70px;
+  scroll-margin-top: 25px;
+}
+.directory-count {
+  font-size: 10px;
+  color: #7b896e;
+}
+.directory-toolbar {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  padding: 20px;
+  background: #eef1e9;
+  margin-bottom: 25px;
+  border-radius: 22px;
+}
+.directory-search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  background: #fdfdf9;
+  border: 1px solid #e0e6d9;
+  padding: 10px 14px;
+  min-width: 180px;
+  border-radius: 14px;
+}
+.directory-search > span:first-child {
+  font-size: 23px;
+  color: #78906b;
+}
+.directory-search input {
+  border: 0;
+  background: none;
+  min-width: 0;
+  width: 100%;
+  font-size: 12px;
+  color: #36553d;
+  outline: none;
+}
+.directory-search:focus-within {
+  outline: 2px solid #a0b28c;
+  outline-offset: 2px;
+}
+.directory-select {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 10px;
+  color: #718168;
+}
+.directory-select select {
+  background: #fdfdf9;
+  border: 1px solid #e0e6d9;
+  padding: 11px 25px 11px 10px;
+  color: #405b3f;
+  font: inherit;
+  font-size: 11px;
+  max-width: 195px;
+  height: 100%;
+  border-radius: 12px;
+}
+.directory-reset {
+  font-size: 10px;
+  padding: 0 8px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+.directory-reset:hover {
+  color: #a77b4d;
+}
+.school-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.school-card {
+  background: #fdfdf9;
+  border: 1px solid #e1e7db;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-radius: 24px;
+  box-shadow: 0 5px 22px #284e3f04;
+}
+.school-card:hover {
+  border-color: #c5d3b8;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px #284e3f09;
+}
+.school-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 23px;
+}
+.school-card-top > span:last-child {
+  margin-left: auto;
+  font-size: 19px;
+  color: #6c8760;
+}
+.school-mark {
+  width: 40px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: #e6eddb;
+  color: #6f8c5d;
+  font-family: Georgia;
+  font-size: 20px;
+  border-radius: 14px;
+}
+.school-location {
+  font-size: 10px;
+  color: #7f8e74;
+}
+.school-location .pair > span:last-child {
+  font-size: 9px;
+}
+.school-card h3 {
+  font-family: 'SimSun', Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+.school-card h3 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 19px;
+  line-height: 1.3;
+  opacity: 0.85;
+}
+.school-original {
+  font-size: 10px;
+  color: #8a967f;
+  margin-bottom: 14px;
+}
+.school-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 12px 0;
+}
+.school-tags > span {
+  display: inline-flex;
+  font-size: 9px;
+  background: #edf1e7;
+  color: #69825d;
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+.school-tags > span .pair > span:last-child {
+  font-size: 8px;
+  opacity: 0.85;
+}
+.school-card > p {
+  font-size: 12px;
+  line-height: 1.85;
+  color: #7b8b70;
+  margin: 10px 0 25px;
+}
+.school-card > p .pair > span:last-child {
+  font-size: 11px;
+  line-height: 1.8;
+}
+.school-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #dce2d4;
+  font-size: 8px;
+  color: #819473;
+}
+.school-card-bottom > span:last-child {
+  font-size: 10px;
+  color: #44673b;
+  white-space: nowrap;
+}
+.directory-disclaimer {
+  font-size: 10px;
+  color: #859278;
+  line-height: 1.9;
+  margin-top: 22px;
+}
+.directory-disclaimer .pair > span:last-child {
+  font-size: 10px;
+}
+.school-profile {
+  margin: 30px 5% 70px;
+}
+.school-back {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: #7e8c72;
+  font-size: 10px;
+  margin: 5px 0 25px;
+}
+.school-profile-header {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 65px;
+  align-items: start;
+  padding-bottom: 30px;
+}
+.school-profile-header h1 {
+  font-size: 40px;
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.school-profile-header h1 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 29px;
+  opacity: 0.8;
+}
+.profile-original {
+  font-size: 12px;
+  color: #819074;
+  margin-bottom: 18px;
+}
+.school-profile-header > div > p:not(.profile-original) {
+  font-size: 12px;
+  color: #7d8d71;
+  line-height: 1.85;
+}
+.school-profile-header .profile-summary {
+  max-width: 720px;
+  margin-top: 20px;
+}
+.school-profile-header .profile-summary .pair > span:last-child {
+  font-size: 12px;
+}
+.school-profile-header .school-tags {
+  margin-top: 20px;
+}
+.profile-record {
+  border: 1px solid #dfe7d5;
+  background: #eaf0e1;
+  padding: 23px;
+  border-radius: 24px;
+}
+.record-monogram {
+  display: block;
+  font-family: Georgia, serif;
+  color: #b2c39d;
+  font-size: 64px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+.profile-record > strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+.profile-record > p {
+  font-size: 9px;
+  margin-top: 15px;
+  color: #7a8a6b;
+}
+.profile-record > p > span:last-child:not(.pair) {
+  display: block;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.profile-anchors {
+  display: flex;
+  border-top: 1px solid #e2e8db;
+  border-bottom: 1px solid #e2e8db;
+  margin: 10px 0 45px;
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid #e2e8db;
+  background: #f0f3e9;
+}
+.profile-anchors > a {
+  display: flex;
+  gap: 12px;
+  padding: 17px 20px;
+  flex: 1;
+  font-size: 11px;
+  min-width: 150px;
+  align-items: center;
+  border-radius: 14px;
+}
+.profile-anchors > a > span:first-child {
+  font-size: 9px;
+  color: #8c9e7b;
+}
+.profile-anchors > a:hover {
+  background: #e9eedf;
+}
+.profile-section {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 50px;
+  margin-bottom: 45px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d7dfce;
+  scroll-margin-top: 25px;
+}
+.profile-section-title h2 {
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 15px 0;
+}
+.profile-section-title h2 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 20px;
+}
+.profile-section-title p {
+  font-size: 10px;
+  color: #829374;
+  line-height: 1.9;
+}
+.profile-section-title p .pair > span:last-child {
+  font-size: 10px;
+}
+.school-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 0;
+}
+.school-facts > div {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e6d7;
+}
+.school-facts dt {
+  font-size: 10px;
+  color: #8b987f;
+  margin-bottom: 10px;
+}
+.school-facts dd {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  color: #4c6942;
+}
+.school-facts dd .pair > span:last-child {
+  font-size: 11px;
+}
+.school-practices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+.school-practices > div {
+  padding: 24px;
+  background: #f0f2e9;
+  border-radius: 20px;
+}
+.school-practices h3 {
+  font-size: 20px;
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  margin: 12px 0 15px;
+}
+.school-practices h3 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 17px;
+}
+.school-practices p {
+  font-size: 12px;
+  color: #788a6b;
+  line-height: 1.9;
+}
+.school-practices p .pair {
+  gap: 9px;
+}
+.school-practices p .pair > span:last-child {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.evidence-tag {
+  display: block;
+  color: #889d76;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.school-sources > a {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid #e1e8d9;
+  margin-bottom: 12px;
+  border-radius: 18px;
+}
+.school-sources > a:hover {
+  background: #edf2e5;
+}
+.school-sources > a > strong {
+  font-size: 14px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.school-sources > a > span:last-child {
+  font-size: 10px;
+  color: #718b61;
+}
+.school-sources > p {
+  font-size: 10px;
+  color: #829175;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+.school-sources > p .pair > span:last-child {
+  font-size: 10px;
+}
+.country-topic-header {
+  margin: 40px 5% 25px;
+}
+.country-topic-header > p {
+  font-size: 13px;
+  color: #7e8e71;
+}
+.country-topic-content {
+  margin: 30px 5% 70px;
+}
+.topic-explanation {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #75896b;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.topic-explanation .pair > span:last-child {
+  font-size: 12px;
+}
+.policy-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+.policy-resource {
+  padding: 30px;
+  border: 1px solid #e1e7db;
+  background: #fdfdf8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 24px;
+}
+.policy-resource:hover {
+  background: #edf2e4;
+}
+.policy-resource h2 {
+  font-family: 'SimSun', Georgia, serif;
+  font-weight: 500;
+  font-size: 23px;
+}
+.policy-resource h2 .pair > span:last-child {
+  font-family: Georgia;
+  font-size: 20px;
+}
+.policy-resource p {
+  font-size: 12px;
+  color: #7b8c6e;
+}
+.policy-resource > span:last-child {
+  font-size: 11px;
+  color: #60844d;
+  margin-top: auto;
+}
+.topic-pending {
+  padding: 35px;
+  background: #eef1e7;
+  max-width: 800px;
+  border-radius: 24px;
+}
+.topic-pending h2 {
+  font-family: 'SimSun', Georgia, serif;
+  font-size: 27px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.topic-pending p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #7e8e72;
+  margin: 20px 0;
+}
+.directory-section .section-heading h2 {
+  margin-top: 10px;
+}
+.country-topic-header + .articles-section {
+  margin-top: 30px;
+}
+@media (max-width: 1100px) {
+  .home-hero {
+    gap: 25px;
+    padding: 45px 0;
+  }
+  .home-hero h1 {
+    font-size: 38px;
+  }
+  .home-hero h1 .pair > span:last-child {
+    font-size: 25px;
+  }
+  .home-hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.3px;
+  }
+  .home-purpose {
+    gap: 35px;
+    grid-template-columns: 1fr 1.6fr;
+  }
+  .country-gateway {
+    padding: 25px;
+    grid-template-columns: 65px 1fr;
+    gap: 17px;
+  }
+  .gateway-code {
+    font-size: 46px;
+  }
+  .home-reading {
+    gap: 35px;
+    padding: 30px;
+  }
+  .directory-toolbar {
+    flex-wrap: wrap;
+  }
+  .directory-search {
+    flex-basis: 100%;
+  }
+  .school-card {
+    padding: 18px;
+  }
+  .school-card h3 {
+    font-size: 20px;
+  }
+  .school-card h3 .pair > span:last-child {
+    font-size: 17px;
+  }
+  .school-card-bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+  .school-profile-header {
+    gap: 30px;
+  }
+  .profile-section {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 30px;
+  }
+  .profile-anchors > a {
+    padding: 15px 12px;
+    min-width: 145px;
+  }
+}
+@media (max-width: 850px) {
+  .home-hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+  }
+  .home-hero h1 {
+    font-size: 32px;
+  }
+  .home-hero h1 .pair > span:last-child {
+    font-size: 22px;
+  }
+  .home-hero > div > p {
+    font-size: 12px;
+  }
+  .home-hero > div > p .pair > span:last-child {
+    font-size: 11px;
+  }
+  .home-illustration {
+    border-radius: 42px 22px 42px 22px;
+    padding: 20px 12px;
+  }
+  .home-illustration > .eyebrow {
+    padding-left: 15px;
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .home-illustration > .garden {
+    transform: scale(1.08);
+    margin: 25px 0;
+  }
+  .home-purpose {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 40px 5%;
+  }
+  .home-purpose h2 {
+    max-width: 550px;
+  }
+  .purpose-points {
+    margin-top: 20px;
+  }
+  .country-gateways {
+    margin: 45px 5%;
+  }
+  .country-gateway {
+    grid-template-columns: 45px 1fr;
+    padding: 20px;
+    gap: 12px;
+  }
+  .gateway-code {
+    font-size: 35px;
+  }
+  .country-gateway h3 {
+    font-size: 24px;
+  }
+  .country-gateway h3 .pair > span:last-child {
+    font-size: 20px;
+  }
+  .country-gateway p {
+    font-size: 10px;
+  }
+  .gateway-bottom {
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .home-reading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 45px 5%;
+  }
+  .home-update {
+    align-items: start;
+    gap: 20px;
+  }
+  .home-update > div {
+    max-width: 470px;
+  }
+  .school-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .school-profile-header {
+    grid-template-columns: minmax(0, 1fr) 190px;
+    gap: 25px;
+  }
+  .school-profile-header h1 {
+    font-size: 32px;
+  }
+  .school-profile-header h1 .pair > span:last-child {
+    font-size: 25px;
+  }
+  .profile-record {
+    padding: 18px;
+  }
+  .record-monogram {
+    font-size: 52px;
+  }
+  .profile-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .profile-section-title p {
+    max-width: 550px;
+  }
+  .school-facts {
+    gap: 18px;
+  }
+  .country-intro h1 {
+    font-size: 32px;
+  }
+  .directory-toolbar {
+    padding: 14px;
+    gap: 12px;
+  }
+  .directory-select {
+    flex: 1;
+    justify-content: space-between;
+  }
+  .directory-select select {
+    max-width: 175px;
+  }
+  .policy-resource-grid {
+    gap: 18px;
+  }
+  .policy-resource {
+    padding: 23px;
+  }
+  .profile-anchors {
+    margin-bottom: 30px;
+  }
+}
