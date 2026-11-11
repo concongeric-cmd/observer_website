@@ -25,14 +25,8 @@ export default function HomePage() {
             )}
           </p>
           <a className="button primary" href="#countries">
-            {pair('选择国家，开始探索', 'Choose a country to explore')} ↓
+            {pair('选择国家，开始探索', 'Choose a country to explore')} 
           </a>
-          <span className="home-scope">
-            {pair(
-              '关注出生至小学入学的教育与照护',
-              'Education and care from birth to primary entry',
-            )}
-          </span>
         </div>
         <div className="home-illustration">
           <span className="eyebrow">TWO COUNTRIES. SHARED QUESTIONS.</span>
@@ -46,7 +40,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="home-purpose">
-        <div>
+        <div className="purpose-heading">
           <span className="eyebrow">WHY THIS OBSERVER EXISTS</span>
           <h2>
             {pair(
@@ -55,44 +49,42 @@ export default function HomePage() {
             )}
           </h2>
         </div>
-        <div>
-          <p>
-            {pair(
-              '我们希望帮助经营管理者理解：不同园所如何组织教学、支持教师、服务家庭，又如何在各自制度下持续运营。',
-              'Our goal is to help leaders understand how schools organise learning, support educators, work with families and operate within their own systems.',
-            )}
-          </p>
-          <div className="purpose-points">
-            {[
-              [
-                '01',
-                '找到园所',
-                'Discover schools',
-                '按地区与理念浏览具体园所。',
-                'Browse individual schools by location and approach.',
-              ],
-              [
-                '02',
-                '理解实践',
-                'Understand practice',
-                '把教育方针与具体做法联系起来。',
-                'Connect educational policies with practical actions.',
-              ],
-              [
-                '03',
-                '回到证据',
-                'Follow the evidence',
-                '查看原始出处、核验时间与资料边界。',
-                'Review original sources, check dates and evidence limits.',
-              ],
-            ].map(([n, a, b, c, d]) => (
-              <div key={n}>
-                <span>{n}</span>
-                <h3>{pair(a, b)}</h3>
-                <p>{pair(c, d)}</p>
-              </div>
-            ))}
-          </div>
+        <p className="purpose-intro">
+          {pair(
+            '我们希望帮助经营管理者理解：不同园所如何组织教学、支持教师、服务家庭，又如何在各自制度下持续运营。通过园所案例、政策背景与原始资料，把宏观制度和日常实践放在一起观察。',
+            'We help education leaders understand how schools organise learning, support educators, work with families and sustain their work within different systems. School profiles, policy context and original sources bring the wider system into view alongside everyday practice.',
+          )}
+        </p>
+        <div className="purpose-points">
+          {[
+            [
+              '01',
+              '找到园所',
+              'Discover schools',
+              '按地区与理念浏览具体园所，了解各自的环境、服务对象与办学方向。',
+              'Explore schools by location and approach, with a clearer view of their settings, communities and priorities.',
+            ],
+            [
+              '02',
+              '理解实践',
+              'Understand practice',
+              '把教育方针与具体做法联系起来，观察理念如何落实在日常工作中。',
+              'Connect policy with practical choices and see how educational ideas take shape in daily work.',
+            ],
+            [
+              '03',
+              '回到证据',
+              'Follow the evidence',
+              '查看原始出处与更新时间，理解每项资料能够说明什么、又有哪些边界。',
+              'Check original sources and dates, and understand what each piece of evidence can and cannot tell us.',
+            ],
+          ].map(([n, a, b, c, d]) => (
+            <div key={n}>
+              <span>{n}</span>
+              <h3>{pair(a, b)}</h3>
+              <p>{pair(c, d)}</p>
+            </div>
+          ))}
         </div>
       </section>
       <section className="country-gateways" id="countries">
@@ -186,26 +178,6 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </section>
-      <section className="home-update">
-        <div>
-          <span className="eyebrow">KEEPING THE PICTURE CURRENT</span>
-          <h2>
-            {pair(
-              '观察变化，也保留依据。',
-              'Track changes. Keep the evidence.',
-            )}
-          </h2>
-          <p>
-            {pair(
-              '月度更新将整理两国政策与实践的新变化，并连接到相关档案。当前月度内容正在筹备。',
-              'Monthly updates will connect changes in policy and practice to relevant profiles. Monthly content is currently in preparation.',
-            )}
-          </p>
-        </div>
-        <Link className="text-link" to="/monthly">
-          {pair('月度更新', 'Monthly Updates')} ↗
-        </Link>
       </section>
     </div>
   )

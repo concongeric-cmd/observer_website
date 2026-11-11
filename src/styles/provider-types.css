@@ -1,5 +1,5 @@
 .provider-types-content {
-  margin: 28px 5% 70px;
+  margin: 28px var(--content-gutter) 70px;
 }
 .provider-types-note {
   font-size: 12px;
