@@ -1,30 +1,7 @@
-.topline {
-  background: #23483c;
-  color: #f5f4e9;
-  display: flex;
-  justify-content: space-between;
-  padding: 9px 5%;
-  font-size: 10px;
-  letter-spacing: 1.5px;
+:root {
+  --content-gutter: clamp(80px, 9vw, 180px);
 }
-.topline .pair {
-  flex-direction: row;
-  gap: 12px;
-}
-.topline .pair > span:last-child {
-  font-size: 9px;
-}
-.topline > span:last-child {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.topline i {
-  height: 3px;
-  width: 3px;
-  background: #c0c9b9;
-  border-radius: 50%;
-}
+
 .header {
   height: 111px;
   margin: 0 5%;
@@ -87,15 +64,17 @@
 .header nav {
   display: flex;
   flex: 1;
-  justify-content: space-evenly;
-  gap: 29px;
+  justify-content: stretch;
+  gap: 0;
   height: 100%;
+  position: relative;
   align-items: center;
 }
 .header nav a {
   justify-content: center;
   text-align: center;
-  flex-shrink: 0;
+  flex: 1 1 0;
+  min-width: 0;
   height: 100%;
   display: flex;
   align-items: center;
@@ -118,15 +97,16 @@
 .header nav .pair > span:last-child {
   min-height: 15px;
 }
-.header nav a.active:after {
-  content: '';
-  height: 4px;
-  background: #2d5d47;
-  border-radius: 999px;
+.header nav .nav-indicator {
   position: absolute;
   bottom: -1px;
-  left: 8%;
-  right: 8%;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 999px;
+  background: #2d5d47;
+  pointer-events: none;
+  will-change: left, width;
 }
 .header nav a:hover {
   color: #1d4a3d;
@@ -146,14 +126,15 @@
   background: #e9eee3;
 }
 main {
-  max-width: 1600px;
-  margin: auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 .breadcrumb {
   display: flex;
   align-items: center;
   gap: 13px;
-  margin: 23px 5%;
+  margin: 23px var(--content-gutter);
   font-size: 11px;
   color: #6c7b70;
 }
@@ -165,7 +146,7 @@ main {
   font-size: 10px;
 }
 .hero {
-  margin: 0 5%;
+  margin: 0 var(--content-gutter);
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 474px;
@@ -340,7 +321,7 @@ main {
   text-align: right;
 }
 .metrics-section {
-  margin: 32px 5% 0;
+  margin: 32px var(--content-gutter) 0;
   padding-bottom: 22px;
   border-bottom: 1px solid #d7dcd2;
 }
@@ -458,7 +439,7 @@ th {
   padding: 10px;
 }
 .section {
-  margin: 55px 5%;
+  margin: 55px var(--content-gutter);
 }
 .section-heading {
   display: flex;
@@ -830,7 +811,7 @@ th {
   text-decoration: underline;
 }
 .centre-feature {
-  margin: 70px 5% 50px;
+  margin: 70px var(--content-gutter) 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #e9ede1;
@@ -892,7 +873,7 @@ th {
   margin-top: 24px;
 }
 .closing-strip {
-  margin: 50px 5% 60px;
+  margin: 50px var(--content-gutter) 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -919,7 +900,7 @@ footer {
   justify-content: space-between;
   gap: 30px;
   background: #e9ede1;
-  padding: 38px 5%;
+  padding: 38px var(--page-gutter);
   border-top: 1px solid #d7dcd2;
 }
 footer .brand strong {
@@ -1093,7 +1074,7 @@ footer > a:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 35px 5% 0;
+  margin: 35px var(--content-gutter) 0;
   padding: 35px;
   background: #e9eddf;
 }
@@ -1169,7 +1150,10 @@ footer > a:last-child {
   line-height: 1.8;
 }
 .info-page {
-  padding: 90px 8%;
+  padding: 90px var(--content-gutter);
+  width: auto;
+  max-width: none;
+  margin: 0;
   min-height: 650px;
 }
 .info-page > h1 {
