@@ -1,5 +1,5 @@
 .monthly-page {
-  margin: 50px 5% 75px;
+  margin: 50px var(--content-gutter) 75px;
 }
 .monthly-header {
   padding-bottom: 35px;
