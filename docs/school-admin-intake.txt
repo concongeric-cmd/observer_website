@@ -1,0 +1,306 @@
+SCHOOL DATA INTAKE GUIDE
+Admin input checklist for adding and maintaining a school
+管理端新增与维护园所资料清单
+
+Purpose
+Use this guide as the field plan for an integrated admin website. Create one school record at a time, then add separately sourced sections, practices, and updates. Do not treat an empty field as “none”; distinguish “not yet researched,” “not publicly available,” “not applicable,” and “confirmed none.”
+
+UNIFORM RECORD RULE
+Every country must use the same country form, and every school must use the same school form. A field may be unknown or not applicable for one record, but it must still be present with an explicit status. Do not make fields disappear just because a country or school has no verified value yet. This makes forms, searches, comparisons, exports and future admin automation consistent.
+
+For text fields, use fixed textboxes or text areas with a defined meaning. Keep separate values separate: country name is not population; a school’s name is not its enrollment; policy is not practice. Use repeatable rows for multiple policies, strategies, sources and statistics. Keep public-facing explanatory copy separate from structured facts.
+
+统一记录原则
+每个国家使用同一份国家表单，每所园所使用同一份园所表单。某条记录的字段可以是未知或不适用，但字段本身必须保留并标明状态。不能因为暂时没有核实值，就把字段从记录中删掉。这样表单、搜索、比较、导出和后续后台自动化才能保持一致。
+
+文本字段可使用定义明确的文本框或多行文本框，但不同信息必须分开记录：国家名称不等于人口，园所名称不等于在园人数，政策不等于实践。多项政策、策略、来源和统计使用可重复添加的记录行。面向读者的解释性文案与结构化事实分开保存。
+
+CANONICAL COUNTRY FORM · same fields for every country
+Identity: country ID; official/native name; English name; Simplified Chinese name; aliases; record status.
+Population and indicators: use repeatable metric rows, each with indicator name, value, unit, age range/population, geographic scope, reference period, source ID, checked date and status. Store total population separately from ECE-age population, enrollment, capacity, utilisation or waiting-list figures. “Population” alone is not an adequate statistic without year, scope and unit.
+Country sections: keep the same seven section slots for each nation—sector and policy, provider types, pedagogy and curriculum, operations and management, centre cases, company profiles, technology and services. Each slot has bilingual title/copy, status, relevant sources and last-reviewed date. Mark unavailable content explicitly instead of omitting a section.
+
+统一国家表单 · 每个国家字段相同
+身份：国家 ID、官方/原文名称、英文名称、简体中文名称、别名、记录状态。
+人口与指标：使用可重复的指标记录，每条包含指标名称、数值、单位、年龄范围/统计对象、地理范围、基准期间、来源 ID、核查日期和状态。全国总人口、幼教年龄人口、入学人数/率、服务定员、使用率或候补人数应分开记录。仅写“人口”而没有年份、范围和单位，不能作为完整统计。
+国家专题：每个国家保留相同的七个专题入口——行业与政策、机构类型、理念与课程、经营与管理、园所案例、企业观察、科技与服务。每个入口包含双语标题/文案、状态、相关来源和最后复核日期。没有内容时明确标记，不要省略入口。
+
+CANONICAL SCHOOL FORM · same fields for every school
+Identity and location: immutable school ID; official/original name; English name; Chinese name; aliases; country ID; region and locality; address precision; record status.
+Profile: provider/facility type; operator/ownership category with evidence; age range/programme; educational approach; bilingual profile summary.
+Policy: repeatable policy records with policy name, jurisdiction/authority, requirement or relevance, applicability status, bilingual explanation, source ID and effective/reference date.
+Strategies/practices: repeatable practice records with title, category, what happens, who is involved, age group, when/how often, conditions or limits, evidence type, source ID and verification status. Do not require exactly three if evidence supports fewer; show missing-practice status instead of inventing examples.
+Enrollment and capacity: repeatable measures with enrolled count, approved capacity, age/group scope, unit, reference date/period, source ID and status. Never merge enrolled count with capacity or infer one from the other.
+Operations: the same named slots on every school—staffing, hours/schedule, fees, admissions, family services, meals, safety/health, inclusion/support, management/governance, inspection/evaluation. Each value has a field status; structured units and dates for counts, rates, money and time.
+Evidence and maintenance: sources linked to the claims they support; publisher, title, URL, language, published/updated date, checked date, evidence type, scope and limits; reviewer, last review, next update trigger and change history.
+
+统一园所表单 · 每所园所字段相同
+身份与地点：永久园所 ID、官方/原文名称、英文名称、中文名称、别名、国家 ID、地区与地方行政区、地址精度、记录状态。
+档案：服务/设施类型；有来源支持的运营/所有权类别；年龄范围/项目；教育理念；双语简介。
+政策：可重复的政策记录，包含政策名称、管辖范围/主管部门、要求或相关内容、适用状态、双语说明、来源 ID、生效/参考日期。
+策略/实践：可重复的实践记录，包含标题、类别、实际内容、参与者、年龄组、时间/频率、条件或限制、证据类型、来源 ID和核实状态。不要为了凑三项而编造；来源只支持较少实践时，明确标注。
+招生与容量：可重复的指标记录，包含在园人数、核定容量、年龄/组别范围、单位、基准日期/期间、来源 ID和状态。不得把在园人数与容量合并，也不得相互推算。
+运营：每所园都保留相同字段——人员、开放时间/日程、费用、招生、家庭服务、餐食、安全/健康、融合/支持、管理/治理、检查/评价。每项都带状态；人数、比例、金额和时间使用有单位/日期的结构化值。
+证据与维护：来源关联到其支持的具体主张；记录发布机构、标题、链接、语言、发布日期/更新日期、核查日期、证据类型、范围和局限；并记录审核人、复核日期、下次更新触发条件和修改历史。
+
+使用状态统一选项：verified / school-reported / conflicting / not yet researched / not publicly available / not applicable / confirmed none。状态选项中英文含义固定，空字段不作为一种状态。
+
+使用统一状态选项：已核实 / 园方自述 / 来源冲突 / 尚未调查 / 未公开 / 不适用 / 已确认没有。状态含义中英文固定；空白不作为一种状态。
+
+使用目的
+本清单可作为一体化管理网站的录入字段规划。每次新增一条园所主档，再分别添加有来源支持的内容、实践和更新。空白不等于“没有”；请区分“尚未调查”“未公开”“不适用”和“已确认没有”。
+
+1. School identity | 园所身份
+Required:
+- Stable internal school ID (generated by system; never reused).
+- Official name in the original language/script.
+- Preferred English name and preferred Simplified Chinese name.
+- Other names: translated names, abbreviations, former names, aliases, common misspellings, and Traditional Chinese variants when relevant.
+- School / organisation type and age range or programme covered by this record.
+- Record status: draft, needs review, published, archived.
+- Country and administrative areas (state/prefecture, county/city, district/municipality); address only to the precision supported by a reliable source.
+- Website and public contact page, if available.
+
+建议必填：
+- 系统生成且不重复的园所 ID。
+- 原文官方名称。
+- 首选英文名称和简体中文名称。
+- 其他名称：译名、缩写、曾用名、别名、常见拼写变体；适用时记录繁体中文名称。
+- 园所/机构类型，以及本条记录涵盖的年龄段或项目。
+- 记录状态：草稿、待审核、已发布、已归档。
+- 国家及行政区划（州/都道府县、县/市、区/市町村）；地址精度不得超过可靠来源所支持的范围。
+- 官网及公开联系页面（如有）。
+
+2. Classification and scope | 分类与范围
+Capture each as a separate tagged value where possible:
+- Provider/facility type (e.g. centre, family child-care home, kindergarten, university-affiliated, public pre-K, Head Start).
+- Ownership/operator: public, private, nonprofit, university, local authority, or other verified category.
+- Programme names and age groups served.
+- Educational approach / curriculum only when the source identifies it.
+- Scope note: what the profile covers, what it excludes, and whether the information applies to one campus, a programme, or the whole organisation.
+- Classification source and date. Categories can overlap; do not force a single category if sources support several.
+
+建议作为独立标签记录：
+- 服务/设施类型（如托育中心、家庭托育、幼儿园、大学附属、公共学前班、Head Start）。
+- 所有权/运营方：公立、私立、非营利、大学、地方政府或其他有依据的类别。
+- 项目名称和服务年龄段。
+- 教育理念/课程，仅在来源明确说明时记录。
+- 范围说明：此档案涵盖和不涵盖的内容，以及信息适用于单个校区、一个项目还是整个机构。
+- 分类所依据的来源及日期。分类可能重叠；若来源支持多个类别，不要强行单选。
+
+3. Policy and regulatory context | 政策与监管背景
+For every policy or rule, record:
+- Jurisdiction and responsible authority (country, state/prefecture, locality, regulator or school district).
+- Policy / law / standard name, official URL, publication or effective date, and date checked.
+- The specific requirement relevant to this school or provider type: licensing, exemptions, curriculum/learning standards, funding eligibility, staffing/qualifications, safety, inspections, or reporting.
+- Applicability: confirmed applicable, likely applicable but unverified, not applicable, or unknown.
+- Evidence explaining the applicability and any local variation.
+- Separate the rule itself from the school’s reported or observed implementation. Never imply that a school follows a policy merely because the policy exists.
+
+每项政策/规则都要记录：
+- 管辖范围和主管部门（国家、州/都道府县、地方、监管机构或学区）。
+- 政策/法律/标准名称、官方链接、发布日期或生效日期、核查日期。
+- 与该园所/机构类型相关的具体要求：许可、豁免、课程/学习标准、资助资格、人员/资质、安全、检查或报告要求。
+- 适用性：已确认适用、可能适用但未核实、不适用或未知。
+- 说明适用性的证据和地方差异。
+- 将规则本身与园所自述或实际观察到的执行情况分开。不能仅因政策存在，就推断园所遵守了该政策。
+
+4. Strategies and verifiable practices | 策略与可核实实践
+Aim for at least three concrete practices for a substantial school case, if sources support them. For each practice enter:
+- Short practice title and topic (teaching, staffing, family engagement, inclusion, assessment, operations, etc.).
+- What happens, who does it, for which children/families, and when/how often.
+- Any conditions, resources, eligibility, group size, or limits that affect whether the practice can be reproduced.
+- Source quotation or concise evidence note, with source link and page/section.
+- Evidence kind: school-reported, regulator-recorded, observed, independently evaluated, or secondary report.
+- Verification status and last checked date.
+- Confidence/limitation note. Do not turn an aspiration, philosophy, or marketing claim into a verified routine.
+
+For substantial cases also collect, when publicly evidenced:
+- A typical day/session schedule, or clearly state why none was found.
+- One operating/management example (e.g. staffing deployment, enrollment process, family communication, or service workflow).
+- Comparable conditions or data that explain the context.
+- Known information gaps, including what was searched and what remains unresearched.
+
+若来源支持，重要园所案例尽量记录至少三项具体实践。每项实践需填写：
+- 实践标题和主题（教学、人员、家庭参与、融合、评估、运营等）。
+- 实际做什么、由谁执行、面向哪些儿童/家庭、何时或多常发生。
+- 可复制该实践所需的条件、资源、资格、组别规模或限制。
+- 来源摘录或简明证据说明，以及来源链接和页面/章节。
+- 证据类型：园所自述、监管记录、现场观察、独立评估或二手报道。
+- 核实状态和最后核查日期。
+- 可信度/局限说明。不要把愿景、理念或营销内容当成已核实的日常流程。
+
+重要案例还应在公开证据支持时记录：
+- 典型每日/每节课程安排，或明确说明为何未找到。
+- 一个运营/管理示例（如人员安排、招生流程、家庭沟通或服务流程）。
+- 能解释背景的可比条件或数据。
+- 已知信息缺口，包括已搜索内容及尚未调查的内容。
+
+5. Operations and services | 运营与服务
+Collect only if a reliable source supports the value:
+- Opening days/hours and session schedule.
+- Ages, capacity/enrollment, class/group size; keep units and the exact scope (class, campus, programme, organisation).
+- Staffing roles, qualifications, ratios, and training; specify age group and jurisdiction. Do not substitute one ratio for another.
+- Enrollment/admissions steps, eligibility and required documents.
+- Fees, currency, billing period, included services, effective year, and any eligibility/subsidy conditions.
+- Meals, transport, health, safety, inclusion, additional support and family services.
+- Governance/operator and organisation relationship.
+- Inspection, quality rating, accreditation, or evaluation results with issuing body, period, method and scope. School-reported evaluation must not be described as independent.
+
+仅在可靠来源支持时记录：
+- 开放日期/时间及课程安排。
+- 年龄、核定容量/注册人数、班级/小组人数；保留单位和准确范围（班级、校区、项目或机构）。
+- 岗位、资质、师生比例和培训；注明年龄组和管辖范围。不得用不同概念的比例互相替代。
+- 招生步骤、资格条件及所需材料。
+- 费用、币种、计费周期、包含服务、生效年份及资格/补贴条件。
+- 餐食、交通、健康、安全、融合、额外支持和家庭服务。
+- 治理/运营方及机构关系。
+- 检查、质量评级、认证或评估结果，注明发布机构、周期、方法和范围。园所自述的评估不得描述为独立评估。
+
+6. Sources and evidence ledger | 来源与证据台账
+Create one source record per page/document, with:
+- Source ID; publisher / author; exact title; source type; language.
+- Canonical URL and page/section where the claim appears.
+- Publication/update date (if stated); access/check date.
+- Claims/fields this source supports; quote or evidence note.
+- Geographic and programme scope; source limitations or contradictions.
+- Primary/secondary status; official status; archive/snapshot URL if needed.
+- Link each school fact, policy and practice to one or more source IDs.
+
+每个网页/文件单独建来源记录，包括：
+- 来源 ID；发布机构/作者；准确标题；来源类型；语言。
+- 规范链接及证据所在页面/章节。
+- 发布/更新日期（如有）；访问/核查日期。
+- 来源支持的字段/主张；摘录或证据说明。
+- 地理与项目范围；来源局限或矛盾。
+- 一手/二手及官方状态；必要时记录存档/快照链接。
+- 每条园所信息、政策和实践都关联一个或多个来源 ID。
+
+7. Data quality, updates and publishing | 数据质量、更新与发布
+For every field store:
+- Value, language, source ID(s), evidence note, valid-from / reference period, checked-at date, and editor.
+- Status: verified, school-reported, conflicting sources, not yet researched, not publicly available, not applicable, or confirmed none.
+- Update trigger / recommended review cadence (fees and admissions yearly; staffing and schedules when changed; regulations at least yearly or on official change; stable identity as needed).
+- Internal notes separated from public-facing text.
+- Reviewer, review date, approval state, and change history.
+- Do not publish incomplete drafts. Flag contradictory values for review instead of silently choosing one.
+- Preserve old values and their dates when values change.
+
+每个字段都保存：
+- 数值/文本、语言、来源 ID、证据说明、生效时间/参考周期、核查日期和编辑者。
+- 状态：已核实、园所自述、来源冲突、尚未调查、未公开、不适用或已确认没有。
+- 更新触发条件/建议复核周期（费用和招生每年；人员和日程变更时；法规至少每年或官方更新时；身份信息按需）。
+- 内部备注与公开展示文字分开。
+- 审核人、审核日期、批准状态和修改历史。
+- 未完成草稿不得直接发布。发现来源矛盾时标记审核，不要暗中择一。
+- 信息变更后保留旧值及对应日期。
+
+Suggested admin workflow | 建议管理流程
+1. Create draft school ID and identity fields.
+2. Add location, classification, programme scope and language variants.
+3. Add policy context for each applicable jurisdiction; cite official authority.
+4. Add concrete practices and operating details only when evidence exists.
+5. Add source records first or alongside every claim; set freshness and evidence status.
+6. Mark gaps explicitly; do not fill unknowns with guesses.
+7. Run validation: required fields, valid URLs, dates, duplicate-name/alias check, scope and source links.
+8. Send for editorial review; reviewer checks primary sources, contradictions, translations and public wording.
+9. Approve and publish. Keep a revision history and scheduled review reminders.
+
+建议管理流程
+1. 创建草稿园所 ID 和身份字段。
+2. 添加地点、分类、项目范围及多语言名称。
+3. 按适用管辖范围添加政策背景，并引用官方主管机构。
+4. 仅在有证据时添加具体实践和运营信息。
+5. 为每个主张添加来源记录，并设置时效及证据状态。
+6. 明确标记信息缺口，不要猜测填补未知内容。
+7. 运行校验：必填项、有效链接、日期、重名/别名、范围及来源关联。
+8. 提交编辑审核；审核者核查一手来源、矛盾、译文和公开表述。
+9. 批准后发布。保留修改历史并设置定期复核提醒。
+
+Suggested first admin form groups | 建议首版后台表单分组
+A. Identity and aliases | 身份与别名
+B. Location and scope | 地点与范围
+C. Provider type and programme | 机构类型与项目
+D. Policy and regulation | 政策与监管
+E. Strategies and practices | 策略与实践
+F. Operations and services | 运营与服务
+G. Sources and evidence | 来源与证据
+H. Gaps, review and update schedule | 信息缺口、审核与更新
+
+
+TECHNICAL FIELD LIST · MATCHED TO THE CURRENT WEBSITE
+This section lists fields currently present in the website’s data and rendered profile pages. It is a portal-entry proposal for those fields only. It does not add new content requirements.
+
+Field label — stored type — form control.
+- Text — string — single-line textbox.
+- Bilingual text — two strings (Chinese and English) — paired textboxes or text areas.
+- Number — numeric value — number box.
+- Date — date string — date picker.
+- Choice — existing controlled value — dropdown.
+- Repeatable item — array with the same fields below — “Add another” form row.
+- Link — URL string — URL textbox.
+
+SCHOOL PROFILE · fields used by the directory and school page
+- School ID — text/system key — generated read-only value.
+- Country — country key — dropdown/reference picker.
+- School code — text — textbox.
+- School name — bilingual text — paired textboxes.
+- Original-language name — text — textbox.
+- Aliases — repeatable text — “Add name” textbox.
+- Region — text/key — textbox or existing region dropdown.
+- Location — bilingual text — paired textboxes.
+- Educational approach — choice — existing approach dropdown.
+- Approach label — bilingual text — paired textboxes.
+- Ages covered — bilingual text — paired textboxes.
+- Profile summary — bilingual text — paired text areas.
+- School policy — repeatable bilingual item {title, description} — “Add policy” with paired title and description fields.
+- Strategies and practices — repeatable bilingual item {title, description} — “Add practice” with paired title and description fields.
+- Operations and services — fixed fields: fees, staffing, hours, family, safety, management; each stores bilingual text — six paired text areas. Keep all six fields on every school; use the existing unknown text when information has not been collected.
+- Daily schedule — repeatable bilingual item {time, activity} — “Add schedule item” with paired time and activity fields.
+- Sources — repeatable item {title, URL, language} — “Add source” with text, URL and language controls.
+- Sources checked — date — date picker.
+- Provider classifications — repeatable item {type ID, status, source title, source URL, checked date, evidence in Chinese, evidence in English} — “Add classification” form with dropdown, textboxes, URL and date controls.
+
+COUNTRY PROFILE · fields used by country landing pages
+- Country key/slug — text — generated/read-only key.
+- Country code — text — textbox.
+- Country name — bilingual text — paired textboxes.
+- Country page title — bilingual text — paired textboxes.
+- Country description — bilingual text — paired text areas.
+- Snapshot reference date — bilingual text — paired textboxes.
+- Snapshot scope — bilingual text — paired text areas.
+- Snapshot source title — bilingual text — paired textboxes.
+- Snapshot source URL — URL — URL textbox.
+- Snapshot metrics — repeatable item {label in Chinese, label in English, displayed value} — “Add metric” with textboxes. Values remain text because the current site includes both counts and percentages.
+- Chart title — bilingual text — paired textboxes.
+- Chart unit — bilingual text — paired textboxes.
+- Chart bars — repeatable item {label in Chinese, label in English, numeric value} — “Add bar” with paired labels and number box.
+- Chart note — bilingual text — paired text areas.
+- Capacity utilisation — text or empty — textbox; shown only when that country snapshot uses it.
+- Country section entrances — fixed seven entries from the existing site navigation, with title, description/summary in Chinese and English — paired textboxes and text areas.
+
+COUNTRY SECTION CONTENT · fields currently rendered in topic pages
+- Section key — existing site key: sector, types, curriculum, operations, centres, companies, technology — dropdown/read-only.
+- Section summary or introduction — bilingual text — paired text areas.
+- Sector and policy blocks — repeatable item {title in Chinese, title in English, body in Chinese, body in English, source links} — “Add block” form with paired text fields and source-link selectors.
+- Pedagogy and curriculum blocks — repeatable item {number, title in Chinese, title in English, body in Chinese, body in English, optional bilingual list items} — “Add block” form.
+- Operations, company, and technology profiles — repeatable item {name, bilingual label, bilingual body, source URLs and titles, checked date, bilingual update note} — “Add profile” form.
+- Provider type — existing fields {ID, country, dimension in Chinese/English, label in Chinese/English, description in Chinese/English}; enter with dropdowns and paired textboxes/text areas.
+- Provider type guide — repeatable item {bilingual title, bilingual description, source label and URL} — “Add guide” form.
+- Related school — school ID — searchable picker, only where the current page links to a school.
+- Section note / reviewed date — bilingual text / date — paired text areas and date picker when present in the current section data.
+
+ARTICLE CONTENT · fields used by the current article pages
+- Article ID — text/system key — generated read-only value.
+- Category, title, introduction and article type — bilingual text — paired textboxes/text areas.
+- Reading time — number — number box.
+- Display colour/style — existing choice — dropdown.
+- Related source — existing source key — dropdown.
+- Article blocks — repeatable item {bilingual title, bilingual body} — “Add block” form.
+- Process steps — repeatable bilingual label — “Add step” form.
+
+FORM CONSISTENCY RULES
+- Do not add a field just because it could be useful in a future system; add it only when the website has a matching data field and display.
+- Keep every school’s six displayed operations fields available in the form. If information is missing, retain the current unknown value instead of removing that field.
+- Repeatable lists may have different numbers of entries, but every entry in a list uses the same shape.
+- Preserve the site’s existing bilingual values, links, labels and conditional display behavior.

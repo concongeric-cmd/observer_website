@@ -224,6 +224,16 @@ try {
     'Japanese search',
   )
   assert.equal(
+    filterSchools(schools, { query: '藤幼兒園' }).length,
+    1,
+    'Traditional Chinese Fuji search',
+  )
+  assert.equal(
+    filterSchools(schools, { query: '賓幼兒學校' }).length,
+    1,
+    'Traditional Chinese Bing search',
+  )
+  assert.equal(
     filterSchools(schools, { region: 'maryland', approach: 'montessori' })
       .length,
     1,

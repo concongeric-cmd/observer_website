@@ -1,11 +1,12 @@
 import { Link, useParams } from 'react-router'
 import { sections } from '../data/content'
-import { policyResources } from '../data/policyResources'
 import useCountry from '../hooks/useCountry'
 import useLanguage from '../hooks/useLanguage'
 import ArticleList from '../components/articles/ArticleList'
 import NotFoundPage from './NotFoundPage'
 import ProviderTypesPage from './ProviderTypesPage'
+import PedagogyCurriculumPage from '../components/country/PedagogyCurriculumPage'
+import CountryEvidencePage from '../components/country/CountryEvidencePage'
 export default function CountrySectionPage() {
   const { sectionId } = useParams()
   const country = useCountry()
@@ -22,37 +23,13 @@ export default function CountrySectionPage() {
         <h1>{pair(section[1], section[2])}</h1>
         <p>{pair(section[3], section[4])}</p>
       </header>
-      {sectionId === 'sector' ? (
-        <section className="country-topic-content">
-          <p className="topic-explanation">
-            {pair(
-              '这里展示国家层面的制度与政策资料入口。具体园所自己的教育方针、服务与做法请进入园所档案查看。',
-              'These resources concern country-level systems and policies. For an individual school’s educational policy, services and practices, open its school profile.',
-            )}
-          </p>
-          <div className="policy-resource-grid">
-            {policyResources[country.slug].map((resource) => (
-              <a
-                className="policy-resource"
-                key={resource.url}
-                href={resource.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="eyebrow">{resource.publisher}</span>
-                <h2>{pair(...resource.title)}</h2>
-                <p>{pair(...resource.note)}</p>
-                <span>{pair('查看资料入口', 'Open source gateway')} ↗</span>
-              </a>
-            ))}
-          </div>
-          <p className="directory-disclaimer">
-            {pair(
-              '此处为资料入口，不是完整政策库。尚未提供逐条政策解读或监管建议。',
-              'These are source gateways, not a complete policy library. Detailed policy interpretation and regulatory guidance are not provided.',
-            )}
-          </p>
-        </section>
+      {sectionId === 'sector' ||
+      sectionId === 'companies' ||
+      sectionId === 'technology' ||
+      (sectionId === 'operations' && country.slug === 'united-states') ? (
+        <CountryEvidencePage sectionId={sectionId} />
+      ) : sectionId === 'curriculum' ? (
+        <PedagogyCurriculumPage />
       ) : sectionId === 'operations' && country.slug === 'japan' ? (
         <ArticleList operations />
       ) : (

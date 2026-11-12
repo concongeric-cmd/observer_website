@@ -12,10 +12,10 @@ export const policyResources = {
     {
       title: ['保育供给与利用数据', 'Childcare capacity & utilisation'],
       publisher: 'こども家庭庁 / Children and Families Agency',
-      url: 'https://www.cfa.go.jp/policies/hoiku/torimatome/r7/',
+      url: 'https://www.cfa.go.jp/policies/hoiku/torimatome/r8/',
       note: [
-        '2025年4月1日统计快照，不代表最新全国总量。',
-        'Statistical snapshot for 1 April 2025, not a claim about the latest totals.',
+        '2026年4月1日统计快照；数据为暂定值，熊本县数据仍待确定。',
+        'Provisional snapshot for 1 April 2026; Kumamoto Prefecture data are still being finalized.',
       ],
     },
   ],

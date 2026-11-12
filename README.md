@@ -29,7 +29,7 @@ Use npm.cmd on Windows if PowerShell blocks npm.ps1.
 - src/components/layout/ — header, footer and branding
 - src/components/articles/ — existing Japan management samples
 - src/components/common/ — shared elements
-- src/data/ — countries, school records, articles, policy gateways and page copy
+- src/data/ — countries, school records, articles, policy gateways, curriculum summaries and page copy
 - src/context/ and src/hooks/ — language preference and country context
 - src/styles/ — shared and explorer layouts
 - scripts/check-routes.mjs — automated route and data checks
@@ -40,7 +40,7 @@ Use npm.cmd on Windows if PowerShell blocks npm.ps1.
 - /japan and /united-states — matching country directories
 - /:countrySlug/centres — directory alias
 - /:countrySlug/centres/:schoolId — country-specific school profile
-- /:countrySlug/sector — country policy resource gateways
+- /:countrySlug/sector — sourced country system and sector overview
 - /:countrySlug/:sectionId — other required country topics
 - /japan/operations/:articleId — existing management sample articles
 - /monthly — monthly observation scope and publication status
@@ -50,7 +50,18 @@ The directory stores q, region and approach filters in URL search parameters. Sc
 
 ## Content and limitations
 
-Six sample schools are stored in src/data/schools.js, three per country, with original source links and check dates. These are illustrative directory records, not a national census or ranking. Profiles distinguish published school statements from uncollected data. Fees, staffing and internal strategies are not invented. National policy pages currently provide source gateways rather than a complete policy library. Monthly publishing, maps, comparisons, currency conversion and an editorial backend are future work.
+Six sample schools are stored in src/data/schools.js, three per country, with original source links and check dates. These are illustrative directory records, not a national census or ranking. Search includes English, Chinese, Japanese and declared Simplified/Traditional name variants. Fuji Kindergarten and Bing Nursery School have expanded, source-backed profiles with sample days and operating details. Bing tuition is labeled for 2026–27, and ambiguous staffing data are not converted into a ratio. Remaining unknown fields are marked as not researched in the profile. Country snapshots include a provisional 2026 Japan childcare-capacity release and 2022 US school-enrollment estimates, with their scopes and sources stated separately. Sector, provider-type, curriculum, operations, company and technology pages now contain bilingual research summaries for both countries. Company and vendor examples are limited case studies, not market rankings; company disclosures and vendor feature descriptions are identified by evidence basis. The US operations page provides source-linked compliance and management checklists, not state-specific legal advice. MonthlyUpdates contains one reviewed Japan data release; updates are curated manually. Three Japan practical articles include checkable steps and operating conditions. Two Japan practice frameworks are editorial guidance, not observed procedures. Maps, currency conversion and an editorial backend remain future work.
+
+## Handover documents
+
+- [Chinese README](README.zh-CN.md) — bilingual development, route, content and deployment instructions.
+- [Content inventory](docs/content-inventory.md) — page coverage and known content gaps.
+- [Data dictionary](docs/data-dictionary.md) — records, fields, statuses and language pairs.
+- [Source register](docs/source-register.md) — cited public sources and scope notes.
+- [Design resources](docs/design-resources.md) — editable source files for the visual system.
+- [Issue log](docs/issue-log.md) — unresolved work and next actions.
+- [School and country source tracker](docs/school-source-tracker-curriculum-updated.xlsx) — school records plus a Country sources worksheet with sector facts, direct links, evidence basis and update triggers.
+- [Review log](docs/review-log.md) — dated changes and open review items.
 
 ## Hosting
 

@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import { schools } from '../data/schools'
+import { providerTypeGuides } from '../data/providerTypeGuides'
 import {
   getSchoolsByProviderType,
   getVerifiedProviderTypes,
@@ -14,6 +15,7 @@ export default function ProviderTypesPage() {
   const types = providerTypes.filter((type) =>
     type.countries.includes(country.slug),
   )
+  const guides = providerTypeGuides[country.slug] || []
   const unclassified = schools.filter(
     (school) =>
       school.country === country.slug &&
@@ -38,6 +40,20 @@ export default function ProviderTypesPage() {
             'Only classifications supported by original sources are shown. Facility category, university relationship and private status can overlap, so a school may appear in several groups. Counts refer only to current directory samples.',
           )}
         </p>
+        <section className="provider-landscape">
+          <h2>{pair('全国制度中的服务类型', 'Provider types in the national system')}</h2>
+          <div>
+            {guides.map((guide) => (
+              <article key={guide.title[1]}>
+                <h3>{pair(...guide.title)}</h3>
+                <p>{pair(...guide.body)}</p>
+                <a href={guide.source[1]} target="_blank" rel="noreferrer">
+                  {guide.source[0]} ↗
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
         <nav className="provider-type-index" aria-label="Provider type groups">
           {types.map((type) => (
             <a href={'#provider-' + type.id} key={type.id}>
