@@ -1,6 +1,7 @@
 import useCountry from '../hooks/useCountry'
 import useLanguage from '../hooks/useLanguage'
 import SchoolDirectory from '../components/directory/SchoolDirectory'
+import CountryOverview from '../components/country/CountryOverview'
 export default function CountryPage() {
   const country = useCountry()
   const { pair } = useLanguage()
@@ -17,6 +18,7 @@ export default function CountryPage() {
           )}
         </div>
       </header>
+      <CountryOverview country={country} />
       <SchoolDirectory country={country} />
     </>
   )
