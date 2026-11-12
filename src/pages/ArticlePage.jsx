@@ -58,10 +58,10 @@ export default function ArticlePage() {
             <div className="article-status">
               {pair(
                 article.source
-                  ? '来源解读与编辑建议 · 2026年11月9日'
+                  ? '来源解读与编辑建议 · 2026年11月12日'
                   : '编辑示例 · 尚无实施效果数据',
                 article.source
-                  ? 'Source interpretation & suggestions · 9 November 2026'
+                  ? 'Source interpretation & suggestions · 12 November 2026'
                   : 'Editorial example · no implementation outcomes available',
               )}
             </div>

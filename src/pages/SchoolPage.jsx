@@ -18,8 +18,8 @@ export default function SchoolPage() {
   )
   if (!school) return <NotFoundPage />
   const unknown = [
-    '待核实 · 尚未收集',
-    'Pending verification · not yet collected',
+    '本档案尚未研究或收集；不代表园所没有该项',
+    'Not yet researched or collected in this profile; this does not mean the school lacks it',
   ]
   return (
     <div className="school-profile">
@@ -27,17 +27,6 @@ export default function SchoolPage() {
         ← {pair('返回园所目录', 'Back to school directory')}
       </Link>
       <header className="school-profile-header">
-        <div>
-          <span className="eyebrow">SCHOOL PROFILE / {school.code}</span>
-          <h1>{pair(...school.name)}</h1>
-          <p className="profile-original">{school.original}</p>
-          <p>{pair(...school.location)}</p>
-          <p className="profile-summary">{pair(...school.summary)}</p>
-          <div className="school-tags">
-            <ProviderTypeBadges school={school} />
-            <span>{pair(...school.approachLabel)}</span>
-          </div>
-        </div>
         <div className="profile-record">
           <span className="eyebrow">SOURCE RECORD</span>
           <span className="record-monogram">{country.code}</span>
@@ -52,6 +41,17 @@ export default function SchoolPage() {
               'School-reported · not an independent outcome evaluation',
             )}
           </p>
+        </div>
+        <div>
+          <span className="eyebrow">SCHOOL PROFILE / {school.code}</span>
+          <h1>{pair(...school.name)}</h1>
+          <p className="profile-original">{school.original}</p>
+          <p>{pair(...school.location)}</p>
+          <p className="profile-summary">{pair(...school.summary)}</p>
+          <div className="school-tags">
+            <ProviderTypeBadges school={school} />
+            <span>{pair(...school.approachLabel)}</span>
+          </div>
         </div>
       </header>
       <nav className="profile-anchors" aria-label="School profile contents">
@@ -143,26 +143,45 @@ export default function SchoolPage() {
           <h2>{pair('经营与家园服务', 'Operations & family services')}</h2>
           <p>
             {pair(
-              '待补充字段不表示园所没有该服务。',
-              'An uncollected field does not mean a school lacks the service.',
+              '未收集信息不代表园所没有该服务。',
+              'Uncollected information does not mean a school lacks the service.',
             )}
           </p>
         </div>
         <dl className="school-facts">
           {[
-            ['收费与资助', 'Fees & financial support'],
-            ['人员与师幼配置', 'Staffing & ratios'],
-            ['开放时间与日程', 'Hours & daily schedule'],
-            ['招生与家庭沟通', 'Admissions & family communication'],
-            ['安全与接送制度', 'Safety & collection procedures'],
-            ['管理计划与效果', 'Management plans & outcomes'],
-          ].map((label) => (
-            <div key={label[1]}>
-              <dt>{pair(...label)}</dt>
-              <dd>{pair(...unknown)}</dd>
+            ['fees', '收费与资助', 'Fees & financial support'],
+            ['staffing', '人员与师幼配置', 'Staffing & ratios'],
+            ['hours', '开放时间与日程', 'Hours & daily schedule'],
+            ['family', '招生与家庭沟通', 'Admissions & family communication'],
+            ['safety', '安全与接送制度', 'Safety & collection procedures'],
+            ['management', '管理计划与效果', 'Management plans & outcomes'],
+          ].map(([key, zh, en]) => (
+            <div key={key}>
+              <dt>{pair(zh, en)}</dt>
+              <dd>{pair(...(school.operations?.[key] || unknown))}</dd>
             </div>
           ))}
         </dl>
+        {school.dailySchedule?.length > 0 && (
+          <div className="daily-schedule">
+            <h3>{pair('园方公布的一日流程', 'School-published daily schedule')}</h3>
+            <ol>
+              {school.dailySchedule.map((item) => (
+                <li key={item.time[1]}>
+                  <time>{pair(...item.time)}</time>
+                  <span>{pair(...item.activity)}</span>
+                </li>
+              ))}
+            </ol>
+            <p>
+              {pair(
+                '这是园方公开的日程示例；实际每周安排可能不同。',
+                'This is a school-published sample day; the weekly schedule may vary.',
+              )}
+            </p>
+          </div>
+        )}
       </section>
       <section id="school-sources" className="profile-section">
         <div className="profile-section-title">
