@@ -6,7 +6,7 @@ export const countries = [
     title: ['美国幼教', 'Early childhood education in the US'],
     description: [
       '从具体园所开始，了解教学方法、服务安排与公开的经营实践。也可按主题查看行业制度与政策资料。',
-      'Start with individual schools to explore teaching, services and published operating practices, or browse sector and policy resources by topic.',
+      'Explore how early childhood schools across the US teach, support families, and manage daily life, alongside the policies that shape their work.',
     ],
   },
   {

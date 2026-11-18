@@ -16,13 +16,7 @@ export default function CountrySectionPage() {
   if (sectionId === 'types') return <ProviderTypesPage />
   return (
     <>
-      <header className="country-topic-header">
-        <span className="eyebrow">
-          {country.code} / {section[2].toUpperCase()}
-        </span>
-        <h1>{pair(section[1], section[2])}</h1>
-        <p>{pair(section[3], section[4])}</p>
-      </header>
+
       {sectionId === 'sector' ||
       sectionId === 'companies' ||
       sectionId === 'technology' ||
