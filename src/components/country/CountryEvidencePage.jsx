@@ -26,7 +26,7 @@ export default function CountryEvidencePage({ sectionId }) {
 
   if (sectionId === 'sector') {
     return (
-      <section className="country-topic-content evidence-page">
+      <section className="country-topic-content evidence-page evidence-sector">
         <p className="topic-explanation">{pair(...section.summary)}</p>
         <div className="evidence-rows">
           {section.blocks.map((block, index) => (
@@ -48,7 +48,7 @@ export default function CountryEvidencePage({ sectionId }) {
   }
 
   return (
-    <section className="country-topic-content evidence-page">
+      <section className="country-topic-content evidence-page evidence-profiles">
       <p className="topic-explanation">{pair(...section.summary)}</p>
       <div className="evidence-rows">
         {section.profiles.map((profile, index) => (

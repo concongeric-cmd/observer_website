@@ -18,17 +18,15 @@ export default function ArticleList({ operations = false }) {
         .includes(query.toLowerCase()),
   )
   return (
-    <section className="section articles-section" id="articles">
-      <SectionHeading
-        number={operations ? '01' : '02'}
-        zh={operations ? '经营与管理专题' : '给经营者的实践观察'}
-        en={
-          operations
-            ? 'Operations & management'
-            : 'Ideas for everyday leadership'
-        }
-        to={operations ? null : '/japan/operations'}
-      />
+    <section className={'section articles-section' + (operations ? ' operations-articles' : '')} id="articles">
+      {!operations && (
+        <SectionHeading
+          number="02"
+          zh="ç»™ç»è¥è€…çš„å®žè·µè§‚å¯Ÿ"
+          en="Ideas for everyday leadership"
+          to="/japan/operations"
+        />
+      )}
       <div className="article-toolbar">
         <div className="filter-tabs">
           {[

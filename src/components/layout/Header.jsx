@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from 'react-router'
-import { useLayoutEffect, useRef } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import useLanguage from '../../hooks/useLanguage'
 import Brand from './Brand'
 
@@ -11,13 +11,15 @@ const navigation = [
   ['/about', '关于本站', 'About'],
 ]
 export default function Header() {
-  const { pair, english, toggle } = useLanguage()
+  const { pair, english, mode, setMode } = useLanguage()
   const location = useLocation()
+  const [menuOpen, setMenuOpen] = useState(false)
   const navRef = useRef(null)
   const indicatorRef = useRef(null)
   const hasPositionedIndicator = useRef(false)
 
   useLayoutEffect(() => {
+    setMenuOpen(false)
     const nav = navRef.current
     const indicator = indicatorRef.current
     if (!nav || !indicator) return
@@ -44,12 +46,12 @@ export default function Header() {
     const observer = new ResizeObserver(updateIndicator)
     observer.observe(nav)
     return () => observer.disconnect()
-  }, [location.pathname, english])
+  }, [location.pathname, english, mode])
   return (
     <>
       <header className="header">
         <Brand />
-        <nav aria-label="Main navigation" ref={navRef}>
+        <nav className={menuOpen ? 'mobile-open' : ''} aria-label="Main navigation" ref={navRef}>
           {navigation.map(([path, zh, en]) => (
             <NavLink
               to={path}
@@ -57,17 +59,28 @@ export default function Header() {
               className={({ isActive }) => (isActive ? 'active' : '')}
               key={path}
             >
-              {pair(zh, en)}
+              <span onClick={() => setMenuOpen(false)}>{pair(zh, en)}</span>
             </NavLink>
           ))}
           <span className="nav-indicator" ref={indicatorRef} aria-hidden="true" />
         </nav>
         <button
-          className="language-button"
-          onClick={toggle}
-          aria-label="Switch bilingual reading order"
+          className="mobile-menu-button"
+          type="button"
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          onClick={() => setMenuOpen((open) => !open)}
         >
-          {english ? 'EN / 中' : '中 / EN'} ⇅
+          {menuOpen ? '×' : '☰'}
+        </button>
+        <button
+          className="language-button"
+          type="button"
+          aria-label="Cycle display language: English, Chinese, bilingual"
+          title="Cycle display language"
+          onClick={() => setMode(mode === 'en' ? 'zh' : mode === 'zh' ? 'bilingual' : 'en')}
+        >
+          {mode === 'en' ? 'EN / \u4e2d' : mode === 'zh' ? '\u4e2d / EN' : '\u4e2d + EN'}
         </button>
       </header>
     </>

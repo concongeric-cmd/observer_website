@@ -4,3 +4,7 @@
 @import './styles/explorer.css';
 @import './styles/monthly.css';
 @import './styles/provider-types.css';
+@import './styles/homepage.css';
+@import './styles/homepage-composition.css';
+@import './styles/remaining-pages.css';
+@import './styles/reference-layout.css';

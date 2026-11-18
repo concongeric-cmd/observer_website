@@ -1,12 +1,12 @@
 import { Link } from 'react-router'
 import { schools } from '../data/schools'
 import { providerTypeGuides } from '../data/providerTypeGuides'
+import SchoolCard from '../components/directory/SchoolCard'
 import {
   getSchoolsByProviderType,
   getVerifiedProviderTypes,
   providerTypes,
 } from '../data/providerTypes'
-import SchoolCard from '../components/directory/SchoolCard'
 import useCountry from '../hooks/useCountry'
 import useLanguage from '../hooks/useLanguage'
 export default function ProviderTypesPage() {
@@ -23,16 +23,7 @@ export default function ProviderTypesPage() {
   )
   return (
     <div className="provider-types-page">
-      <header className="country-topic-header">
-        <span className="eyebrow">{country.code} / PROVIDER TYPES</span>
-        <h1>{pair('机构类型', 'Provider Types')}</h1>
-        <p>
-          {pair(
-            '从类型出发，探索目录中的具体园所。',
-            'Explore actual schools in the directory by provider type.',
-          )}
-        </p>
-      </header>
+
       <div className="provider-types-content">
         <p className="provider-types-note">
           {pair(
@@ -93,10 +84,33 @@ export default function ProviderTypesPage() {
                 </span>
               </div>
               {matching.length ? (
-                <div className="school-grid">
-                  {matching.map((school) => (
-                    <SchoolCard key={school.id} school={school} />
-                  ))}
+                <div className="provider-type-matches">
+                  {matching.map((school) => {
+                    const classification = getVerifiedProviderTypes(school).find(
+                      (verifiedType) => verifiedType.id === type.id,
+                    )
+                    return (
+                      <article className="provider-type-match" key={school.id}>
+                        <div>
+                          <Link to={'/' + country.slug + '/centres/' + school.id}>
+                            {school.code} · {pair(...school.name)}
+                          </Link>
+                          {classification && (
+                            <p>{pair(...classification.source.evidence)}</p>
+                          )}
+                        </div>
+                        {classification && (
+                          <a
+                            href={classification.source.url}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {pair('åŽŸå§‹å‡ºå¤„', 'Source')} ↗
+                          </a>
+                        )}
+                      </article>
+                    )
+                  })}
                 </div>
               ) : (
                 <p className="provider-types-note">
