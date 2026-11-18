@@ -13,13 +13,7 @@ export default function ArticlePage() {
   if (!article || country.slug !== 'japan') return <NotFoundPage />
   return (
     <>
-      <div className="breadcrumb">
-        <Link to="/japan">{pair('日本幼教', 'Japan')}</Link>
-        <span>/</span>
-        <Link to="/japan/operations">
-          {pair('经营与管理', 'Operations & management')}
-        </Link>
-      </div>
+
       <article className="reading-page">
         <header className="reading-header">
           <span className="eyebrow">OPERATIONS / FIELD NOTES</span>

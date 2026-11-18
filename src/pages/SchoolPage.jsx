@@ -1,11 +1,27 @@
+import { useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router'
 import { schools } from '../data/schools'
 import useCountry from '../hooks/useCountry'
 import useLanguage from '../hooks/useLanguage'
 import NotFoundPage from './NotFoundPage'
-import { getProviderTypeLabel } from '../data/providerTypes'
-import ProviderTypeBadges from '../components/directory/ProviderTypeBadges'
 import ProviderClassification from '../components/directory/ProviderClassification'
+import SchoolDataVisuals from '../components/directory/SchoolDataVisuals'
+
+const operationLabels = [
+  ['hours', 'Hours & schedules', '開放時間與日程'],
+  ['fees', 'Fees & financial support', '收費與資助'],
+  ['staffing', 'Staffing & ratios', '人員與師幼配置'],
+  ['family', 'Admissions & family communication', '招生與家庭溝通'],
+  ['safety', 'Safety & collection procedures', '安全與接送制度'],
+  ['management', 'Management plans & outcomes', '管理計劃與成效'],
+]
+
+const tabs = [
+  ['overview', 'Data & daily rhythm', '資料與一日流程'],
+  ['pedagogy', 'Policy & pedagogy', '教育方針與教學'],
+  ['operations', 'Operations & notes', '營運與備註'],
+]
+
 export default function SchoolPage() {
   const country = useCountry()
   const location = useLocation()
@@ -13,208 +29,174 @@ export default function SchoolPage() {
   const directoryPath = '/' + country.slug + search
   const { schoolId } = useParams()
   const { pair } = useLanguage()
+  const englishFirst = (en, zh) => pair(zh, en)
+  const [activeTab, setActiveTab] = useState('overview')
   const school = schools.find(
     (s) => s.id === schoolId && s.country === country.slug,
   )
+
   if (!school) return <NotFoundPage />
+
   const unknown = [
-    '本档案尚未研究或收集；不代表园所没有该项',
+    '本檔案尚未研究或收集；不代表園所沒有該項',
     'Not yet researched or collected in this profile; this does not mean the school lacks it',
   ]
+  const factRows = [
+    [['Original name', '原始名稱'], [school.original, school.original]],
+    [['Location', '地區'], school.location],
+    [['Ages', '年齡範圍'], school.ages || unknown],
+  ]
+
   return (
-    <div className="school-profile">
-      <Link className="school-back" to={directoryPath}>
-        ← {pair('返回园所目录', 'Back to school directory')}
-      </Link>
-      <header className="school-profile-header">
-        <div className="profile-record">
-          <span className="eyebrow">SOURCE RECORD</span>
-          <span className="record-monogram">{country.code}</span>
-          <strong>{pair('基础档案', 'Basic profile')}</strong>
-          <p>
-            {pair('原始资料核验', 'Original sources checked')}
-            <span>{school.checked}</span>
-          </p>
-          <p>
-            {pair(
-              '园方自述 · 非独立成效评价',
-              'School-reported · not an independent outcome evaluation',
-            )}
-          </p>
-        </div>
-        <div>
-          <span className="eyebrow">SCHOOL PROFILE / {school.code}</span>
-          <h1>{pair(...school.name)}</h1>
-          <p className="profile-original">{school.original}</p>
-          <p>{pair(...school.location)}</p>
-          <p className="profile-summary">{pair(...school.summary)}</p>
-          <div className="school-tags">
-            <ProviderTypeBadges school={school} />
-            <span>{pair(...school.approachLabel)}</span>
+    <div className="school-dossier">
+      <header className="school-dossier-header">
+        <div className="school-dossier-heading">
+          <div className="school-dossier-title">
+            <div className="school-dossier-kicker">
+              <span>{country.code} · {school.code}</span>
+              <span>{pair(...school.location)}</span>
+              {school.ages && <span>{pair(...school.ages)}</span>}
+            </div>
+            <h1>{pair(...school.name)}</h1>
+            <p className="school-dossier-original">{school.original}<span aria-hidden="true"> · </span>{pair(...school.approachLabel)}</p>
+            <p className="school-dossier-summary">{pair(...school.summary)}</p>
           </div>
+          <Link className="school-dossier-back" to={directoryPath}>
+            <span aria-hidden="true">←</span> {englishFirst('Back to directory', '返回園所目錄')}
+          </Link>
         </div>
       </header>
-      <nav className="profile-anchors" aria-label="School profile contents">
-        {[
-          ['essentials', '基本信息', 'Essentials'],
-          ['school-policy', '教育方针', 'School policy'],
-          ['school-practice', '实践与策略', 'Practices & strategies'],
-          ['school-operations', '运营与服务', 'Operations & services'],
-          ['school-sources', '原始来源', 'Sources'],
-        ].map(([id, zh, en], i) => (
-          <a href={'#' + id} key={id}>
-            <span>0{i + 1}</span>
-            {pair(zh, en)}
-          </a>
-        ))}
-      </nav>
-      <section id="essentials" className="profile-section">
-        <div className="profile-section-title">
-          <span className="eyebrow">01 / ESSENTIALS</span>
-          <h2>{pair('先了解这所园', 'Understand the school')}</h2>
+
+      <div className="school-dossier-tabs-wrap">
+        <div className="school-dossier-tabs-row">
+          <div className="school-dossier-tabs" role="tablist" aria-label={englishFirst('School profile sections', '園所檔案內容')}>
+            {tabs.map(([id, en, zh]) => (
+              <button
+                key={id}
+                id={`school-tab-${id}`}
+                type="button"
+                role="tab"
+                aria-selected={activeTab === id}
+                aria-controls={`school-panel-${id}`}
+                onClick={() => setActiveTab(id)}
+                className={activeTab === id ? 'active' : ''}
+              >
+                {englishFirst(en, zh)}
+              </button>
+            ))}
+          </div>
+          <span className="school-dossier-meta">
+            {englishFirst('Sources checked', '資料查閱日期')}: {school.checked} · {school.sources.length} {englishFirst('primary sources', '項原始出處')}
+          </span>
         </div>
-        <dl className="school-facts">
-          {[
-            [['所在地区', 'Location'], school.location],
-            [['机构类型', 'Provider type'], getProviderTypeLabel(school)],
-            [['教育理念', 'Educational approach'], school.approachLabel],
-            [['年龄范围', 'Ages covered'], school.ages || unknown],
-            [['认证身份', 'Accreditation'], unknown],
-            [
-              ['档案范围', 'Profile coverage'],
-              ['具体园所或学前项目', 'Specific site or early years programme'],
-            ],
-          ].map(([label, value]) => (
-            <div key={label[1]}>
-              <dt>{pair(...label)}</dt>
-              <dd>{pair(...value)}</dd>
+      </div>
+
+      <div className="school-dossier-layout">
+        <main className="school-dossier-main">
+          {activeTab === 'overview' && (
+            <div id="school-panel-overview" role="tabpanel" aria-labelledby="school-tab-overview">
+              <SchoolDataVisuals school={school} />
             </div>
-          ))}
-        </dl>
-        <ProviderClassification school={school} />
-      </section>
-      <section id="school-policy" className="profile-section">
-        <div className="profile-section-title">
-          <span className="eyebrow">02 / SCHOOL POLICY</span>
-          <h2>{pair('园方的教育方针', 'The school’s educational policy')}</h2>
-          <p>
-            {pair(
-              '园所层面的公开理念与制度，与国家法规分开。',
-              'Published school-level principles and procedures, separate from national regulation.',
-            )}
-          </p>
-        </div>
-        <div className="school-practices">
-          {school.policy.map(([a, b, c, d]) => (
-            <div key={b}>
-              <span className="evidence-tag">
-                {pair('园方自述', 'School-reported')}
-              </span>
-              <h3>{pair(a, b)}</h3>
-              <p>{pair(c, d)}</p>
+          )}
+
+          {activeTab === 'pedagogy' && (
+            <div id="school-panel-pedagogy" role="tabpanel" aria-labelledby="school-tab-pedagogy" className="dossier-panel-stack">
+              <section className="dossier-panel">
+                <div className="dossier-panel-heading">
+                  <span className="eyebrow">01 · EDUCATIONAL POLICY</span>
+                  <h2>{englishFirst('The school’s stated educational policy', '園方公開立場與核心目標')}</h2>
+                  <p>{pair('Published school-level principles and procedures, separate from national regulation.', '園所層面的公開理念與制度，與國家法規分開。')}</p>
+                </div>
+                <div className="dossier-detail-list">
+                  {school.policy.map(([zhTitle, enTitle, zhBody, enBody]) => (
+                    <article key={enTitle}>
+                      <div><h3>{pair(zhTitle, enTitle)}</h3><p>{pair(zhBody, enBody)}</p></div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+              <section className="dossier-panel">
+                <div className="dossier-panel-heading">
+                  <span className="eyebrow">02 · PRACTICES & STRATEGIES</span>
+                  <h2>{englishFirst('How educational ideas appear in daily work', '理念如何落實在班級與日常中')}</h2>
+                  <p>{pair('Published practices, not a complete internal strategy or proof of outcomes.', '以下為公開做法摘要，不代表內部完整策略或成效證明。')}</p>
+                </div>
+                <div className="dossier-detail-list">
+                  {school.strategies.map(([zhTitle, enTitle, zhBody, enBody]) => (
+                    <article key={enTitle}>
+                      <div><h3>{pair(zhTitle, enTitle)}</h3><p>{pair(zhBody, enBody)}</p></div>
+                    </article>
+                  ))}
+                </div>
+              </section>
             </div>
-          ))}
-        </div>
-      </section>
-      <section id="school-practice" className="profile-section">
-        <div className="profile-section-title">
-          <span className="eyebrow">03 / PRACTICES & STRATEGIES</span>
-          <h2>{pair('理念如何进入实践', 'From principles to practice')}</h2>
-          <p>
-            {pair(
-              '以下为公开做法摘要，不代表内部完整战略或成效证明。',
-              'Published practices, not a complete internal strategy or proof of outcomes.',
-            )}
-          </p>
-        </div>
-        <div className="school-practices">
-          {school.strategies.map(([a, b, c, d], i) => (
-            <div key={b}>
-              <span className="practice-no">0{i + 1}</span>
-              <h3>{pair(a, b)}</h3>
-              <p>{pair(c, d)}</p>
+          )}
+
+          {activeTab === 'operations' && (
+            <div id="school-panel-operations" role="tabpanel" aria-labelledby="school-tab-operations" className="dossier-panel-stack">
+              <section className="dossier-panel">
+                <div className="dossier-panel-heading">
+                  <span className="eyebrow">03 · OPERATIONS & FAMILY SERVICES</span>
+                  <h2>{englishFirst('Hours, fees, staffing, and family touchpoints', '時間安排、收費、人員與家庭溝通')}</h2>
+                  <p>{pair('Uncollected information does not mean a school lacks the service.', '未收集資訊不代表園所沒有該項服務。')}</p>
+                </div>
+                <div className="dossier-detail-list dossier-operations-list">
+                  {operationLabels.map(([key, en, zh]) => (
+                    <article key={key}>
+                      <div><h3>{englishFirst(en, zh)}</h3><p>{pair(...(school.operations?.[key] || unknown))}</p></div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+              {school.dailySchedule?.length > 0 && (
+                <section className="dossier-panel">
+                  <div className="dossier-panel-heading">
+                    <span className="eyebrow">SCHOOL-PUBLISHED RHYTHM</span>
+                    <h2>{englishFirst('Daily schedule', '園方公布的一日流程')}</h2>
+                  </div>
+                  <ol className="dossier-schedule-list">
+                    {school.dailySchedule.map((item) => (
+                      <li key={item.time[1]}><time>{pair(...item.time)}</time><span>{pair(...item.activity)}</span></li>
+                    ))}
+                  </ol>
+                  <p className="dossier-caption">{pair('This is a school-published sample day; the weekly schedule may vary.', '這是園方公開的一日流程示例；每週安排可能不同。')}</p>
+                </section>
+              )}
             </div>
-          ))}
-        </div>
-      </section>
-      <section id="school-operations" className="profile-section">
-        <div className="profile-section-title">
-          <span className="eyebrow">04 / OPERATIONS & SERVICES</span>
-          <h2>{pair('经营与家园服务', 'Operations & family services')}</h2>
-          <p>
-            {pair(
-              '未收集信息不代表园所没有该服务。',
-              'Uncollected information does not mean a school lacks the service.',
-            )}
-          </p>
-        </div>
-        <dl className="school-facts">
-          {[
-            ['fees', '收费与资助', 'Fees & financial support'],
-            ['staffing', '人员与师幼配置', 'Staffing & ratios'],
-            ['hours', '开放时间与日程', 'Hours & daily schedule'],
-            ['family', '招生与家庭沟通', 'Admissions & family communication'],
-            ['safety', '安全与接送制度', 'Safety & collection procedures'],
-            ['management', '管理计划与效果', 'Management plans & outcomes'],
-          ].map(([key, zh, en]) => (
-            <div key={key}>
-              <dt>{pair(zh, en)}</dt>
-              <dd>{pair(...(school.operations?.[key] || unknown))}</dd>
-            </div>
-          ))}
-        </dl>
-        {school.dailySchedule?.length > 0 && (
-          <div className="daily-schedule">
-            <h3>{pair('园方公布的一日流程', 'School-published daily schedule')}</h3>
-            <ol>
-              {school.dailySchedule.map((item) => (
-                <li key={item.time[1]}>
-                  <time>{pair(...item.time)}</time>
-                  <span>{pair(...item.activity)}</span>
+          )}
+        </main>
+
+        <aside className="school-dossier-sidebar">
+          <section className="dossier-side-card">
+            <h2>{englishFirst('School essentials', '檔案基本資訊')}</h2>
+            <dl>
+              {factRows.map(([label, value]) => (
+                <div key={label[0]}><dt>{englishFirst(...label)}</dt><dd>{pair(...value)}</dd></div>
+              ))}
+              <div><dt>{englishFirst('Sources checked', '資料查閱日期')}</dt><dd>{school.checked}</dd></div>
+            </dl>
+          </section>
+
+          <section className="dossier-side-card dossier-classification-card">
+            <ProviderClassification school={school} />
+          </section>
+
+          <section className="dossier-side-card">
+            <h2>{englishFirst('Primary sources', '原始來源')}</h2>
+            <ul className="dossier-sources-list">
+              {school.sources.map((source) => (
+                <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noreferrer">
+                    <span>{source.title}</span><span aria-hidden="true">↗</span>
+                  </a>
+                  <small>{source.language}</small>
                 </li>
               ))}
-            </ol>
-            <p>
-              {pair(
-                '这是园方公开的日程示例；实际每周安排可能不同。',
-                'This is a school-published sample day; the weekly schedule may vary.',
-              )}
-            </p>
-          </div>
-        )}
-      </section>
-      <section id="school-sources" className="profile-section">
-        <div className="profile-section-title">
-          <span className="eyebrow">05 / ORIGINAL SOURCES</span>
-          <h2>{pair('回到原始资料', 'Follow the original sources')}</h2>
-          <p>
-            {pair('资料查看日期：', 'Sources checked: ')} {school.checked}
-          </p>
-        </div>
-        <div className="school-sources">
-          {school.sources.map((source) => (
-            <a
-              key={source.url}
-              href={source.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="eyebrow">{source.language}</span>
-              <strong>{source.title}</strong>
-              <span>{pair('查看原文', 'Read original')} ↗</span>
-            </a>
-          ))}
-          <p>
-            {pair(
-              '档案为基础资料摘要；未收集的信息不作推测。园方自述不等于独立验证，目录收录不构成推荐或排名。',
-              'This basic profile summarises available material without estimating uncollected information. School statements are not independent verification; inclusion is not a recommendation or ranking.',
-            )}
-          </p>
-        </div>
-      </section>
-      <Link className="button primary" to={directoryPath}>
-        ← {pair('返回园所目录', 'Back to school directory')}
-      </Link>
+            </ul>
+            <p className="dossier-source-note">{englishFirst('This basic profile summarises available material without estimating uncollected information. School statements are not independent verification; inclusion is not a recommendation or ranking.', '本檔案摘要現有資料，不推測未收集資訊。園方自述不等於獨立驗證；收錄不構成推薦或排名。')}</p>
+          </section>
+        </aside>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { sections } from '../../data/content'
+import { sections, sectionDescriptions } from '../../data/content'
 import useLanguage from '../../hooks/useLanguage'
 
 const overviewData = {
@@ -64,6 +64,12 @@ export default function CountryOverview({ country }) {
     ['centres', '园所目录', 'School directory', '按地区与理念查找具体园所档案。', 'Browse school profiles by region and approach.'],
     ...sections.filter(([id]) => id !== 'centres'),
   ]
+  const describedEntries = entries.map(([id, zh, en]) => [
+    id,
+    zh,
+    en,
+    ...sectionDescriptions[id],
+  ])
   const max = Math.max(...data.bars.map((bar) => bar.value))
 
   return (
@@ -124,7 +130,7 @@ export default function CountryOverview({ country }) {
       </div>
 
       <div className="overview-entries" aria-label="Country sections">
-        {entries.map(([id, zh, en, summaryZh, summaryEn], i) => (
+        {describedEntries.map(([id, zh, en, summaryZh, summaryEn], i) => (
           <Link className="overview-entry" to={id === 'centres' ? base : base + '/' + id} key={id}>
             <span className="overview-entry-no">0{i + 1}</span>
             <div>

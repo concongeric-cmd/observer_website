@@ -49,6 +49,36 @@ export const sections = [
     'Tools that support education and care',
   ],
 ]
+export const sectionDescriptions = {
+  sector: [
+    '了解有哪些幼教服务、由谁提供，以及政府规则与支持如何影响它们。',
+    'See what early education services are available, who provides them, and how government rules and support shape them.',
+  ],
+  types: [
+    '认识不同类型的幼儿园与照护机构。',
+    'Learn about the different kinds of schools and childcare providers.',
+  ],
+  curriculum: [
+    '了解孩子每天会学些什么、如何参与活动。',
+    'Explore what children learn and the activities they take part in each day.',
+  ],
+  operations: [
+    '了解学校的日程、费用、人员安排与家庭服务。',
+    'See how schools manage schedules, fees, staffing, and family services.',
+  ],
+  centres: [
+    '浏览各所学校的介绍与日常安排。',
+    'Browse profiles and daily routines of individual schools.',
+  ],
+  companies: [
+    '认识提供幼儿教育与相关服务的机构和企业。',
+    'Meet organisations and companies that provide early childhood education and related services.',
+  ],
+  technology: [
+    '了解学校使用的工具与相关服务。',
+    'Explore tools and services used in early childhood settings.',
+  ],
+}
 export const sources = {
   cfa: {
     name: 'こども家庭庁 · Children and Families Agency',
