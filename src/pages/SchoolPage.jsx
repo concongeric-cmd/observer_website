@@ -6,6 +6,7 @@ import useLanguage from '../hooks/useLanguage'
 import NotFoundPage from './NotFoundPage'
 import ProviderClassification from '../components/directory/ProviderClassification'
 import SchoolDataVisuals from '../components/directory/SchoolDataVisuals'
+import MissingData from '../components/common/MissingData'
 
 const operationLabels = [
   ['hours', 'Hours & schedules', '開放時間與日程'],
@@ -37,14 +38,11 @@ export default function SchoolPage() {
 
   if (!school) return <NotFoundPage />
 
-  const unknown = [
-    '本檔案尚未研究或收集；不代表園所沒有該項',
-    'Not yet researched or collected in this profile; this does not mean the school lacks it',
-  ]
+  const sourceRecords = school.sources || []
   const factRows = [
     [['Original name', '原始名稱'], [school.original, school.original]],
     [['Location', '地區'], school.location],
-    [['Ages', '年齡範圍'], school.ages || unknown],
+    [['Ages', '年齡範圍'], school.ages],
   ]
 
   return (
@@ -54,12 +52,12 @@ export default function SchoolPage() {
           <div className="school-dossier-title">
             <div className="school-dossier-kicker">
               <span>{country.code} · {school.code}</span>
-              <span>{pair(...school.location)}</span>
-              {school.ages && <span>{pair(...school.ages)}</span>}
+              <span>{school.location?.some(Boolean) ? pair(...school.location) : <MissingData compact />}</span>
+              <span>{school.ages?.some(Boolean) ? pair(...school.ages) : <MissingData compact />}</span>
             </div>
             <h1>{pair(...school.name)}</h1>
-            <p className="school-dossier-original">{school.original}<span aria-hidden="true"> · </span>{pair(...school.approachLabel)}</p>
-            <p className="school-dossier-summary">{pair(...school.summary)}</p>
+            <p className="school-dossier-original">{school.original || <MissingData compact />}<span aria-hidden="true"> · </span>{school.approachLabel?.some(Boolean) ? pair(...school.approachLabel) : <MissingData compact />}</p>
+            <p className="school-dossier-summary">{school.summary?.some(Boolean) ? pair(...school.summary) : <MissingData compact />}</p>
           </div>
           <Link className="school-dossier-back" to={directoryPath}>
             <span aria-hidden="true">←</span> {englishFirst('Back to directory', '返回園所目錄')}
@@ -86,7 +84,7 @@ export default function SchoolPage() {
             ))}
           </div>
           <span className="school-dossier-meta">
-            {englishFirst('Sources checked', '資料查閱日期')}: {school.checked} · {school.sources.length} {englishFirst('primary sources', '項原始出處')}
+            {englishFirst('Sources checked', '資料查閱日期')}: {school.checked || <MissingData compact />} · {sourceRecords.length} {englishFirst('primary sources', '項原始出處')}
           </span>
         </div>
       </div>
@@ -108,7 +106,8 @@ export default function SchoolPage() {
                   <p>{pair('Published school-level principles and procedures, separate from national regulation.', '園所層面的公開理念與制度，與國家法規分開。')}</p>
                 </div>
                 <div className="dossier-detail-list">
-                  {school.policy.map(([zhTitle, enTitle, zhBody, enBody]) => (
+                  {!school.policy?.length && <MissingData />}
+                  {(school.policy || []).map(([zhTitle, enTitle, zhBody, enBody]) => (
                     <article key={enTitle}>
                       <div><h3>{pair(zhTitle, enTitle)}</h3><p>{pair(zhBody, enBody)}</p></div>
                     </article>
@@ -122,7 +121,8 @@ export default function SchoolPage() {
                   <p>{pair('Published practices, not a complete internal strategy or proof of outcomes.', '以下為公開做法摘要，不代表內部完整策略或成效證明。')}</p>
                 </div>
                 <div className="dossier-detail-list">
-                  {school.strategies.map(([zhTitle, enTitle, zhBody, enBody]) => (
+                  {!school.strategies?.length && <MissingData />}
+                  {(school.strategies || []).map(([zhTitle, enTitle, zhBody, enBody]) => (
                     <article key={enTitle}>
                       <div><h3>{pair(zhTitle, enTitle)}</h3><p>{pair(zhBody, enBody)}</p></div>
                     </article>
@@ -143,25 +143,26 @@ export default function SchoolPage() {
                 <div className="dossier-detail-list dossier-operations-list">
                   {operationLabels.map(([key, en, zh]) => (
                     <article key={key}>
-                      <div><h3>{englishFirst(en, zh)}</h3><p>{pair(...(school.operations?.[key] || unknown))}</p></div>
+                      <div><h3>{englishFirst(en, zh)}</h3><p>{school.operations?.[key]?.some(Boolean) ? pair(...school.operations[key]) : <MissingData />}</p></div>
                     </article>
                   ))}
                 </div>
               </section>
-              {school.dailySchedule?.length > 0 && (
-                <section className="dossier-panel">
-                  <div className="dossier-panel-heading">
-                    <span className="eyebrow">SCHOOL-PUBLISHED RHYTHM</span>
-                    <h2>{englishFirst('Daily schedule', '園方公布的一日流程')}</h2>
-                  </div>
+              <section className="dossier-panel">
+                <div className="dossier-panel-heading">
+                  <h2>{englishFirst('Daily schedule', '每日流程')}</h2>
+                </div>
+                {school.dailySchedule?.length > 0 ? (
+                <>
                   <ol className="dossier-schedule-list">
                     {school.dailySchedule.map((item) => (
                       <li key={item.time[1]}><time>{pair(...item.time)}</time><span>{pair(...item.activity)}</span></li>
                     ))}
                   </ol>
                   <p className="dossier-caption">{pair('This is a school-published sample day; the weekly schedule may vary.', '這是園方公開的一日流程示例；每週安排可能不同。')}</p>
-                </section>
-              )}
+                </>
+                ) : <MissingData />}
+              </section>
             </div>
           )}
         </main>
@@ -171,9 +172,9 @@ export default function SchoolPage() {
             <h2>{englishFirst('School essentials', '檔案基本資訊')}</h2>
             <dl>
               {factRows.map(([label, value]) => (
-                <div key={label[0]}><dt>{englishFirst(...label)}</dt><dd>{pair(...value)}</dd></div>
+                <div key={label[0]}><dt>{englishFirst(...label)}</dt><dd>{value?.some(Boolean) ? pair(...value) : <MissingData compact />}</dd></div>
               ))}
-              <div><dt>{englishFirst('Sources checked', '資料查閱日期')}</dt><dd>{school.checked}</dd></div>
+              <div><dt>{englishFirst('Sources checked', '資料查閱日期')}</dt><dd>{school.checked || <MissingData compact />}</dd></div>
             </dl>
           </section>
 
@@ -184,7 +185,7 @@ export default function SchoolPage() {
           <section className="dossier-side-card">
             <h2>{englishFirst('Primary sources', '原始來源')}</h2>
             <ul className="dossier-sources-list">
-              {school.sources.map((source) => (
+              {sourceRecords.map((source) => (
                 <li key={source.url}>
                   <a href={source.url} target="_blank" rel="noreferrer">
                     <span>{source.title}</span><span aria-hidden="true">↗</span>
@@ -193,6 +194,7 @@ export default function SchoolPage() {
                 </li>
               ))}
             </ul>
+            {!sourceRecords.length && <MissingData />}
             <p className="dossier-source-note">{englishFirst('This basic profile summarises available material without estimating uncollected information. School statements are not independent verification; inclusion is not a recommendation or ranking.', '本檔案摘要現有資料，不推測未收集資訊。園方自述不等於獨立驗證；收錄不構成推薦或排名。')}</p>
           </section>
         </aside>

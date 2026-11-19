@@ -3,6 +3,7 @@ import CustomSelect from '../common/CustomSelect'
 import { filterSchools, schools } from '../../data/schools'
 import useLanguage from '../../hooks/useLanguage'
 import SchoolCard from './SchoolCard'
+import { MissingDataPanel } from '../common/MissingData'
 export default function SchoolDirectory({ country }) {
   const { pair, english } = useLanguage()
   const [params, setParams] = useSearchParams()
@@ -14,10 +15,10 @@ export default function SchoolDirectory({ country }) {
   }
   const results = filterSchools(records, filters)
   const regions = [
-    ...new Map(records.map((s) => [s.region, s.location])).entries(),
+    ...new Map(records.filter((s) => s.region && s.location?.some(Boolean)).map((s) => [s.region, s.location])).entries(),
   ]
   const approaches = [
-    ...new Map(records.map((s) => [s.approach, s.approachLabel])).entries(),
+    ...new Map(records.filter((s) => s.approach && s.approachLabel?.some(Boolean)).map((s) => [s.approach, s.approachLabel])).entries(),
   ]
   const update = (key, value) =>
     setParams(
@@ -87,7 +88,9 @@ export default function SchoolDirectory({ country }) {
           <SchoolCard key={s.id} school={s} />
         ))}
       </div>
-      {!results.length && (
+      {!records.length ? (
+        <MissingDataPanel title={['园所目录', 'School directory']} />
+      ) : !results.length && (
         <div className="empty-state">
           {pair(
             '暂无匹配园所，请调整搜索或筛选。',

@@ -200,12 +200,6 @@ export default function MonthlyUpdatesPage() {
               </div>
             )}
           </div>
-          <p className="monthly-review-note">
-            {pair(
-              '更新将连接到受影响的园所档案或文章，并同步修订相关内容。',
-              'Updates will link to affected school profiles or articles and accompany revisions to related content.',
-            )}
-          </p>
         </section>
         <aside className="monthly-guide">
           <span className="eyebrow">THE UPDATE FORMAT</span>
@@ -236,6 +230,12 @@ export default function MonthlyUpdatesPage() {
             {pair('编辑与核验原则', 'Editorial & verification principles')} ↗
           </Link>
         </aside>
+        <p className="monthly-review-note">
+          {pair(
+            '更新将连接到受影响的园所档案或文章，并同步修订相关内容。',
+            'Updates will link to affected school profiles or articles and accompany revisions to related content.',
+          )}
+        </p>
       </div>
     </div>
   )

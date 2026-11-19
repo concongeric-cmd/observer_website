@@ -2,6 +2,7 @@ import { Link } from 'react-router'
 import { schools } from '../data/schools'
 import { providerTypeGuides } from '../data/providerTypeGuides'
 import SchoolCard from '../components/directory/SchoolCard'
+import MissingData from '../components/common/MissingData'
 import {
   getSchoolsByProviderType,
   getVerifiedProviderTypes,
@@ -34,13 +35,14 @@ export default function ProviderTypesPage() {
         <section className="provider-landscape">
           <h2>{pair('全国制度中的服务类型', 'Provider types in the national system')}</h2>
           <div>
+            {!guides.length && <MissingData />}
             {guides.map((guide) => (
               <article key={guide.title[1]}>
                 <h3>{pair(...guide.title)}</h3>
-                <p>{pair(...guide.body)}</p>
-                <a href={guide.source[1]} target="_blank" rel="noreferrer">
+                <p>{guide.body?.some(Boolean) ? pair(...guide.body) : <MissingData />}</p>
+                {guide.source?.[1] ? <a href={guide.source[1]} target="_blank" rel="noreferrer">
                   {guide.source[0]} ↗
-                </a>
+                </a> : <MissingData compact />}
               </article>
             ))}
           </div>

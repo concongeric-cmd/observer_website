@@ -72,18 +72,18 @@ export default function CountryLayout() {
             </div>
           )}
 
-          <nav className="country-nav" aria-label="Country topics">
-            <NavLink to={base} end className={({ isActive }) => isActive || pathname.startsWith(base + '/centres') ? 'active' : ''}>
-              {pair('å›­æ‰€ç›®å½•', 'School directory')}
-            </NavLink>
-            {sections.filter(([id]) => id !== 'centres').map(([id, zh, en]) => (
-              <NavLink to={base + '/' + id} key={id} className={({ isActive }) => isActive ? 'active' : ''}>
-                {pair(zh, en)}
-              </NavLink>
-            ))}
-          </nav>
         </div>
       </div>
+      <nav className="country-nav" aria-label="Country topics">
+        <NavLink to={base} end className={({ isActive }) => isActive || pathname.startsWith(base + '/centres') ? 'active' : ''}>
+          {pair('å›­æ‰€ç›®å½•', 'School directory')}
+        </NavLink>
+        {sections.filter(([id]) => id !== 'centres').map(([id, zh, en]) => (
+          <NavLink to={base + '/' + id} key={id} className={({ isActive }) => isActive ? 'active' : ''}>
+            {pair(zh, en)}
+          </NavLink>
+        ))}
+      </nav>
       <Outlet context={country} />
     </div>
   )
