@@ -820,6 +820,11 @@
   border-color: var(--home-green);
 }
 
+.home-school-card:focus-visible {
+  outline: 3px solid var(--home-green);
+  outline-offset: 4px;
+}
+
 .home-school-meta {
   display: flex;
   flex-wrap: wrap;
@@ -916,7 +921,7 @@
   font-size: 9px;
 }
 
-.home-school-bottom > a {
+.home-school-bottom > .home-school-profile-link {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
@@ -926,11 +931,11 @@
   font-weight: 650;
 }
 
-.home-school-bottom > a .pair {
+.home-school-bottom > .home-school-profile-link .pair {
   gap: 2px;
 }
 
-.home-school-bottom > a .pair > span:last-child {
+.home-school-bottom > .home-school-profile-link .pair > span:last-child {
   font-size: 10px;
 }
 

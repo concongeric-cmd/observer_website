@@ -81,11 +81,14 @@ h4,
 .country-switch:hover { border-color: #1f4d3a; }
 .country-switch .pair { flex-direction: row; gap: 3px; }
 .country-switch .pair > span:last-child { font-size: inherit; opacity: .9; }
-.country-nav { width: 100%; min-width: 0; margin: 25px 0 0; padding: 14px 0 0; gap: 4px; border-top: 1px solid #efede6; border-bottom: 0; scrollbar-width: thin; }
-.country-nav > a { min-height: 38px; padding: 0 14px; border-radius: 8px; color: #52574d; font-size: 13px; font-weight: 550; }
+.country-nav { width: min(90vw, 1600px); min-width: 0; margin: 0 auto; padding: 0; gap: 10px; border: 0; border-radius: 0; background: transparent; scrollbar-width: thin; }
+.country-nav > a { min-height: 64px; padding: 14px 20px 23px; border: 0; border-radius: 0; background: #f0f1e9; color: #525d4c; font-size: 14px; font-weight: 650; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 9px), 0 100%); }
+.country-nav > a::after { display: none; }
+.country-nav > a:hover { background: #e0e8d8; color: #1f4d3a; }
+.country-nav > a:focus-visible { outline-offset: -3px; }
 .country-nav > a .pair { gap: 3px; }
 .country-nav > a .pair > span:last-child { font-size: inherit; opacity: .85; }
-.country-nav > a.active { background: #1f4d3a; color: #fff; }
+.country-nav > a.active { background: #1f4d3a; color: #fff; font-weight: 700; box-shadow: none; }
 .country-nav > a.active .pair > span:last-child { color: #fff; }
 .country-layout-detail .country-workspace-inner { padding-top: 22px; padding-bottom: 20px; }
 .country-layout-detail .country-nav { display: none; }
@@ -121,11 +124,11 @@ h4,
 .school-card-bottom > span:last-child { color: #1f4d3a; font-size: 11px; font-weight: 600; white-space: nowrap; }
 .directory-disclaimer { margin-top: 20px; padding: 0; border: 0; color: #6b7165; font-size: 11px; line-height: 1.6; }
 
-/* The exported country workspace keeps research sections editorial and compact. */
+/* Country sections share the same content width and side margins. */
 .country-topic-content.evidence-page,
 .country-topic-content.curriculum-content,
 .provider-types-content {
-  width: min(90vw, 896px);
+  width: min(90vw, 1600px);
   margin: 36px auto 72px;
 }
 .country-topic-content.evidence-page > .topic-explanation,
@@ -178,8 +181,8 @@ h4,
 .provider-type-match > div > p { margin-top: 6px; color: #454a41; font-size: 12px; line-height: 1.65; }
 .provider-type-match > a { flex: 0 0 auto; color: #1f4d3a; font-size: 12px; }
 .provider-types-content > .text-link { margin-top: 8px; }
-.country-topic-content.articles-section { width: min(90vw, 1280px); }
-.country-layout > .articles-section { width: min(90vw, 1280px); margin: 32px auto 72px; }
+.country-topic-content.articles-section { width: min(90vw, 1600px); }
+.country-layout > .articles-section { width: min(90vw, 1600px); margin: 32px auto 72px; }
 .operations-articles .article-visual { display: none; }
 .operations-articles .article-card { min-height: 250px; padding: 24px; border-color: #dfddd2; border-radius: 12px; }
 .operations-articles .article-card h3 { margin-top: 16px; color: #181a17; font-size: 21px; }
@@ -377,6 +380,50 @@ h4,
 .monthly-page { width: 100%; margin: 0; }
 .monthly-header { width: 100%; max-width: none; padding: 38px max(24px, calc((100% - 1280px) / 2 + 24px)) 30px; border-bottom: 1px solid #e3e1d8; background: #fff; }
 .monthly-layout { width: min(100% - 48px, 1280px); margin: 0 auto; padding: 36px 0 72px; }
+.monthly-header h1 { font-size: clamp(40px, 4.5vw, 60px); }
+.monthly-header > p { max-width: 960px; font-size: 16px; line-height: 1.75; }
+.monthly-page .eyebrow { font-size: 11px; }
+.monthly-status { font-size: 12px; }
+.monthly-archive .section-heading h2 { font-size: 28px; }
+.monthly-archive .directory-count { font-size: 13px; }
+.monthly-filters > label,
+.monthly-filters .custom-select-label { font-size: 12px; }
+.monthly-filters input,
+.monthly-filters .custom-select-button,
+.monthly-filters .custom-select-option,
+.monthly-filters .directory-reset { font-size: 14px; }
+.monthly-filters input,
+.monthly-filters .custom-select-button { min-height: 44px; }
+.monthly-entry { padding: 22px; }
+.monthly-entry h3 { font-size: 24px; line-height: 1.35; }
+.monthly-entry dt { font-size: 13px; }
+.monthly-entry dd { font-size: 15px; line-height: 1.75; }
+.monthly-entry > p,
+.monthly-entry-links a { font-size: 13px; line-height: 1.7; }
+.monthly-guide h2 { font-size: 28px; }
+.monthly-guide > p,
+.monthly-guide-field p { font-size: 14px; line-height: 1.7; }
+.monthly-guide-field { padding: 15px 0; }
+.monthly-guide-field > span { font-size: 13px; }
+.monthly-guide-field h3 { font-size: 16px; font-weight: 600; }
+.monthly-guide .text-link { font-size: 13px; }
+.monthly-review-note,
+.monthly-empty > span:last-child { font-size: 12px; }
+.monthly-empty p { font-size: 14px; }
+.monthly-page p .pair > span:last-child,
+.monthly-entry dd .pair > span:last-child,
+.monthly-entry dt .pair > span:last-child { font-size: inherit; line-height: inherit; }
+.monthly-layout > .monthly-review-note { grid-column: 1 / -1; margin-top: 0; }
+@media (min-width: 851px) {
+  .monthly-layout { align-items: stretch; }
+  .monthly-archive { display: flex; flex-direction: column; }
+  .monthly-archive > [aria-live] { display: flex; flex: 1; flex-direction: column; }
+  .monthly-archive > [aria-live] > :last-child { flex: 1; margin-bottom: 0; }
+  .monthly-guide { display: flex; flex-direction: column; }
+  .monthly-guide > div { display: flex; flex: 1; flex-direction: column; }
+  .monthly-guide-field { flex: 1; }
+  .monthly-guide > .text-link { align-self: flex-start; }
+}
 .info-page { width: min(100% - 48px, 1000px); margin: 0 auto 72px; padding-top: 55px; }
 
 @media (min-width: 900px) {
@@ -423,8 +470,8 @@ h4,
   .country-workspace-inner { width: calc(100% - 36px); padding: 20px 0 16px; }
   .country-workspace-title h1 { font-size: 30px; }
   .country-workspace-description { font-size: 13px; }
-  .country-nav { margin-top: 20px; padding-top: 11px; }
-  .country-nav > a { min-height: 36px; padding: 0 11px; font-size: 11px; }
+  .country-nav { width: calc(100% - 36px); margin: 0 auto; padding: 0; gap: 6px; }
+  .country-nav > a { min-height: 52px; padding: 10px 12px 19px; font-size: 11px; }
   .country-layout-directory > .directory-section,
   .country-layout-directory > .country-overview { width: calc(100% - 36px); }
   .country-layout-directory > .directory-section { margin-top: 26px; }
@@ -465,6 +512,20 @@ h4,
 }
 
 .school-visuals { display: grid; gap: 16px; }
+.missing-data { display: flex; flex-direction: column; gap: 5px; padding: 18px; border: 1px dashed #cfcec3; border-radius: 8px; background: #f7f7f2; color: #62695b; font-size: 13px; line-height: 1.6; }
+.missing-data-label { font-weight: 550; }
+.missing-data-detail { font-size: 12px; }
+.missing-data-compact { display: inline; padding: 0; border: 0; border-radius: 0; background: none; font-size: inherit; }
+.missing-data-panel { min-width: 0; padding: 24px; border: 1px solid #dfddd2; border-radius: 12px; background: #fff; }
+.missing-data-panel > h2 { margin: 0 0 16px; color: #181a17; font-family: 'Fraunces', 'Noto Serif SC', Georgia, serif; font-size: 20px; font-weight: 600; line-height: 1.35; }
+.missing-data-panel > p { color: #454a41; font-size: 14px; line-height: 1.75; }
+.school-visual-metrics .missing-data { display: block; margin-top: 7px; font-size: 12px; }
+.school-age-card.missing-data-panel { justify-content: flex-start; gap: 16px; }
+.school-age-card.missing-data-panel > h2 { margin-bottom: 0; }
+.evidence-rows > .missing-data, .curriculum-blocks > .missing-data { margin: 22px; }
+.provider-landscape > div > .missing-data { grid-column: 1 / -1; }
+.dossier-side-card .missing-data { overflow-wrap: anywhere; }
+.school-visual-metrics strong { overflow-wrap: anywhere; }
 .school-visual-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: hidden; border: 1px solid #dfddd2; border-radius: 12px; background: #fff; }
 .school-visual-metrics article { min-width: 0; padding: 14px 15px; border-left: 1px solid #e3e1d8; }
 .school-visual-metrics article:first-child { border-left: 0; }

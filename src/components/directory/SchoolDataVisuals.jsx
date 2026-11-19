@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import useLanguage from '../../hooks/useLanguage'
 import { getVerifiedProviderTypes } from '../../data/providerTypes'
+import MissingData, { MissingDataPanel } from '../common/MissingData'
 
 const hourValue = (hour, minute) => Number(hour) + Number(minute) / 60
 const hourLabel = (value) => {
@@ -109,7 +110,6 @@ export default function SchoolDataVisuals({ school }) {
   const yearsMax = 6
   const ageLeft = ageSpan ? Math.max(0, Math.min(100, ageSpan[0] / yearsMax * 100)) : 0
   const ageWidth = ageSpan ? Math.max(8, Math.min(100 - ageLeft, (ageSpan[1] - ageSpan[0]) / yearsMax * 100)) : 0
-  const hasMetrics = Boolean(hours.length || tuition.tiers.length || tuition.discountRate)
 
   const coverageRows = [
     [copy.pedagogy, school.policy?.length || school.strategies?.length, school.policy?.[0]?.[1] || school.strategies?.[0]?.[1]],
@@ -122,25 +122,23 @@ export default function SchoolDataVisuals({ school }) {
 
   return (
     <div className="school-visuals">
-      {hasMetrics && (
         <section className="school-visual-metrics" aria-label={pair(...copy.metrics)}>
-          {duration > 0 && (
+          {duration > 0 ? (
             <article><span>{pair(...copy.session)}</span><strong>{duration.toFixed(1)} hrs</strong><small>{coreRanges.length > 1 ? `${hourLabel(coreRanges[0].start)}–${hourLabel(coreRanges[0].end)} · ${hourLabel(coreRanges[1].start)}–${hourLabel(coreRanges[1].end)}` : coreRanges[0] ? `${hourLabel(coreRanges[0].start)}–${hourLabel(coreRanges[0].end)}` : ''}</small></article>
-          )}
-          {totalSpan > 0 && (
+          ) : <article><span>{pair(...copy.session)}</span>{school.operations?.hours?.some(Boolean) ? <small>{pair('见日程说明', 'See schedule notes below')}</small> : <MissingData compact />}</article>}
+          {totalSpan > 0 ? (
             <article><span>{pair(...copy.extended)}</span><strong>{hourLabel(Math.min(...hours.map((item) => item.start)))}–{hourLabel(Math.max(...hours.map((item) => item.end)))}</strong><small>{school.operations?.hours ? pair('根據園所公開日程整理', 'Based on published schedule') : ''}</small></article>
-          )}
-          {tuition.tiers.length > 0 && (
+          ) : <article><span>{pair(...copy.extended)}</span>{school.operations?.hours?.some(Boolean) ? <small>{pair('见日程说明', 'See schedule notes below')}</small> : <MissingData compact />}</article>}
+          {tuition.tiers.length > 0 ? (
             <article><span>{pair(...copy.tuition)}{tuition.year ? ` · ${tuition.year}` : ''}</span><strong>{money(Math.min(...tuitionValues))}–{money(Math.max(...tuitionValues))}</strong><small>{tuition.tiers.length} {pair('種每週出席方案', 'weekly attendance tiers')}</small></article>
-          )}
-          {tuition.discountRate > 0 && (
+          ) : <article><span>{pair(...copy.tuition)}</span>{school.operations?.fees?.some(Boolean) ? <small>{pair('见费用说明', 'See fee notes below')}</small> : <MissingData compact />}</article>}
+          {tuition.discountRate > 0 ? (
             <article><span>{pair(...copy.discount)}</span><strong>{Math.round(tuition.discountRate * 100)}% off</strong><small>{pair('僅適用於園方列明的資格', 'Eligibility follows the school’s terms')}</small></article>
-          )}
+          ) : <article><span>{pair(...copy.discount)}</span>{school.operations?.fees?.some(Boolean) ? <small>{pair('见费用说明', 'See fee notes below')}</small> : <MissingData compact />}</article>}
         </section>
-      )}
 
       <div className="school-visual-secondary">
-        {ageSpan && (
+        {ageSpan ? (
           <section className="school-visual-card school-age-card">
             <div><span className="eyebrow">{pair(...copy.age)}</span><h2>{pair(...school.ages)}</h2></div>
             <div className="age-ruler" role="img" aria-label={`${school.ages[1]} age range on a zero to six year scale`}>
@@ -149,6 +147,10 @@ export default function SchoolDataVisuals({ school }) {
             </div>
             <div className="age-ruler-labels">{[0, 1, 2, 3, 4, 5, 6].map((year) => <span key={year}>{year}y</span>)}</div>
           </section>
+        ) : (
+          <MissingDataPanel title={copy.age} className="school-visual-card school-age-card">
+            {school.ages?.some(Boolean) ? <p>{pair(...school.ages)}</p> : null}
+          </MissingDataPanel>
         )}
 
         <section className="school-visual-card school-coverage-card">
@@ -164,7 +166,7 @@ export default function SchoolDataVisuals({ school }) {
         </section>
       </div>
 
-      {hours.length > 0 && (
+      {hours.length > 0 ? (
         <section className="school-visual-card school-hours-card">
           <div className="visual-section-heading">
             <div><span className="eyebrow">{pair(...copy.hoursTitle)}</span><h2>{pair(...copy.coverageWindow)} ({String(minHour).padStart(2, '0')}:00–{String(maxHour).padStart(2, '0')}:00)</h2></div>
@@ -191,9 +193,13 @@ export default function SchoolDataVisuals({ school }) {
             })()}
           </div>
         </section>
+      ) : (
+        <MissingDataPanel title={copy.hoursTitle} className="school-visual-card school-hours-card">
+          {school.operations?.hours?.some(Boolean) ? <p>{pair(...school.operations.hours)}</p> : null}
+        </MissingDataPanel>
       )}
 
-      {tuition.tiers.length > 0 && (
+      {tuition.tiers.length > 0 ? (
         <section className="school-visual-card school-tuition-card">
           <div className="visual-section-heading tuition-heading">
             <div><span className="eyebrow">{pair(...copy.tuitionSchedule)}{tuition.year ? ` · ${tuition.year}` : ''}</span><h2>{pair(...copy.annualTier)}</h2></div>
@@ -208,15 +214,21 @@ export default function SchoolDataVisuals({ school }) {
           </div>
           <p className="visual-note">{school.operations?.fees?.[1]}</p>
         </section>
+      ) : (
+        <MissingDataPanel title={copy.tuitionSchedule} className="school-visual-card school-tuition-card">
+          {school.operations?.fees?.some(Boolean) ? <p>{pair(...school.operations.fees)}</p> : null}
+        </MissingDataPanel>
       )}
 
-      {schedule.length > 0 && (
+      {schedule.length > 0 ? (
         <section className="school-visual-card school-rhythm-card">
           <div className="visual-section-heading"><div><span className="eyebrow">{pair(...copy.rhythm)}</span><h2>{pair(...copy.daily)}</h2></div><span className="rhythm-icon" aria-hidden="true">◷</span></div>
           <ol className="dossier-timeline">
             {schedule.map((item, index) => <li key={item.time[1]}><span className="dossier-step">{String(index + 1).padStart(2, '0')}</span><span className="dossier-activity">{pair(...item.activity)}</span><time>{pair(...item.time)}</time></li>)}
           </ol>
         </section>
+      ) : (
+        <MissingDataPanel title={copy.daily} className="school-visual-card school-rhythm-card" />
       )}
     </div>
   )
