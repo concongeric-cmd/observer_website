@@ -7,13 +7,65 @@ export default function InfoPage({ section }) {
   const { pair } = useLanguage()
   const page = infoPages[section]
   if (!page) return <NotFoundPage />
+
   return (
-    <section className="info-page">
-      <span className="eyebrow">THE OBSERVER / {page.eyebrow}</span>
-      <h1>{pair(...page.title)}</h1>
-      <p>{pair(...page.intro)}</p>
-      {section === 'about' && (
-        <div className="about-grid">
+    <article className="info-page about-page">
+      <header className="about-intro">
+        <span className="eyebrow">{page.eyebrow}</span>
+        <h1>{pair(...page.title)}</h1>
+        <p>{pair(...page.intro)}</p>
+      </header>
+
+      <div className="about-purpose-grid">
+        {page.purpose.map((purpose) => (
+          <section
+            className={'about-purpose-card about-purpose-' + purpose.id}
+            aria-labelledby={'about-' + purpose.id}
+            key={purpose.id}
+          >
+            <span className="eyebrow">{pair(...purpose.label)}</span>
+            <h2 id={'about-' + purpose.id}>{pair(...purpose.title)}</h2>
+            <p>{pair(...purpose.body)}</p>
+          </section>
+        ))}
+      </div>
+
+      <section className="about-section" aria-labelledby="about-collection-title">
+        <div className="about-section-heading">
+          <h2 id="about-collection-title">{pair(...page.collectionTitle)}</h2>
+          <p>{pair(...page.collectionIntro)}</p>
+        </div>
+        <div className="about-data-grid">
+          {page.collection.map((item) => (
+            <div className="about-data-card" key={item.title[1]}>
+              <h3>{pair(...item.title)}</h3>
+              <p>{pair(...item.body)}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="about-section about-process" aria-labelledby="about-process-title">
+        <h2 id="about-process-title">{pair(...page.processTitle)}</h2>
+        <ol className="about-process-list">
+          {page.process.map((step, index) => (
+            <li key={step.title[1]}>
+              <span className="about-process-number" aria-hidden="true">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <h3>{pair(...step.title)}</h3>
+              <p>{pair(...step.body)}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="about-section about-principles" id="editorial-principles" aria-labelledby="about-principles-title">
+        <div className="about-section-heading">
+          <h2 id="about-principles-title">{pair(...page.principlesTitle)}</h2>
+          <p>{pair(...page.principlesIntro)}</p>
+        </div>
+        <div className="about-principles-list">
           {editorialPrinciples.map(([zh, en, bodyZh, bodyEn]) => (
             <div key={en}>
               <h3>{pair(zh, en)}</h3>
@@ -21,14 +73,25 @@ export default function InfoPage({ section }) {
             </div>
           ))}
         </div>
-      )}
-      <Link className="button primary" to={page.action.to}>
-        {pair(...page.action.label)} ↗
-      </Link>
-      <div className="preview-scope">
-        <h3>{pair('本次预览范围', 'Preview scope')}</h3>
-        <p>{pair(...page.scope)}</p>
-      </div>
-    </section>
+      </section>
+
+      <section className="about-invitation" aria-labelledby="about-invitation-title">
+        <div>
+          <h2 id="about-invitation-title">{pair(...page.invitationTitle)}</h2>
+          <p>{pair(...page.invitationBody)}</p>
+        </div>
+        <div className="about-actions">
+          {page.actions.map((action, index) => (
+            <Link
+              className={'button ' + (index === 0 ? 'primary' : 'secondary')}
+              to={action.to}
+              key={action.to}
+            >
+              {pair(...action.label)} <span aria-hidden="true">↗</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </article>
   )
 }

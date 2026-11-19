@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router'
-import { articles, sections } from '../data/content'
+import { articles } from '../data/content'
 import { countries } from '../data/countries'
 import { schools } from '../data/schools'
 import useLanguage from '../hooks/useLanguage'
@@ -68,7 +68,7 @@ const profileSections = [
   [
     'åŽŸå§‹æ¥æºä¸Žè¯æ®è¾¹ç•Œ',
     'Sources & evidence limits',
-    'ä¿ç•™åŽŸå§‹å‡ºå¤„ã€æ ¸éªŒæ—¥æœŸä¸Žæœªå…¬å¼€çš„èµ„æ–™ç¼ºå£ã€‚',
+    'ä¿ç•™åŽŸå§‹å‡ºå¤„ã€æ\u00a0¸éªŒæ—¥æœŸä¸Žæœªå…¬å¼€çš„èµ„æ–™ç¼ºå£ã€‚',
     'Original sources, checked dates and information gaps.',
   ],
 ]
@@ -135,7 +135,7 @@ export default function HomePage() {
   )
 
   const filterButtons = [
-    { id: 'all', label: [`å…¨éƒ¨æ ·æœ¬ (${schools.length})`, `All Profiles (${schools.length})`] },
+    { id: 'all', label: [`å…¨éƒ¨æ\u00a0·æœ¬ (${schools.length})`, `All Profiles (${schools.length})`] },
     { id: 'japan', label: [`æ—¥æœ¬ (${schoolCountByCountry.japan})`, `Japan (${schoolCountByCountry.japan})`] },
     { id: 'united-states', label: [`ç¾Žå›½ (${schoolCountByCountry['united-states']})`, `United States (${schoolCountByCountry['united-states']})`] },
     ...approaches.map(([id, label]) => ({ id: `approach:${id}`, label })),
@@ -169,11 +169,11 @@ export default function HomePage() {
             </p>
             <div className="home-opening-actions">
               <a className="home-button home-button-primary" href="#school-directory">
-                {pair('æµè§ˆæ ·æœ¬å›­æ‰€', 'Explore sample schools')}
+                {pair('æµè§ˆæ\u00a0·æœ¬å›­æ‰€', 'Explore sample schools')}
                 <span aria-hidden="true">→</span>
               </a>
               <a className="home-text-link" href="#country-portals">
-                {pair('æŒ‰å›½å®¶è¿›å…¥æ ç›®', 'Browse country portals')}
+                {pair('æŒ‰å›½å®¶è¿›å…¥æ\u00a0ç›®', 'Browse country portals')}
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -216,7 +216,7 @@ export default function HomePage() {
             <small>{pair('åˆ†å¸ƒäºŽç¾Žå›½ä¸Žæ—¥æœ¬', 'Across the United States and Japan')}</small>
           </div>
           <div className="home-stat">
-            <span>{pair('å›½å®¶æ ç›®', 'Country portals')}</span>
+            <span>{pair('å›½å®¶æ\u00a0ç›®', 'Country portals')}</span>
             <strong>{String(countries.length).padStart(2, '0')}</strong>
             <small>{pair('ç‹¬ç«‹çš„å›½å®¶ä¸Žåœ°æ–¹èƒŒæ™¯', 'National and local context')}</small>
           </div>
@@ -226,9 +226,9 @@ export default function HomePage() {
             <small>{pair('æŒ‰æ¡£æ¡ˆè®°å½•', 'Listed in school profiles')}</small>
           </div>
           <div className="home-stat">
-            <span>{pair('æ¡£æ¡ˆæ ¸éªŒæ—¥æœŸ', 'Latest profile check')}</span>
+            <span>{pair('æ¡£æ¡ˆæ\u00a0¸éªŒæ—¥æœŸ', 'Latest profile check')}</span>
             <strong className="home-stat-date">{latestChecked || '—'}</strong>
-            <small>{pair('å›­æ‰€æ¡£æ¡ˆçš„æœ€æ–°æ ¸éªŒè®°å½•', 'Most recent date listed in a school profile')}</small>
+            <small>{pair('å›­æ‰€æ¡£æ¡ˆçš„æœ€æ–°æ\u00a0¸éªŒè®°å½•', 'Most recent date listed in a school profile')}</small>
           </div>
         </div>
       </section>
@@ -245,7 +245,7 @@ export default function HomePage() {
             </h2>
             <p>
               {pair(
-                'æ¯ä¸ªå›½å®¶æ ç›®åŒºåˆ†å›­æ‰€å®žè·µä¸Žå›½å®¶æˆ–åœ°æ–¹åˆ¶åº¦ï¼Œä¾¿äºŽä»Žä¸ªæ¡ˆè¿›å…¥ï¼Œå†æŸ¥çœ‹ç›¸åº”çš„åˆ¶åº¦èƒŒæ™¯ã€‚',
+                'æ¯ä¸ªå›½å®¶æ\u00a0ç›®åŒºåˆ†å›­æ‰€å®žè·µä¸Žå›½å®¶æˆ–åœ°æ–¹åˆ¶åº¦ï¼Œä¾¿äºŽä»Žä¸ªæ¡ˆè¿›å…¥ï¼Œå†æŸ¥çœ‹ç›¸åº”çš„åˆ¶åº¦èƒŒæ™¯ã€‚',
                 'Each portal separates individual school practices from national or local frameworks, so you can move from a specific example to its wider context.',
               )}
             </p>
@@ -269,7 +269,7 @@ export default function HomePage() {
                   <div className="home-country-body">
                     <div className="home-country-kicker">
                       <span>{country.code}</span>
-                      <span>{pair(`${count} æ‰€æ ·æœ¬å›­æ‰€`, `${count} sample schools`)}</span>
+                      <span>{pair(`${count} æ‰€æ\u00a0·æœ¬å›­æ‰€`, `${count} sample schools`)}</span>
                     </div>
                     <h3>{pair(...country.title)}</h3>
                     <p className="home-country-description">{pair(...country.description)}</p>
@@ -284,7 +284,7 @@ export default function HomePage() {
                       ))}
                     </nav>
                     <Link className="home-country-cta" to={'/' + country.slug}>
-                      {pair(`è¿›å…¥${country.name[0]}æ ç›®`, `Explore ${country.name[1]} portal`)}
+                      {pair(`è¿›å…¥${country.name[0]}æ\u00a0ç›®`, `Explore ${country.name[1]} portal`)}
                       <span aria-hidden="true">↗</span>
                     </Link>
                   </div>
@@ -306,7 +306,7 @@ export default function HomePage() {
             </div>
             <label className="home-search">
               <span aria-hidden="true">⌕</span>
-              <span className="sr-only">{pair('æœç´¢æ ·æœ¬å›­æ‰€', 'Search school profiles')}</span>
+              <span className="sr-only">{pair('æœç´¢æ\u00a0·æœ¬å›­æ‰€', 'Search school profiles')}</span>
               <input
                 type="search"
                 value={query}
@@ -366,25 +366,30 @@ export default function HomePage() {
           {filteredSchools.length ? (
             <div className="home-school-grid" aria-live="polite">
               {filteredSchools.map((school) => (
-                <article className="home-school-card" key={school.id}>
+                <Link
+                  className="home-school-card"
+                  to={`/${school.country}/centres/${school.id}`}
+                  aria-labelledby={`home-school-${school.id}`}
+                  key={school.id}
+                >
                   <div className="home-school-meta">
                     <span className="home-school-code">{school.code}</span>
                     <span>{pair(...school.location)}</span>
                     <span>{pair(...school.ages)}</span>
                   </div>
-                  <h3>{pair(...school.name)}</h3>
+                  <h3 id={`home-school-${school.id}`}>{pair(...school.name)}</h3>
                   <p className="home-school-original" lang={school.country === 'japan' ? 'ja' : undefined}>
                     {school.original !== school.name[1] && <>{restoreLegacyText(school.original)} <span aria-hidden="true">·</span> </>}
                     {pair(...school.approachLabel)}
                   </p>
                   <p className="home-school-summary">{pair(...school.summary)}</p>
                   <div className="home-school-bottom">
-                    <span>{pair('æ ¸éªŒæ—¥æœŸ', 'Checked')} {school.checked}</span>
-                    <Link to={`/${school.country}/centres/${school.id}`}>
+                    <span>{pair('æ\u00a0¸éªŒæ—¥æœŸ', 'Checked')} {school.checked}</span>
+                    <span className="home-school-profile-link">
                       {pair('æŸ¥çœ‹æ¡£æ¡ˆ', 'View profile')} <span aria-hidden="true">→</span>
-                    </Link>
+                    </span>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           ) : (
@@ -395,7 +400,7 @@ export default function HomePage() {
           )}
           <p className="home-directory-note">
             {pair(
-              'è¿™æ˜¯æ ·æœ¬ç›®å½•ï¼Œå¹¶éžå…¨é¢åå½•æˆ–æŽ¨èæŽ’åã€‚æ¡£æ¡ˆæŒ‰åŽŸå§‹å‡ºå¤„æ•´ç†ï¼Œç¼ºå¤±ä¿¡æ¯ä¿ç•™ä¸ºæœªçŸ¥ã€‚',
+              'è¿™æ˜¯æ\u00a0·æœ¬ç›®å½•ï¼Œå¹¶éžå…¨é¢åå½•æˆ–æŽ¨èæŽ’åã€‚æ¡£æ¡ˆæŒ‰åŽŸå§‹å‡ºå¤„æ•´ç†ï¼Œç¼ºå¤±ä¿¡æ¯ä¿ç•™ä¸ºæœªçŸ¥ã€‚',
               'This is a sample directory, not a comprehensive census or ranking. Profiles follow their cited sources; missing information remains unknown.',
             )}
           </p>

@@ -606,10 +606,10 @@ export function filterSchools(
       (approach === 'all' || school.approach === approach) &&
       [
         school.original,
-        ...school.name,
+        ...(school.name || []),
         ...(school.aliases || []),
-        ...school.location,
-        ...school.approachLabel,
+        ...(school.location || []),
+        ...(school.approachLabel || []),
       ]
         .filter(Boolean)
         .map(normalizeSearchText)

@@ -3,6 +3,7 @@ import { articles } from '../../data/content'
 import useLanguage from '../../hooks/useLanguage'
 import SectionHeading from '../common/SectionHeading'
 import ArticleCard from './ArticleCard'
+import { MissingDataPanel } from '../common/MissingData'
 
 export default function ArticleList({ operations = false }) {
   const { pair } = useLanguage()
@@ -68,7 +69,9 @@ export default function ArticleList({ operations = false }) {
           />
         ))}
       </div>
-      {!filtered.length && (
+      {!articles.length ? (
+        <MissingDataPanel title={['专题文章', 'Articles']} />
+      ) : !filtered.length && (
         <div className="empty-state">
           {pair(
             '没有匹配的样稿，请尝试其他关键词。',
