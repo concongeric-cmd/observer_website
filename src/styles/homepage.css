@@ -9,7 +9,7 @@
 
 .header nav a {
   color: #52574d;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -37,7 +37,7 @@
 
 .brand small {
   color: #667064;
-  font-size: 8px;
+  font-size: var(--text-small);
   letter-spacing: 1.5px;
 }
 
@@ -61,7 +61,7 @@
 .home-page .eyebrow {
   color: var(--home-green);
   font-family: inherit;
-  font-size: 10px;
+  font-size: var(--text-small);
   font-weight: 700;
   letter-spacing: 1.5px;
   line-height: 1.5;
@@ -123,7 +123,7 @@
 .home-hero-intro {
   max-width: 560px;
   color: #52574d;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -132,7 +132,7 @@
 }
 
 .home-hero-intro .pair > span:last-child {
-  font-size: 14px;
+  font-size: 15px;
   opacity: 1;
 }
 
@@ -150,7 +150,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 650;
 }
 
@@ -167,7 +167,7 @@
 
 .home-button .pair > span:last-child {
   color: #e0e8df;
-  font-size: 10px;
+  font-size: var(--text-small);
   opacity: 0.95;
 }
 
@@ -201,7 +201,7 @@
   padding-top: 18px;
   border-top: 1px solid var(--home-line);
   color: #667064;
-  font-size: 11px;
+  font-size: var(--text-small);
 }
 
 .home-hero-foot .pair {
@@ -211,7 +211,7 @@
 .home-foot-mark {
   color: var(--home-green);
   font-family: Georgia, serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .home-hero-image {
@@ -258,7 +258,7 @@
   justify-content: space-between;
   gap: 16px;
   color: white;
-  font-size: 11px;
+  font-size: var(--text-small);
   line-height: 1.5;
 }
 
@@ -269,7 +269,7 @@
 }
 
 .home-hero-image figcaption .pair > span:last-child {
-  font-size: 10px;
+  font-size: var(--text-small);
   opacity: 0.84;
 }
 
@@ -312,14 +312,14 @@
 .home-section-heading h2 .pair > span:last-child,
 .home-reading h2 .pair > span:last-child {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 0.68em;
+  font-size: max(var(--text-small), 0.68em);
   letter-spacing: -0.03em;
 }
 
 .home-purpose-intro,
 .home-section-heading > p {
   color: #52574d;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -330,7 +330,7 @@
 
 .home-purpose-intro .pair > span:last-child,
 .home-section-heading > p .pair > span:last-child {
-  font-size: 13px;
+  font-size: 14px;
   opacity: 1;
 }
 
@@ -349,7 +349,7 @@
 .home-principle-number {
   color: #75826d;
   font-family: Georgia, serif;
-  font-size: 12px;
+  font-size: var(--text-small);
 }
 
 .home-principle h3 {
@@ -365,14 +365,14 @@
 
 .home-principle h3 .pair > span:last-child {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .home-principle p {
   max-width: 380px;
   margin-top: 13px;
   color: #5c6257;
-  font-size: 12px;
+  font-size: var(--text-small);
   line-height: 1.75;
 }
 
@@ -381,7 +381,7 @@
 }
 
 .home-principle p .pair > span:last-child {
-  font-size: 12px;
+  font-size: var(--text-small);
   opacity: 1;
 }
 
@@ -464,7 +464,7 @@
   bottom: 13px;
   left: 16px;
   color: white;
-  font-size: 9px;
+  font-size: var(--text-small);
   text-align: right;
 }
 
@@ -473,7 +473,7 @@
 }
 
 .home-country-image-caption .pair > span:last-child {
-  font-size: 9px;
+  font-size: var(--text-small);
 }
 
 .home-country-content {
@@ -485,7 +485,7 @@
   justify-content: space-between;
   gap: 12px;
   color: #70776b;
-  font-size: 9px;
+  font-size: var(--text-small);
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -509,14 +509,14 @@
 
 .home-country-content h3 .pair > span:last-child {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .home-country-content > p {
   max-width: 540px;
   margin-top: 11px;
   color: #5a6056;
-  font-size: 12px;
+  font-size: var(--text-small);
   line-height: 1.75;
 }
 
@@ -525,7 +525,7 @@
 }
 
 .home-country-content > p .pair > span:last-child {
-  font-size: 12px;
+  font-size: var(--text-small);
   opacity: 1;
 }
 
@@ -541,7 +541,7 @@
 
 .home-country-topics a {
   color: #3a4238;
-  font-size: 10px;
+  font-size: var(--text-small);
   font-weight: 550;
 }
 
@@ -556,7 +556,7 @@
 }
 
 .home-country-topics .pair > span:last-child {
-  font-size: 10px;
+  font-size: var(--text-small);
 }
 
 .home-country-link {
@@ -564,7 +564,7 @@
   width: 100%;
   margin-top: 17px;
   color: var(--home-green);
-  font-size: 12px;
+  font-size: var(--text-small);
 }
 
 .home-country-link .pair {
@@ -572,7 +572,7 @@
 }
 
 .home-country-link .pair > span:last-child {
-  font-size: 11px;
+  font-size: var(--text-small);
 }
 
 .home-reading {
@@ -588,7 +588,7 @@
   max-width: 480px;
   margin-top: 19px;
   color: #52574d;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -597,7 +597,7 @@
 }
 
 .home-reading-copy > p .pair > span:last-child {
-  font-size: 13px;
+  font-size: 14px;
   opacity: 1;
 }
 
@@ -622,11 +622,11 @@
   padding-top: 3px;
   color: #75826d;
   font-family: Georgia, serif;
-  font-size: 11px;
+  font-size: var(--text-small);
 }
 
 .home-profile-row h3 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 650;
 }
 
@@ -635,13 +635,13 @@
 }
 
 .home-profile-row h3 .pair > span:last-child {
-  font-size: 12px;
+  font-size: var(--text-small);
 }
 
 .home-profile-row p {
   margin-top: 6px;
   color: #687064;
-  font-size: 10px;
+  font-size: var(--text-small);
   line-height: 1.6;
 }
 
@@ -650,12 +650,12 @@
 }
 
 .home-profile-row p .pair > span:last-child {
-  font-size: 10px;
+  font-size: var(--text-small);
 }
 
 .home-profile-arrow {
   color: #75826d;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 footer {
@@ -669,16 +669,16 @@ footer {
 footer > div {
   max-width: 420px;
   color: #52574d;
-  font-size: 9px;
+  font-size: var(--text-small);
   line-height: 1.6;
 }
 
 footer > div > small {
-  font-size: 9px;
+  font-size: var(--text-small);
 }
 
 footer > a:last-child {
-  font-size: 11px;
+  font-size: var(--text-small);
 }
 
 @media (max-width: 1050px) {
@@ -688,11 +688,11 @@ footer > a:last-child {
   }
 
   .brand strong {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .header nav a {
-    font-size: 11px;
+    font-size: var(--text-small);
   }
 
   .home-hero,
@@ -764,11 +764,11 @@ footer > a:last-child {
   }
 
   .brand strong {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .brand small {
-    font-size: 7px;
+    font-size: var(--text-small);
   }
 
   .home-hero,
@@ -787,7 +787,7 @@ footer > a:last-child {
   }
 
   .home-page .eyebrow {
-    font-size: 9px;
+    font-size: var(--text-small);
     letter-spacing: 1.2px;
   }
 
@@ -801,11 +801,11 @@ footer > a:last-child {
   }
 
   .home-hero-intro {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .home-hero-intro .pair > span:last-child {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
 
   .home-hero-actions {
@@ -815,12 +815,12 @@ footer > a:last-child {
 
   .home-button,
   .home-text-link {
-    font-size: 11px;
+    font-size: var(--text-small);
   }
 
   .home-hero-foot {
     margin-top: 25px;
-    font-size: 9px;
+    font-size: var(--text-small);
   }
 
   .home-hero-image {
@@ -846,12 +846,12 @@ footer > a:last-child {
 
   .home-purpose-intro,
   .home-section-heading > p {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
 
   .home-purpose-intro .pair > span:last-child,
   .home-section-heading > p .pair > span:last-child {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
 
   .home-principles {
@@ -875,21 +875,21 @@ footer > a:last-child {
 
   .home-principle h3 {
     margin-top: 0;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .home-principle h3 .pair > span:last-child {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .home-principle p {
     max-width: 500px;
     margin-top: 7px;
-    font-size: 11px;
+    font-size: var(--text-small);
   }
 
   .home-principle p .pair > span:last-child {
-    font-size: 11px;
+    font-size: var(--text-small);
   }
 
   .home-countries {
@@ -924,12 +924,12 @@ footer > a:last-child {
   }
 
   .home-country-content h3 .pair > span:last-child {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .home-country-content > p,
   .home-country-content > p .pair > span:last-child {
-    font-size: 11px;
+    font-size: var(--text-small);
   }
 
   .home-country-topics {
@@ -944,7 +944,7 @@ footer > a:last-child {
 
   .home-reading-copy > p,
   .home-reading-copy > p .pair > span:last-child {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
 
   .home-profile-row {
@@ -960,7 +960,7 @@ footer > a:last-child {
   }
 
   footer .brand strong {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   footer > div {

@@ -1,7 +1,10 @@
+import { fujiCaseStudy } from './fujiCaseStudy'
+
 // Provider categories require a verified source record; an empty array means unverified.
 export const schools = [
   {
     id: 'fuji-kindergarten',
+    caseStudy: fujiCaseStudy,
     country: 'japan',
     code: 'JPS01',
     name: ['藤幼儿园', 'Fuji Kindergarten'],
@@ -15,6 +18,21 @@ export const schools = [
     summary: [
       '从环境设计、自主选择与自然体验，了解园方的教育方针。',
       'Explore the school’s stated approach to the environment, independent choice and nature.',
+    ],
+    campusTitle: ['屋顶、园庭、教室和厨房', 'Roof, yard, classrooms and kitchen'],
+    campus: [
+      [
+        '环形屋顶和中央园庭',
+        'Rooftop loop and central yard',
+        '手塚建筑研究所设计的主园舍围绕中央园庭。屋顶本身可供孩子活动，园方也把园庭的起伏地面作为儿童运动空间的一部分。',
+        'Tezuka Architects designed the main building around a central yard. Children use the rooftop for play, and the school keeps uneven ground in parts of the yard for movement.',
+      ],
+      [
+        '厨房也有孩子的位置',
+        'A kitchen with space for children',
+        'Kids Terrace 一层有厨房、用餐区和儿童烹饪工作室。园方介绍，孩子可以在工作室做披萨、饼干，园内另设南园舍及林间保育空间。',
+        'Kids Terrace houses a kitchen, dining room and children’s cooking studio on its first floor. The school describes activities such as making pizza and cookies, and lists additional rooms in the south building and wooded area.',
+      ],
     ],
     policy: [
       [
@@ -76,6 +94,18 @@ export const schools = [
         title: '園の生活 / Daily life: classes, hours, schedule and meals',
         url: 'https://fujikids.jp/guide/life/',
         language: '日本語 / Japanese',
+      },
+      {
+        title: '施設と設備 / Facilities and equipment',
+        url: 'https://fujikids.jp/guide/facilities/',
+        language: '日本語 / Japanese',
+        checkedAt: '2026-11-20',
+      },
+      {
+        title: 'Fuji Kindergarten / Tezuka Architects project gallery',
+        url: 'https://www.tezuka-arch.com/english/works/education/fujiyochien/',
+        language: 'English / 英文',
+        checkedAt: '2026-11-20',
       },
     ],
     checked: '2026-11-12',
