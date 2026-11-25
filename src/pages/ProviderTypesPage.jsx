@@ -10,7 +10,7 @@ import {
 } from '../data/providerTypes'
 import useCountry from '../hooks/useCountry'
 import useLanguage from '../hooks/useLanguage'
-export default function ProviderTypesPage() {
+export default function ProviderTypesPage({ showPageHeading = true }) {
   const country = useCountry()
   const { pair } = useLanguage()
   const types = providerTypes.filter((type) =>
@@ -24,25 +24,40 @@ export default function ProviderTypesPage() {
   )
   return (
     <div className="provider-types-page">
-
       <div className="provider-types-content">
-        <p className="provider-types-note">
-          {pair(
-            '以下只展示有原始来源支持的分类。设施类别、组织关系与运营主体可以交叉，同一园所可出现在多个组中；数量仅指当前目录样本。',
-            'Only classifications supported by original sources are shown. Facility category, university relationship and private status can overlap, so a school may appear in several groups. Counts refer only to current directory samples.',
-          )}
-        </p>
         <section className="provider-landscape">
-          <h2>{pair('全国制度中的服务类型', 'Provider types in the national system')}</h2>
-          <div>
+          {showPageHeading ? <header className="section-heading">
+            <div>
+              <span className="eyebrow">{pair('了解各类机构', 'EXPLORE THE PROVIDERS')}</span>
+              <h2>{pair('机构类型', 'Provider Types')}</h2>
+            </div>
+          </header> : (
+            <h2 className="provider-landscape-title">
+              {pair('全国制度中的服务类型', 'Provider Types in the National System')}
+            </h2>
+          )}
+          <div className="provider-landscape-grid">
             {!guides.length && <MissingData />}
             {guides.map((guide) => (
               <article key={guide.title[1]}>
                 <h3>{pair(...guide.title)}</h3>
-                <p>{guide.body?.some(Boolean) ? pair(...guide.body) : <MissingData />}</p>
-                {guide.source?.[1] ? <a href={guide.source[1]} target="_blank" rel="noreferrer">
-                  {guide.source[0]} ↗
-                </a> : <MissingData compact />}
+                <p>
+                  {guide.body?.some(Boolean) ? (
+                    pair(...guide.body)
+                  ) : (
+                    <MissingData />
+                  )}
+                </p>
+                {guide.source?.[1] ? (
+                  <a href={guide.source[1]} target="_blank" rel="noreferrer">
+                    {guide.source[0].includes(' / ')
+                      ? pair(...guide.source[0].split(' / '))
+                      : guide.source[0]}{' '}
+                    ↗
+                  </a>
+                ) : (
+                  <MissingData compact />
+                )}
               </article>
             ))}
           </div>
@@ -88,13 +103,15 @@ export default function ProviderTypesPage() {
               {matching.length ? (
                 <div className="provider-type-matches">
                   {matching.map((school) => {
-                    const classification = getVerifiedProviderTypes(school).find(
-                      (verifiedType) => verifiedType.id === type.id,
-                    )
+                    const classification = getVerifiedProviderTypes(
+                      school,
+                    ).find((verifiedType) => verifiedType.id === type.id)
                     return (
                       <article className="provider-type-match" key={school.id}>
                         <div>
-                          <Link to={'/' + country.slug + '/centres/' + school.id}>
+                          <Link
+                            to={'/' + country.slug + '/centres/' + school.id}
+                          >
                             {school.code} · {pair(...school.name)}
                           </Link>
                           {classification && (

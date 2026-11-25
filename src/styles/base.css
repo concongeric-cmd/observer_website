@@ -6,13 +6,17 @@
   font-synthesis: none;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 15px;
+  --text-small: 0.8667rem;
 }
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+}
+main p {
+  font-size: max(16px, 1em) !important;
 }
 a {
   color: inherit;
@@ -63,7 +67,7 @@ button {
   gap: 4px;
 }
 .pair > span:last-child {
-  font-size: 0.73em;
+  font-size: max(var(--text-small), 0.73em);
   line-height: 1.5;
   opacity: 0.66;
   font-weight: 400;

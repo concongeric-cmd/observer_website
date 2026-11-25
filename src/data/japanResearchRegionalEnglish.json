@@ -1,0 +1,873 @@
+{
+  "volume-8-s1": [
+    "This volume uses four measures in supplementary material 3 from the Children and Families Agency: facilities, capacity, usage and waiting children. The prefectural column excludes separately listed designated and core cities. The report adds those 82 cities back to their prefectures to reconstruct all 47 regions. National totals reconcile for all four measures: 40,046 facilities, 3,016,417 places, 2,646,756 children using services and 2,435 waiting children.",
+    "Using only the left-hand table would understate prefectures containing major cities. Supplementary material 2’s municipal aggregation does not have exactly the same coverage as the summary. Its child counts were not combined with material 3’s capacity to calculate ratios; it was used only to identify the cities’ prefectures. Separate data-quality notes prevent later merging of incompatible scopes.",
+    "The report calculates utilisation as children using services divided by capacity. Capacity minus usage is an arithmetic difference, not bookable places. Previous-year waiting changes come from material 4 in the same release and are used only for that measure, not to infer earlier facilities or fees. The official release is provisional and subject to revision; every regional record retains that status.",
+    "The eight reading and chart groups are Hokkaido, Tohoku, Kanto, Chubu, Kinki, Chugoku, Shikoku, and Kyushu & Okinawa. Mie is included in Kinki. These groups do not define funding or legal jurisdictions."
+  ],
+  "volume-8-s2": [
+    "Fifteen prefectures with the highest utilisation. Source: J01; prefectures reconstructed by the report. Children using services divided by capacity, not an education or safety score.",
+    "Fifteen prefectures with the largest childcare capacity. Source: J01; designated and core cities added back. Not total early childhood capacity.",
+    "Capacity and usage across 47 prefectures. Source: J01; calculated by the report. Point area varies with waiting children. Association does not establish causation.",
+    "Largest increases and decreases in waiting children. Source: J01, supplementary material 4. Only the waiting measure is compared; the chart alone does not establish causes.",
+    "Capacity and usage across eight regional groups. Source: J01; report grouping. Mie is in Kinki; Chugoku is the name of a Japanese geographic region.",
+    "Utilisation across all 47 prefectures. Source: J01; reconstructed and calculated by the report. Designated and core cities are included; figures are provisional.",
+    "These cross-sectional charts describe counts and ratios within one statistical population. More waiting children do not mean every service is poor; zero waiting does not remove eligibility, price, language or timing barriers. Utilisation is not classroom quality and cannot directly recommend local schools."
+  ],
+  "volume-8-s50": [
+    "Prefectural totals describe structure, while applications and daily life operate at smaller scales. One prefecture may contain new housing areas with inward migration and shrinking communities. Subsidy rules, childcare applications and opening hours require local information, not just this volume’s totals.",
+    "Fix the measure before comparing places. Absolute waiting counts measure numbers; waiting rates need an application denominator; utilisation uses capacity; enrolment rates require child-population denominators. These ratios are not interchangeable. This report does not rename waiting divided by capacity an official waiting rate or use inconsistent age tables to infer births or coverage."
+  ],
+  "volume-8-s51": [
+    "For updates, first establish the national release version, revision notes and reference date. Replace original values, reconstruct separately listed cities, reconcile national totals and regenerate derived ratios and charts. Changing only the heading’s year is insufficient. Preserve zero, missing and provisional values separately so visual completeness does not change statistical meaning.",
+    "Regional pages can later add municipal plans, local fees, facility registers and inspection records, but unverified gaps must not be filled with guesses. These profiles provide consistently defined childcare provision for 47 prefectures, not an exhaustive account of every kindergarten, unlicensed service or local policy."
+  ],
+  "volume-8-s3": [
+    "This prefecture belongs to the report?s Hokkaido group. On 1 April 2026, it had 1,495 nursery centres and related facilities, capacity of 93,489 places and 80,845 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "1,495 sites"],
+        ["Capacity", "93,489 places"],
+        ["Children using services", "80,845 children"],
+        ["Utilisation (report calculation)", "86.48%"],
+        ["Capacity minus usage", "12,644 places"],
+        ["Official waiting children", "38 children"],
+        ["Previous-year waiting children", "34 children"],
+        ["Annual change in waiting children", "4 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 3.10% of national capacity and 3.05% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 38 children, up 4 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s4": [
+    "This prefecture belongs to the report?s Tohoku group. On 1 April 2026, it had 499 nursery centres and related facilities, capacity of 29,320 places and 24,373 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "499 sites"],
+        ["Capacity", "29,320 places"],
+        ["Children using services", "24,373 children"],
+        ["Utilisation (report calculation)", "83.13%"],
+        ["Capacity minus usage", "4,947 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.97% of national capacity and 0.92% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s5": [
+    "This prefecture belongs to the report?s Tohoku group. On 1 April 2026, it had 489 nursery centres and related facilities, capacity of 29,724 places and 24,195 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "489 sites"],
+        ["Capacity", "29,724 places"],
+        ["Children using services", "24,195 children"],
+        ["Utilisation (report calculation)", "81.4%"],
+        ["Capacity minus usage", "5,529 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "5 children"],
+        ["Annual change in waiting children", "-5 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.99% of national capacity and 0.91% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, down 5 from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s6": [
+    "This prefecture belongs to the report?s Tohoku group. On 1 April 2026, it had 832 nursery centres and related facilities, capacity of 46,791 places and 42,577 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "832 sites"],
+        ["Capacity", "46,791 places"],
+        ["Children using services", "42,577 children"],
+        ["Utilisation (report calculation)", "90.99%"],
+        ["Capacity minus usage", "4,214 places"],
+        ["Official waiting children", "26 children"],
+        ["Previous-year waiting children", "17 children"],
+        ["Annual change in waiting children", "9 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.55% of national capacity and 1.61% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 26 children, up 9 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s7": [
+    "This prefecture belongs to the report?s Tohoku group. On 1 April 2026, it had 299 nursery centres and related facilities, capacity of 21,817 places and 17,316 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "299 sites"],
+        ["Capacity", "21,817 places"],
+        ["Children using services", "17,316 children"],
+        ["Utilisation (report calculation)", "79.37%"],
+        ["Capacity minus usage", "4,501 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "5 children"],
+        ["Annual change in waiting children", "-5 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.72% of national capacity and 0.65% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, down 5 from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s8": [
+    "This prefecture belongs to the report?s Tohoku group. On 1 April 2026, it had 382 nursery centres and related facilities, capacity of 27,254 places and 22,438 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "382 sites"],
+        ["Capacity", "27,254 places"],
+        ["Children using services", "22,438 children"],
+        ["Utilisation (report calculation)", "82.33%"],
+        ["Capacity minus usage", "4,816 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.90% of national capacity and 0.85% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s9": [
+    "This prefecture belongs to the report?s Tohoku group. On 1 April 2026, it had 527 nursery centres and related facilities, capacity of 38,538 places and 32,178 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "527 sites"],
+        ["Capacity", "38,538 places"],
+        ["Children using services", "32,178 children"],
+        ["Utilisation (report calculation)", "83.5%"],
+        ["Capacity minus usage", "6,360 places"],
+        ["Official waiting children", "3 children"],
+        ["Previous-year waiting children", "5 children"],
+        ["Annual change in waiting children", "-2 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.28% of national capacity and 1.22% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 3 children, down 2 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s10": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 859 nursery centres and related facilities, capacity of 66,777 places and 57,920 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "859 sites"],
+        ["Capacity", "66,777 places"],
+        ["Children using services", "57,920 children"],
+        ["Utilisation (report calculation)", "86.74%"],
+        ["Capacity minus usage", "8,857 places"],
+        ["Official waiting children", "1 children"],
+        ["Previous-year waiting children", "1 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 2.21% of national capacity and 2.19% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 1 children, unchanged from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s11": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 590 nursery centres and related facilities, capacity of 45,060 places and 38,247 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "590 sites"],
+        ["Capacity", "45,060 places"],
+        ["Children using services", "38,247 children"],
+        ["Utilisation (report calculation)", "84.88%"],
+        ["Capacity minus usage", "6,813 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "3 children"],
+        ["Annual change in waiting children", "-3 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.49% of national capacity and 1.45% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, down 3 from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s12": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 526 nursery centres and related facilities, capacity of 49,769 places and 42,613 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "526 sites"],
+        ["Capacity", "49,769 places"],
+        ["Children using services", "42,613 children"],
+        ["Utilisation (report calculation)", "85.62%"],
+        ["Capacity minus usage", "7,156 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.65% of national capacity and 1.61% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s13": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 2,318 nursery centres and related facilities, capacity of 148,630 places and 138,004 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "2,318 sites"],
+        ["Capacity", "148,630 places"],
+        ["Children using services", "138,004 children"],
+        ["Utilisation (report calculation)", "92.85%"],
+        ["Capacity minus usage", "10,626 places"],
+        ["Official waiting children", "140 children"],
+        ["Previous-year waiting children", "208 children"],
+        ["Annual change in waiting children", "-68 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 4.93% of national capacity and 5.21% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 140 children, down 68 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s14": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 2,038 nursery centres and related facilities, capacity of 139,707 places and 125,050 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "2,038 sites"],
+        ["Capacity", "139,707 places"],
+        ["Children using services", "125,050 children"],
+        ["Utilisation (report calculation)", "89.51%"],
+        ["Capacity minus usage", "14,657 places"],
+        ["Official waiting children", "69 children"],
+        ["Previous-year waiting children", "91 children"],
+        ["Annual change in waiting children", "-22 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 4.63% of national capacity and 4.72% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 69 children, down 22 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s15": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 4,635 nursery centres and related facilities, capacity of 339,206 places and 308,997 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "4,635 sites"],
+        ["Capacity", "339,206 places"],
+        ["Children using services", "308,997 children"],
+        ["Utilisation (report calculation)", "91.09%"],
+        ["Capacity minus usage", "30,209 places"],
+        ["Official waiting children", "1,113 children"],
+        ["Previous-year waiting children", "339 children"],
+        ["Annual change in waiting children", "774 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 11.25% of national capacity and 11.67% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 1,113 children, up 774 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population.",
+    "Tokyo also changed local fee support: from September 2025 it supports municipalities in extending relief for first-child childcare fees and related charges. Coverage depends on local implementation, not just the national outline. Changes in waiting cannot be attributed entirely to this single policy."
+  ],
+  "volume-8-s16": [
+    "This prefecture belongs to the report?s Kanto group. On 1 April 2026, it had 2,861 nursery centres and related facilities, capacity of 184,416 places and 174,516 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "2,861 sites"],
+        ["Capacity", "184,416 places"],
+        ["Children using services", "174,516 children"],
+        ["Utilisation (report calculation)", "94.63%"],
+        ["Capacity minus usage", "9,900 places"],
+        ["Official waiting children", "65 children"],
+        ["Previous-year waiting children", "138 children"],
+        ["Annual change in waiting children", "-73 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 6.11% of national capacity and 6.59% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation exceeds 94%, indicating relatively tight aggregate usage. Municipal and age-group detail is still needed. Near-full utilisation does not mean every centre is full or every site has adequate teachers. The official waiting count is 65 children, down 73 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s17": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 762 nursery centres and related facilities, capacity of 61,108 places and 49,634 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "762 sites"],
+        ["Capacity", "61,108 places"],
+        ["Children using services", "49,634 children"],
+        ["Utilisation (report calculation)", "81.22%"],
+        ["Capacity minus usage", "11,474 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 2.03% of national capacity and 1.88% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s18": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 308 nursery centres and related facilities, capacity of 30,920 places and 25,116 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "308 sites"],
+        ["Capacity", "30,920 places"],
+        ["Children using services", "25,116 children"],
+        ["Utilisation (report calculation)", "81.23%"],
+        ["Capacity minus usage", "5,804 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.03% of national capacity and 0.95% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s19": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 367 nursery centres and related facilities, capacity of 36,638 places and 29,841 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "367 sites"],
+        ["Capacity", "36,638 places"],
+        ["Children using services", "29,841 children"],
+        ["Utilisation (report calculation)", "81.45%"],
+        ["Capacity minus usage", "6,797 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.21% of national capacity and 1.13% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s20": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 290 nursery centres and related facilities, capacity of 27,058 places and 21,719 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "290 sites"],
+        ["Capacity", "27,058 places"],
+        ["Children using services", "21,719 children"],
+        ["Utilisation (report calculation)", "80.27%"],
+        ["Capacity minus usage", "5,339 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.90% of national capacity and 0.82% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s21": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 289 nursery centres and related facilities, capacity of 23,829 places and 17,779 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "289 sites"],
+        ["Capacity", "23,829 places"],
+        ["Children using services", "17,779 children"],
+        ["Utilisation (report calculation)", "74.61%"],
+        ["Capacity minus usage", "6,050 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.79% of national capacity and 0.67% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s22": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 689 nursery centres and related facilities, capacity of 61,268 places and 45,329 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "689 sites"],
+        ["Capacity", "61,268 places"],
+        ["Children using services", "45,329 children"],
+        ["Utilisation (report calculation)", "73.98%"],
+        ["Capacity minus usage", "15,939 places"],
+        ["Official waiting children", "20 children"],
+        ["Previous-year waiting children", "10 children"],
+        ["Annual change in waiting children", "10 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 2.03% of national capacity and 1.71% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 20 children, up 10 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s23": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 521 nursery centres and related facilities, capacity of 43,530 places and 34,666 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "521 sites"],
+        ["Capacity", "43,530 places"],
+        ["Children using services", "34,666 children"],
+        ["Utilisation (report calculation)", "79.64%"],
+        ["Capacity minus usage", "8,864 places"],
+        ["Official waiting children", "1 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "1 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.44% of national capacity and 1.31% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 1 children, up 1 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s24": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 1,034 nursery centres and related facilities, capacity of 76,708 places and 65,534 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "1,034 sites"],
+        ["Capacity", "76,708 places"],
+        ["Children using services", "65,534 children"],
+        ["Utilisation (report calculation)", "85.43%"],
+        ["Capacity minus usage", "11,174 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 2.54% of national capacity and 2.48% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s25": [
+    "This prefecture belongs to the report?s Chubu group. On 1 April 2026, it had 2,032 nursery centres and related facilities, capacity of 189,663 places and 157,281 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "2,032 sites"],
+        ["Capacity", "189,663 places"],
+        ["Children using services", "157,281 children"],
+        ["Utilisation (report calculation)", "82.93%"],
+        ["Capacity minus usage", "32,382 places"],
+        ["Official waiting children", "47 children"],
+        ["Previous-year waiting children", "51 children"],
+        ["Annual change in waiting children", "-4 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 6.29% of national capacity and 5.94% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 47 children, down 4 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s26": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 476 nursery centres and related facilities, capacity of 43,484 places and 35,897 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "476 sites"],
+        ["Capacity", "43,484 places"],
+        ["Children using services", "35,897 children"],
+        ["Utilisation (report calculation)", "82.55%"],
+        ["Capacity minus usage", "7,587 places"],
+        ["Official waiting children", "73 children"],
+        ["Previous-year waiting children", "84 children"],
+        ["Annual change in waiting children", "-11 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.44% of national capacity and 1.36% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 73 children, down 11 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s27": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 496 nursery centres and related facilities, capacity of 39,725 places and 36,036 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "496 sites"],
+        ["Capacity", "39,725 places"],
+        ["Children using services", "36,036 children"],
+        ["Utilisation (report calculation)", "90.71%"],
+        ["Capacity minus usage", "3,689 places"],
+        ["Official waiting children", "102 children"],
+        ["Previous-year waiting children", "335 children"],
+        ["Annual change in waiting children", "-233 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.32% of national capacity and 1.36% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 102 children, down 233 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s28": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 717 nursery centres and related facilities, capacity of 58,442 places and 51,884 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "717 sites"],
+        ["Capacity", "58,442 places"],
+        ["Children using services", "51,884 children"],
+        ["Utilisation (report calculation)", "88.78%"],
+        ["Capacity minus usage", "6,558 places"],
+        ["Official waiting children", "15 children"],
+        ["Previous-year waiting children", "15 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.94% of national capacity and 1.96% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 15 children, unchanged from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s29": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 2,449 nursery centres and related facilities, capacity of 198,272 places and 188,201 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "2,449 sites"],
+        ["Capacity", "198,272 places"],
+        ["Children using services", "188,201 children"],
+        ["Utilisation (report calculation)", "94.92%"],
+        ["Capacity minus usage", "10,071 places"],
+        ["Official waiting children", "133 children"],
+        ["Previous-year waiting children", "194 children"],
+        ["Annual change in waiting children", "-61 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 6.57% of national capacity and 7.11% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation exceeds 94%, indicating relatively tight aggregate usage. Municipal and age-group detail is still needed. Near-full utilisation does not mean every centre is full or every site has adequate teachers. The official waiting count is 133 children, down 61 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population.",
+    "Osaka?s universal childcare access guidance directs users to municipalities for facilities and procedures. Hirakata and other municipalities have their own regular attendance arrangements. Regional totals and sessions that an individual family can book remain distinct."
+  ],
+  "volume-8-s30": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 1,622 nursery centres and related facilities, capacity of 118,912 places and 111,590 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "1,622 sites"],
+        ["Capacity", "118,912 places"],
+        ["Children using services", "111,590 children"],
+        ["Utilisation (report calculation)", "93.84%"],
+        ["Capacity minus usage", "7,322 places"],
+        ["Official waiting children", "200 children"],
+        ["Previous-year waiting children", "199 children"],
+        ["Annual change in waiting children", "1 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 3.94% of national capacity and 4.22% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 200 children, up 1 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s31": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 305 nursery centres and related facilities, capacity of 29,005 places and 25,072 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "305 sites"],
+        ["Capacity", "29,005 places"],
+        ["Children using services", "25,072 children"],
+        ["Utilisation (report calculation)", "86.44%"],
+        ["Capacity minus usage", "3,933 places"],
+        ["Official waiting children", "147 children"],
+        ["Previous-year waiting children", "186 children"],
+        ["Annual change in waiting children", "-39 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.96% of national capacity and 0.95% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 147 children, down 39 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s32": [
+    "This prefecture belongs to the report?s Kinki group. On 1 April 2026, it had 204 nursery centres and related facilities, capacity of 20,936 places and 17,728 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "204 sites"],
+        ["Capacity", "20,936 places"],
+        ["Children using services", "17,728 children"],
+        ["Utilisation (report calculation)", "84.68%"],
+        ["Capacity minus usage", "3,208 places"],
+        ["Official waiting children", "32 children"],
+        ["Previous-year waiting children", "53 children"],
+        ["Annual change in waiting children", "-21 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.69% of national capacity and 0.67% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 32 children, down 21 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s33": [
+    "This prefecture belongs to the report?s Chugoku group. On 1 April 2026, it had 213 nursery centres and related facilities, capacity of 18,626 places and 14,405 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "213 sites"],
+        ["Capacity", "18,626 places"],
+        ["Children using services", "14,405 children"],
+        ["Utilisation (report calculation)", "77.34%"],
+        ["Capacity minus usage", "4,221 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.62% of national capacity and 0.54% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s34": [
+    "This prefecture belongs to the report?s Chugoku group. On 1 April 2026, it had 307 nursery centres and related facilities, capacity of 21,279 places and 18,433 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "307 sites"],
+        ["Capacity", "21,279 places"],
+        ["Children using services", "18,433 children"],
+        ["Utilisation (report calculation)", "86.63%"],
+        ["Capacity minus usage", "2,846 places"],
+        ["Official waiting children", "3 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "3 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.71% of national capacity and 0.70% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 3 children, up 3 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s35": [
+    "This prefecture belongs to the report?s Chugoku group. On 1 April 2026, it had 574 nursery centres and related facilities, capacity of 50,473 places and 44,246 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "574 sites"],
+        ["Capacity", "50,473 places"],
+        ["Children using services", "44,246 children"],
+        ["Utilisation (report calculation)", "87.66%"],
+        ["Capacity minus usage", "6,227 places"],
+        ["Official waiting children", "20 children"],
+        ["Previous-year waiting children", "22 children"],
+        ["Annual change in waiting children", "-2 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.67% of national capacity and 1.67% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 20 children, down 2 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s36": [
+    "This prefecture belongs to the report?s Chugoku group. On 1 April 2026, it had 868 nursery centres and related facilities, capacity of 73,484 places and 61,225 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "868 sites"],
+        ["Capacity", "73,484 places"],
+        ["Children using services", "61,225 children"],
+        ["Utilisation (report calculation)", "83.32%"],
+        ["Capacity minus usage", "12,259 places"],
+        ["Official waiting children", "11 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "11 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 2.44% of national capacity and 2.31% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 11 children, up 11 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s37": [
+    "This prefecture belongs to the report?s Chugoku group. On 1 April 2026, it had 385 nursery centres and related facilities, capacity of 28,913 places and 25,439 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "385 sites"],
+        ["Capacity", "28,913 places"],
+        ["Children using services", "25,439 children"],
+        ["Utilisation (report calculation)", "87.98%"],
+        ["Capacity minus usage", "3,474 places"],
+        ["Official waiting children", "16 children"],
+        ["Previous-year waiting children", "9 children"],
+        ["Annual change in waiting children", "7 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.96% of national capacity and 0.96% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 16 children, up 7 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s38": [
+    "This prefecture belongs to the report?s Shikoku group. On 1 April 2026, it had 223 nursery centres and related facilities, capacity of 17,604 places and 14,825 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "223 sites"],
+        ["Capacity", "17,604 places"],
+        ["Children using services", "14,825 children"],
+        ["Utilisation (report calculation)", "84.21%"],
+        ["Capacity minus usage", "2,779 places"],
+        ["Official waiting children", "2 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "2 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.58% of national capacity and 0.56% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 2 children, up 2 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s39": [
+    "This prefecture belongs to the report?s Shikoku group. On 1 April 2026, it had 280 nursery centres and related facilities, capacity of 26,191 places and 21,039 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "280 sites"],
+        ["Capacity", "26,191 places"],
+        ["Children using services", "21,039 children"],
+        ["Utilisation (report calculation)", "80.33%"],
+        ["Capacity minus usage", "5,152 places"],
+        ["Official waiting children", "1 children"],
+        ["Previous-year waiting children", "1 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.87% of national capacity and 0.79% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 1 children, unchanged from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s40": [
+    "This prefecture belongs to the report?s Shikoku group. On 1 April 2026, it had 400 nursery centres and related facilities, capacity of 29,394 places and 24,284 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "400 sites"],
+        ["Capacity", "29,394 places"],
+        ["Children using services", "24,284 children"],
+        ["Utilisation (report calculation)", "82.62%"],
+        ["Capacity minus usage", "5,110 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "13 children"],
+        ["Annual change in waiting children", "-13 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.97% of national capacity and 0.92% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, down 13 from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s41": [
+    "This prefecture belongs to the report?s Shikoku group. On 1 April 2026, it had 281 nursery centres and related facilities, capacity of 21,929 places and 16,626 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "281 sites"],
+        ["Capacity", "21,929 places"],
+        ["Children using services", "16,626 children"],
+        ["Utilisation (report calculation)", "75.82%"],
+        ["Capacity minus usage", "5,303 places"],
+        ["Official waiting children", "6 children"],
+        ["Previous-year waiting children", "10 children"],
+        ["Annual change in waiting children", "-4 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.73% of national capacity and 0.63% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "On the same statistical basis, utilisation is below 82%, leaving a substantial difference between capacity and usage. This warrants study of scale and service distribution, but the ratio alone does not establish inadequate demand or business failure: age, location and staffing constraints can also affect usage. The official waiting count is 6 children, down 4 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s42": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 1,491 nursery centres and related facilities, capacity of 130,263 places and 118,351 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "1,491 sites"],
+        ["Capacity", "130,263 places"],
+        ["Children using services", "118,351 children"],
+        ["Utilisation (report calculation)", "90.86%"],
+        ["Capacity minus usage", "11,912 places"],
+        ["Official waiting children", "53 children"],
+        ["Previous-year waiting children", "29 children"],
+        ["Annual change in waiting children", "24 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 4.32% of national capacity and 4.47% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 53 children, up 24 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s43": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 358 nursery centres and related facilities, capacity of 25,823 places and 21,742 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "358 sites"],
+        ["Capacity", "25,823 places"],
+        ["Children using services", "21,742 children"],
+        ["Utilisation (report calculation)", "84.2%"],
+        ["Capacity minus usage", "4,081 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "8 children"],
+        ["Annual change in waiting children", "-8 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.86% of national capacity and 0.82% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, down 8 from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s44": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 555 nursery centres and related facilities, capacity of 36,157 places and 32,082 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "555 sites"],
+        ["Capacity", "36,157 places"],
+        ["Children using services", "32,082 children"],
+        ["Utilisation (report calculation)", "88.73%"],
+        ["Capacity minus usage", "4,075 places"],
+        ["Official waiting children", "15 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "15 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.20% of national capacity and 1.21% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 15 children, up 15 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s45": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 767 nursery centres and related facilities, capacity of 53,904 places and 48,295 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "767 sites"],
+        ["Capacity", "53,904 places"],
+        ["Children using services", "48,295 children"],
+        ["Utilisation (report calculation)", "89.59%"],
+        ["Capacity minus usage", "5,609 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "4 children"],
+        ["Annual change in waiting children", "-4 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.79% of national capacity and 1.82% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, down 4 from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s46": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 369 nursery centres and related facilities, capacity of 28,023 places and 24,346 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "369 sites"],
+        ["Capacity", "28,023 places"],
+        ["Children using services", "24,346 children"],
+        ["Utilisation (report calculation)", "86.88%"],
+        ["Capacity minus usage", "3,677 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 0.93% of national capacity and 0.92% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s47": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 480 nursery centres and related facilities, capacity of 31,785 places and 27,805 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "480 sites"],
+        ["Capacity", "31,785 places"],
+        ["Children using services", "27,805 children"],
+        ["Utilisation (report calculation)", "87.48%"],
+        ["Capacity minus usage", "3,980 places"],
+        ["Official waiting children", "0 children"],
+        ["Previous-year waiting children", "0 children"],
+        ["Annual change in waiting children", "0 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.05% of national capacity and 1.05% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 0 children, unchanged from the previous year. Zero applies only to this definition and survey date. It does not establish that every family obtained its first-choice centre or that temporary, sick-child or nonstandard-hours needs are absent."
+  ],
+  "volume-8-s48": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 697 nursery centres and related facilities, capacity of 40,292 places and 34,775 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "697 sites"],
+        ["Capacity", "40,292 places"],
+        ["Children using services", "34,775 children"],
+        ["Utilisation (report calculation)", "86.31%"],
+        ["Capacity minus usage", "5,517 places"],
+        ["Official waiting children", "5 children"],
+        ["Previous-year waiting children", "14 children"],
+        ["Annual change in waiting children", "-9 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 1.34% of national capacity and 1.31% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 5 children, down 9 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ],
+  "volume-8-s49": [
+    "This prefecture belongs to the report?s Kyushu & Okinawa group. On 1 April 2026, it had 887 nursery centres and related facilities, capacity of 62,281 places and 56,262 children using services. Coverage includes designated and core cities added back to the prefecture. Figures are provisional and do not include all kindergarten educational places.",
+    {
+      "columnsEn": ["Measure", "Value"],
+      "rowsEn": [
+        ["Childcare facilities", "887 sites"],
+        ["Capacity", "62,281 places"],
+        ["Children using services", "56,262 children"],
+        ["Utilisation (report calculation)", "90.34%"],
+        ["Capacity minus usage", "6,019 places"],
+        ["Official waiting children", "78 children"],
+        ["Previous-year waiting children", "171 children"],
+        ["Annual change in waiting children", "-93 children"]
+      ]
+    },
+    "The prefecture accounts for approximately 2.06% of national capacity and 2.13% of children using services. The difference describes its relative capacity and usage structure, not net migration, birth changes or educational quality; causal explanations need additional evidence.",
+    "The regional totals still show a difference between capacity and usage, but these are not freely transferable vacancies. Local research must examine younger age groups, commuting areas, opening hours and staffing rather than apply a regional average to an individual facility. The official waiting count is 78 children, down 93 from the previous year. Waiting children and aggregate capacity differences can coexist. An aggregate difference cannot cancel families? actual shortfalls: location, age and eligibility mean they are not the same population."
+  ]
+}

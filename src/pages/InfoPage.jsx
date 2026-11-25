@@ -1,4 +1,3 @@
-import { Link } from 'react-router'
 import { editorialPrinciples, infoPages } from '../data/infoPages'
 import useLanguage from '../hooks/useLanguage'
 import NotFoundPage from './NotFoundPage'
@@ -30,7 +29,7 @@ export default function InfoPage({ section }) {
         ))}
       </div>
 
-      <section className="about-section" aria-labelledby="about-collection-title">
+      <section className="about-section about-collection" aria-labelledby="about-collection-title">
         <div className="about-section-heading">
           <h2 id="about-collection-title">{pair(...page.collectionTitle)}</h2>
           <p>{pair(...page.collectionIntro)}</p>
@@ -75,23 +74,6 @@ export default function InfoPage({ section }) {
         </div>
       </section>
 
-      <section className="about-invitation" aria-labelledby="about-invitation-title">
-        <div>
-          <h2 id="about-invitation-title">{pair(...page.invitationTitle)}</h2>
-          <p>{pair(...page.invitationBody)}</p>
-        </div>
-        <div className="about-actions">
-          {page.actions.map((action, index) => (
-            <Link
-              className={'button ' + (index === 0 ? 'primary' : 'secondary')}
-              to={action.to}
-              key={action.to}
-            >
-              {pair(...action.label)} <span aria-hidden="true">↗</span>
-            </Link>
-          ))}
-        </div>
-      </section>
     </article>
   )
 }
