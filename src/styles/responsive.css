@@ -23,7 +23,7 @@
     font-size: 21px;
   }
   .brand small {
-    font-size: 7px;
+    font-size: var(--text-small);
     letter-spacing: 1.4px;
   }
   .header {
@@ -69,7 +69,7 @@
     gap: 9px;
   }
   .section-tile h3 {
-    font-size: 13px;
+    font-size: 14px;
   }
   .tile-arrow {
     right: 10px;
@@ -82,10 +82,10 @@
     height: 180px;
   }
   .article-card h3 {
-    font-size: 18px;
+    font-size: 19px;
   }
   .article-card h3 .pair > span:last-child {
-    font-size: 16px;
+    font-size: 17px;
   }
   .centre-copy {
     padding: 30px;
@@ -125,13 +125,13 @@
     height: 52px;
   }
   .header nav a {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
   .language-button {
     margin-left: auto;
   }
   .topline {
-    font-size: 8px;
+    font-size: var(--text-small);
   }
   .topline > .pair > span:last-child {
     display: none;
@@ -153,10 +153,10 @@
     font-size: 21px;
   }
   .hero-copy > p {
-    font-size: 12px;
+    font-size: var(--text-small);
   }
   .hero-copy > p .pair > span:last-child {
-    font-size: 11px;
+    font-size: var(--text-small);
   }
   .hero-art {
     min-height: 440px;
@@ -167,7 +167,7 @@
     margin-top: 0;
   }
   .art-tag {
-    font-size: 7px;
+    font-size: var(--text-small);
     letter-spacing: 1px;
     padding-left: 13px;
   }
@@ -180,7 +180,7 @@
   }
   .art-bottom .pair {
     text-align: left;
-    font-size: 7px;
+    font-size: var(--text-small);
   }
   .hero-actions {
     flex-wrap: wrap;
@@ -190,11 +190,11 @@
     margin-top: 5px;
   }
   .hero-foot {
-    font-size: 8px;
+    font-size: var(--text-small);
     margin-top: 22px;
   }
   .hero-foot .pair > span:last-child {
-    font-size: 8px;
+    font-size: var(--text-small);
   }
   .metrics-title .eyebrow {
     display: none;
@@ -203,13 +203,13 @@
     font-size: 31px;
   }
   .metric-value small {
-    font-size: 10px;
+    font-size: var(--text-small);
   }
   .metric {
     padding-left: 13px;
   }
   .metric-note {
-    font-size: 9px;
+    font-size: var(--text-small);
   }
   .section-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -219,7 +219,7 @@
     padding: 20px;
   }
   .section-tile h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .tile-arrow {
     top: 17px;
@@ -255,25 +255,25 @@
     transform: scale(0.8) rotate(-10deg);
   }
   .visual-caption {
-    font-size: 6px;
+    font-size: var(--text-small);
     left: 10px;
     bottom: 7px;
   }
   .visual-caption .pair > span:last-child {
-    font-size: 6px;
+    font-size: var(--text-small);
   }
   .article-card h3 {
-    font-size: 16px;
+    font-size: 17px;
   }
   .article-card h3 .pair > span:last-child {
-    font-size: 15px;
+    font-size: 16px;
   }
   .card-meta .pair {
     flex-direction: column;
     gap: 1px;
   }
   .card-bottom {
-    font-size: 8px;
+    font-size: var(--text-small);
     gap: 6px;
   }
   .card-bottom > span:last-child {
@@ -316,14 +316,14 @@
     font-size: 23px;
   }
   .reading-body p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .process-diagram {
     padding: 18px 5px;
   }
   .process-diagram > div {
     padding: 0 7px;
-    font-size: 10px;
+    font-size: var(--text-small);
   }
   .profile-facts {
     grid-template-columns: repeat(2, 1fr);

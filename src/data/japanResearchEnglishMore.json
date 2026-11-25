@@ -1,0 +1,315 @@
+{
+  "volume-3-s1": [
+    "Regulation covers facility eligibility, educational and care content, staffing, safety, public funding and disclosure. Facility type determines the framework, while local ordinances, approval and inspections affect implementation. A brand licensed in one city does not automatically have the same status at every site.",
+    "A facility record should establish at least four layers: official name and address, founding and operating entity, licence or recognition category, and the benefit or subsidy schemes it participates in. Chinese or English names identify a brand but do not replace legal and administrative identity. A site marketed as an ‘international kindergarten’ may not be a kindergarten under the School Education Act."
+  ],
+  "volume-3-s2": [
+    "Licensing principally establishes whether a facility may operate under a legal category. Recognition may concern certified-centre status or family eligibility; confirmation concerns participation in benefit arrangements; subsidy eligibility concerns a particular funding programme. These processes are related but distinct. ‘Notified’, ‘subsidised’ and ‘licensed’ are not synonyms in this report.",
+    "Unlicensed facilities also fall under notification and supervisory frameworks. Compliance with supervisory standards, possession of a compliance certificate and eligibility for particular fee-relief arrangements require separate checks. Being outside the licensed childcare system does not mean no regulation; meeting a subsidy condition does not guarantee that every instance of care is problem-free."
+  ],
+  "volume-3-s3": [
+    {
+      "columnsEn": [
+        "Age",
+        "Earlier indicative ratio",
+        "Improved national standard or support direction",
+        "Limitations"
+      ],
+      "rowsEn": [
+        [
+          "Under one",
+          "About three children per childcare worker",
+          "Relevant basic framework retained",
+          "Check minimum on-site staffing and actual rosters separately"
+        ],
+        [
+          "One–two",
+          "About 6:1",
+          "A supplement supports 5:1 staffing for one-year-olds",
+          "A supplement is not a universal statutory change to 5:1"
+        ],
+        [
+          "Three",
+          "About 20:1",
+          "Improved to about 15:1 from FY2024",
+          "Transitional provisions apply"
+        ],
+        [
+          "Four–five",
+          "About 30:1",
+          "Improved to about 25:1 from FY2024",
+          "Check transitional arrangements and local implementation"
+        ]
+      ]
+    },
+    "The table explains the direction of reform rather than replacing the complete regulations for a particular facility type. Official 2026 material sets the transition period for the old age-three ratio through the end of FY2027. Reform goals, funding supplements and actual practice at individual centres must not be reduced to one number.",
+    "Improved staffing standards for ages three and four–five. Sources: J14 and J15. These are not complete class rosters; the age-one staffing supplement is not plotted as a universal statutory standard.",
+    "A frequent misreading is to treat fewer children per worker as proof that workload problems are solved. Actual coverage depends on full-day rosters, breaks, cover, recording time and additional-needs support. Meeting an average ratio does not mean equal spare staffing at opening, closing, outdoors and handovers."
+  ],
+  "volume-3-s4": [
+    "Minimum standards are a floor, not a complete definition of good service. Centres may add staff, assistants or better team arrangements; stability depends on employment contracts, hours and actual operations. Claims to ‘exceed standards’ are hard to compare without a reference period and a definition of staff.",
+    "Operational interpretation: additional staff can improve care coverage but require sustainable funding. If supplement income, wages and expense recognition fall in different periods, timing affects reported profit. A quarterly profit rise does not prove staffing cuts, and a higher total headcount does not prove lower pressure in every class."
+  ],
+  "volume-3-s5": [
+    "Nursery worker (hoikushi), kindergarten teacher and integrated-centre teacher (hoiku kyōyu) are not three names for one qualification. Nursery-worker qualification and registration, kindergarten teaching licences and integrated-centre teacher requirements come from different systems. Integrated-centre teachers generally require both qualifications, subject to statutory exceptions and transitional arrangements.",
+    "Official material extends certain exceptions allowing appointment with only one of the qualifications through the end of FY2029. This is a specific transitional arrangement, not abolition of the dual-qualification principle, and does not apply to every role in other facility types."
+  ],
+  "volume-3-s6": [
+    "Official guidance identifies two principal routes: completing an approved nursery-worker training programme, or meeting eligibility conditions and passing the nursery-worker examination. Qualified people must also enter the prefectural register before working under the nursery-worker title. Course completion, private certificates and the national qualification are distinct.",
+    "Training routes include universities, junior colleges and vocational colleges; the nursery-worker title does not correspond to one educational level. Cross-qualification exceptions have specific coursework, experience and procedural conditions. This report explains workforce structure rather than assessing individual eligibility; applications require the applicable official rules."
+  ],
+  "volume-3-s7": [
+    "Teams also include assistants, nutrition and cooking staff, nurses, directors, administrators and cleaners. These roles are not interchangeable. Cleaning support and digital records may free time but cannot remove necessary professional observation or responsibility for care.",
+    "Company headcounts may include part-time, management and other-business staff. Without hours, headcounts are not full-time equivalents. Dividing group employees by all children cannot establish classroom ratios, because the staff and children may belong to different businesses or reporting dates."
+  ],
+  "volume-3-s8": [
+    "Wages require context: locality, qualifications, experience, hours, allowances, bonuses and employment type. A recruitment advertisement’s maximum monthly salary, national average pay and actual starting pay are different measures. This report does not rank company salaries using unstandardised advertisements.",
+    "Operational interpretation: long opening hours make shifts and cover important, while commuting and caring responsibilities affect staff availability. Retention depends on pay, management, breaks, professional support and predictable work. More recruitment advertising may fill short-term gaps without resolving repeated departures.",
+    "Resources for improving staff treatment must be allocated and recorded under the relevant conditions. Payments received by a provider are not automatically unrestricted profit. Their effect on individual earnings requires checking rules, centre arrangements and payment records."
+  ],
+  "volume-3-s9": [
+    "Professional development under the childcare guidelines includes internal reflection, planning, observation and feedback, not just external lectures. Directors need to provide learning time and support; teachers must turn knowledge into interactions rather than merely accumulate certificates.",
+    "Observation records help teams understand children, but disconnected, repetitive or inspection-only paperwork adds burden. Training effectiveness should be assessed through later practice and children’s participation, not simply the number of sessions held annually."
+  ],
+  "volume-3-s10": [
+    "Safety covers sleep, meals, outdoor activity, transport, hygiene, equipment, disasters and protection from inappropriate treatment. Different risks require different management; one sensor or digital system cannot cover everything. Alarms, manual checks, handovers and emergency responses need to work together.",
+    "Official serious-incident summaries and databases help explain incident types and prevention of recurrence. Counts depend on reporting coverage, definitions and completeness. They do not include every minor injury and should not be compared with differently scoped incident rates. Without exposure hours and age denominators, absolute counts cannot simply rank centre danger."
+  ],
+  "volume-3-s11": [
+    "Sleep-monitoring tools can assist recording or flag unusual conditions but cannot eliminate risk or replace required human observation. Suitability, fit, connectivity, power, alarm handling and responsibility after alerts affect performance. Purchasing requires product instructions and applicable standards; ‘AI’ is not evidence of safety effectiveness.",
+    "Software can also record checks and handovers, but a record does not prove the check occurred. Data review must consider on-site workflows. Workload claims based on customer questionnaires differ from independent experiments or studies of incident outcomes; they answer different questions."
+  ],
+  "volume-3-s12": [
+    "Meals support nutrition, everyday life and education while creating risks involving allergies, accidental ingestion, choking, cross-contact and hygiene. Individual arrangements must consider children’s needs, family information and professional guidance. A group-wide menu does not mean identical food handling suits every child.",
+    "Information transfer among suppliers, cooks and classroom teachers is a risk point. Safe ingredients alone do not complete the process: menus, substitutes, portioning, distribution and observation during eating must connect. This is a discussion of governance, not individual medical or dietary advice."
+  ],
+  "volume-3-s13": [
+    "Disaster planning must address local earthquakes, typhoons, flooding, extreme heat and other hazards. Buildings, outdoor spaces, evacuation routes, communication and family pickup arrangements must reflect children’s ages. Young children cannot move independently like adults; staffing and transport equipment affect implementation.",
+    "Recovery involves more than reopening: drinking water, meals, emotional security, transport and staff families’ circumstances matter. If a building is unusable, local government and providers must coordinate alternatives. National statistics in regional profiles do not replace a site-specific risk assessment."
+  ],
+  "volume-3-s14": [
+    "Families need ways to raise concerns, and institutions need recording, response, investigation and required external reporting. Inappropriate care, abuse, serious incidents and ordinary complaints must be distinguished using facts and rules. Issues should not be ignored merely because they do not yet meet one legal category, nor should social-media claims alone determine judgement of an entire group.",
+    "Quality governance requires individual accountability and examination of organisational causes, including understaffing, poor supervision, closed information channels and unreasonable workflows. An apology is not the whole investigation. Later research should examine implementation and verification of corrective actions and support for children."
+  ],
+  "volume-3-s15": [
+    "Kokode Search provides facility information, while continuing operating disclosures extend visibility into resources and management. Reporting delays and missing fields are possible. Blanks are not zero, and group finances must not fill gaps in an individual centre’s record.",
+    "A consistent profile separates licensing, latest inspection, corrective action, staffing, services and fees. No single item of evidence is a permanent ‘safety certification’. The company volume explains business models and the regional volume explains provision; neither assigns educational or safety ratings to uninvestigated centres."
+  ],
+  "volume-4-s1": [
+    "Understanding content requires the Kindergarten Course of Study, Nursery Centre Childcare Guidelines and the integrated certified-centre education and care guidelines. They cover different institutions but connect in their treatment of development, environments and experience. Administrative categories do not imply completely disconnected educational goals.",
+    "These frameworks are not uniform daily lesson plans or requirements to purchase one curriculum. Centres plan for their children, families and communities. Branded curricula, monthly picture books, sport, music and English programmes are resources that must be understood within the centre’s overall activities."
+  ],
+  "volume-4-s2": [
+    "The kindergarten framework emphasises education through the environment, children’s initiative and play. Environment includes relationships, materials, space, time and available experiences, not just decoration. Teachers observe, anticipate activities and deliberately organise conditions; child agency does not mean adults withdraw entirely.",
+    "For example, when a child repeatedly tries to balance blocks, a teacher might offer different shapes, help express discoveries and connect peers’ experiences. Learning need not first be divided into mathematics, physics and language lessons with separate exercises. This example explains an idea; it is not an observation from a named school."
+  ],
+  "volume-4-s3": [
+    {
+      "columnsEn": [
+        "Domain",
+        "Meaning",
+        "Everyday observation",
+        "Avoid reducing it to"
+      ],
+      "rowsEn": [
+        [
+          "Health",
+          "Bodies, everyday living and safety",
+          "Movement, rest, habits and self-care",
+          "Only sports training"
+        ],
+        [
+          "Human relationships",
+          "Relationships and living together",
+          "Interaction, negotiation, belonging and handling conflict",
+          "Only obedience"
+        ],
+        [
+          "Environment",
+          "Interaction with surroundings",
+          "Exploration, comparison, nature and social experience",
+          "Only factual nature quizzes"
+        ],
+        [
+          "Language",
+          "Understanding, expression and communication",
+          "Conversation, storytelling, picture books and listening",
+          "The number of characters learned early"
+        ],
+        [
+          "Expression",
+          "Feeling, creating and expressing",
+          "Sound, movement, drawing, materials and imagination",
+          "Accuracy of copied artwork"
+        ]
+      ]
+    },
+    "The five domains frame experience rather than five isolated timetables. One activity can involve movement, negotiation and material exploration together. Turning them into five fixed daily training subjects loses their integrated character."
+  ],
+  "volume-4-s4": [
+    "National frameworks connect foundations of knowledge and skills, thinking, judgement and expression, and motivation to learn and human qualities. Desired developmental characteristics near the end of early childhood give teachers a shared language for observation and transition to primary school. They should not become a uniform checklist examination that every child must pass.",
+    "Development varies between children and situations. Speaking little to an unfamiliar adult does not establish weak language or thinking; familiar activities, home language and long-term observation matter. The ten desired characteristics support understanding processes, improving environments and collaboration, rather than ranking children."
+  ],
+  "volume-4-s5": [
+    "The childcare guidelines link infants’ physical growth, relationships, exploration and feelings: growing healthily and comfortably, communicating with familiar people, and encountering surroundings while developing sensitivity. Infant development is not neatly divided into adult academic subjects.",
+    "Care is not a gap before learning begins. Feeding, changing, comforting, sleeping and communicating build experience of relationships, the body and the environment. Infant-room quality requires observing responsiveness, continuity, rhythms and children’s states, rather than counting photographs of activities."
+  ],
+  "volume-4-s6": [
+    "Children’s movement and expression expand rapidly at this stage, while stable adults and daily rhythms remain important. Waiting, taking turns, exploring materials and peer conflict can involve emotional and cognitive experiences together. Teachers protect safety while allowing room to try things.",
+    "Treating autonomy as having to do everything alone ignores individual differences. Appropriate help supports continued participation; excessive substitution can limit exploration. Everyday quality concerns when adults respond, how they guide and whether they understand intentions, not just task completion speed."
+  ],
+  "volume-4-s7": [
+    "In shared play, children may negotiate roles, develop rules, plan and reflect. These processes connect language, number, social understanding and self-regulation. A curriculum can have clear intentions while allowing discoveries to change an activity.",
+    "Play-centred education does not exclude every adult suggestion. What matters is its connection to experience, room for action and expression, and adjustment to feedback. A lively activity alone does not prove active participation: observe who decides, who is overlooked and whether children understand it."
+  ],
+  "volume-4-s8": [
+    "Overall plans, shorter-term plans and individual support should connect. Records should help understand children and improve practice, rather than merely produce attractive displays. Detailed analysis of one event can reveal changes in action and understanding better than mechanically completing many fields.",
+    "Teachers inevitably select what to record, so observed facts, interpretation and next steps should be distinguished. ‘The child changed the block base three times’ is observable; ‘the child lacks patience’ is an interpretation with alternative explanations. Digital tools organise information but do not automatically remove interpretive bias."
+  ],
+  "volume-4-s9": [
+    "Families see life at home; centres see group activity. These perspectives complement each other. Communication books, meetings and photographs help explain rhythms, interests and changes, but communication should go beyond quantities eaten and hours slept, without burdening families with excessive messages.",
+    "Different home languages and information skills require understandable communication. Software translation helps, but important health, consent and support arrangements need confirmation of understanding. Receiving a notice, clicking acknowledgement and reaching shared understanding are different outcomes."
+  ],
+  "volume-4-s10": [
+    "Food education concerns relationships with food, bodies, others and everyday life, rather than nutrition facts alone. Growing, preparing, sharing and discussing tastes can provide experience while respecting hygiene, safety and individual needs. Activities must not expose children to unsuitable foods or force eating.",
+    "Meal suppliers can support menus, nutrition and logistics; classroom teachers are closer to children’s actual experiences. Purchasing a food-education programme does not establish complete practice. Observe participation, adult responses and implementation of allergy support."
+  ],
+  "volume-4-s11": [
+    "Outdoor activity provides different spaces, materials and sensory experiences, with effects depending on time, location, safety and teacher support. A large yard is not the only route; urban centres may use neighbourhood spaces. Without observation, floor area or quantities of natural materials cannot establish educational quality.",
+    "Physical activity includes organised sport, climbing, carrying, chasing and everyday movement. Visible results from uniform movement drills do not capture all development in risk judgement, coordination, cooperation and interests. Research should distinguish participation, intensity, enjoyment and longer-term change."
+  ],
+  "volume-4-s12": [
+    "Some unlicensed or privately paid facilities market bilingual environments, English, international curricula or school preparation. They are specific segments, not representative of all Japanese kindergartens. An English name does not establish international accreditation or school-law status.",
+    "Evaluating bilingual provision requires age, exposure hours, teachers’ language ability, interaction and home-language background. A promotional example of a fluent child is an individual case, not proof of equal outcomes for everyone. English development should be considered alongside emotional wellbeing, home language and participation.",
+    "Structured activities are possible, but ‘international’ is not independent evidence of effectiveness. Curriculum accreditation, test results, parent satisfaction and research evaluations should be recorded separately. Good educational outcomes do not establish eligibility for public support of every charge."
+  ],
+  "volume-4-s13": [
+    "An educational approach may shape training, materials, environments and everyday activities, or be borrowed for only some activities. Researchers must establish its scope, staff qualifications and any formal accreditation rather than use one promotional term as a uniform classification.",
+    "The same approach can be implemented differently across ages, hours and family populations. Comparisons require similar groups and explicit outcomes, not rankings based on material photographs or brand recognition. Japan has varied practices; one famous school’s style cannot represent national culture."
+  ],
+  "volume-4-s14": [
+    "MEXT’s early-childhood-to-primary transition initiatives connect experiences and educational arrangements across preschool’s final stage and primary school’s opening stage. Transition does not mean teaching the whole primary curriculum early or leaving primary schools simply to wait for children to adapt.",
+    "Questions include teachers’ exchange of interests and support needs, initial school activities and families’ understanding of changes. Language differences, disability or additional needs should not be reduced to inadequate preschool training. Transition requires shared institutional responsibility, rather than placing preparation entirely on children."
+  ],
+  "volume-4-s15": [
+    "Frameworks explain intended education, implementation studies examine actual practice, and outcome research investigates change. They are not interchangeable. A company’s declaration of child-centred principles establishes its stated position; claims about children’s outcomes need samples, measurement, comparison and implementation conditions.",
+    "Cross-sectional observation describes associations and longitudinal studies show change, but without suitable designs neither excludes family selection, locality or teacher differences. Overseas instruments also require linguistic, cultural and measurement adaptation in Japan. The report does not turn one study or customer case into a national causal conclusion."
+  ],
+  "volume-4-s16": [
+    "AI can organise teacher input, draft text or help retrieve records, but authentic observations must be preserved. A fluent generated sentence does not prove an event occurred. Photo recognition and automatic summaries particularly need checks against absent children, mixed dates and adult interpretations.",
+    "Educators remain responsible for records, while family and child data require access controls, retention limits and rules for reuse. Efficiency should be assessed alongside staff hours, classroom interaction and information quality. More polished or numerous documents alone do not demonstrate better education. The company volume distinguishes CoDMON, UniFa and Sen’s product approaches."
+  ],
+  "volume-5-s1": [
+    "Families’ actual needs involve commuting, working hours, days off, children’s ages and support networks. A counted place may not allow drop-off before work or accept a sick child. Accessibility combines location, timing, cost, eligibility and service fit.",
+    "Maternal employment or dual-earner shares explain only part of demand; job seeking, illness, caring for relatives, study and family pressures also matter. Recognised childcare need follows applicable local rules, not a researcher’s simple employed-versus-unemployed judgement."
+  ],
+  "volume-5-s2": [
+    "Hokatsu describes the information gathering, consultation, applications and arrangements families undertake to obtain childcare. They may compare hours, distance, admission ages, features and conditions before applying through municipal procedures. The number of listed options differs from the number a family can realistically accept.",
+    "Admission coordination may consider employment and household circumstances, but scores, priorities and required documents are locally determined. The report provides no uniform national admission-score table. One ward’s experience cannot be generalised elsewhere, and zero waiting does not mean every applicant obtained a first-choice centre."
+  ],
+  "volume-5-s3": [
+    "The end of parental leave, April admissions and a child’s birthday can create transition pressures. Return-to-work timing affects applications for infant and age-one places. Younger classes also require higher staffing; spare places at one age cannot automatically serve another.",
+    "Policy and employer arrangements require specific analysis. Longer employer leave may change application timing, while local shortages can affect returning to work. Falling births do not automatically resolve these timing problems. Labour provisions depend on household circumstances; this report principally explains their relationship to demand."
+  ],
+  "volume-5-s4": [
+    "Implemented nationwide in FY2026, the universal childcare access scheme serves children aged six months to under three who are not attending regular nursery and related provision. It allows limited monthly hours without requiring parental employment. The official portal describes a ten-hours-per-month framework, subject to recognition, booking, interviews and local arrangements.",
+    "The scheme expands contact with peers and professionals and support for families. It is not a substitute for full-day care or unrestricted walk-in access to any centre. Initial interviews, settling in, health information and safe handovers also matter in short sessions.",
+    "Local arrangements differ. Hirakata’s 2026 guidance describes regular attendance on fixed days and times in periods lasting several months. This illustrates local operating design within a national benefit framework; it is not a universal municipal procedure."
+  ],
+  "volume-5-s5": [
+    "Temporary care can support parental illness, short-term commitments and parenting pressures. Its aims, eligibility and operations overlap with, but differ from, the universal access scheme. Families need local rules on advance registration, first-time use and ages.",
+    "Availability also depends on staffing capacity. Temporary places may not be confirmed far ahead and may require settling-in interviews. Annual service-use counts are not unique children: repeated use by one family creates multiple records."
+  ],
+  "volume-5-s6": [
+    "Ordinary group care may not accept a sick child, creating needs for sick-child care, convalescent care or alternatives. Such services have specific staffing, space, health-assessment and family-information requirements. Renaming an empty classroom does not create suitable provision.",
+    "Real availability depends on illness, booking and local support. A service’s existence does not remove all work disruption for families. Company research should distinguish facility-based services, home visits and other forms, establishing actual responsibilities rather than inferring medical capability from a product name."
+  ],
+  "volume-5-s7": [
+    "Hospital childcare, workplace childcare and the employer-led childcare programme are distinct concepts. The first two primarily describe users or location; employer-led childcare is a specific policy programme. Workplace childcare within community-based services has its own institutional position. Combining everything labelled corporate childcare hides funding and regulatory differences.",
+    "Hospitals and similar employers may need irregular or extended hours. Contract operators’ strengths may lie in rosters, staffing and continuity rather than enrolling every nearby family at scale. Community places depend on programme and site rules."
+  ],
+  "volume-5-s8": [
+    "Support needs can concern communication, movement, sensory experience, development, health and family circumstances. Inclusive everyday environments, individual staffing, medical-care support and specialised developmental services should be distinguished, rather than grouped under one label for ‘special children’.",
+    "Child development support, visiting support for nursery settings and ordinary childcare can work together. Receiving developmental services does not necessarily require leaving a mainstream centre, and administrative service categories do not establish a child’s ability. Analysis should examine coordination, access, staff support and participation, not only the number of institutions."
+  ],
+  "volume-5-s9": [
+    "Families can face differences in administrative language, notices, health explanations and educational expectations. Children’s Japanese learning should be considered with home language and identity. Foreign-language families do not all need English, and an English-branded provider does not necessarily support every multilingual need.",
+    "Software translation and multilingual notices reduce some barriers, but understanding important information still needs confirmation. Record which languages are supported, who translates, which information is covered and whether in-person help exists. A translation button alone is not complete language support."
+  ],
+  "volume-5-s10": [
+    "Free core charges reduce expenses without automatically solving transport, supplies, nonstandard work hours or temporary income loss. Low-income households’ needs and eligibility can change with employment, so administrative gaps matter.",
+    "Unstable employment may conflict with providers’ need for fixed schedules. Services designed only for regular Monday-to-Friday work may miss other families. Equity requires examining who does not use services and why, not only satisfaction among enrolled families."
+  ],
+  "volume-5-s11": [
+    "Community parenting support centres provide spaces for parent–child interaction, consultation, information and connections to services. They are not full-day childcare, and each visit is not a full-time place. Their value in relationships and early support cannot be measured solely in class hours.",
+    "Family support may also include home visits, short-term care and relationship support. Each requires appropriate expertise and referral routes. A school open day does not establish responsibility for every family-welfare function."
+  ],
+  "volume-5-s12": [
+    "Primary-school dismissal, holidays and parental work hours do not fully align, creating after-school needs. After-school children’s clubs serve primary pupils and must be counted separately from preschool provision. Running both businesses can provide continuity, but their curricula, staffing and funding rules differ.",
+    "Privately paid English after-school provision and statutory public programmes cannot simply be combined. Brands may both use the term gakudō while differing in service, hours and cost. Company profiles distinguish directly operated sites, contracts and franchises rather than call every group location a kindergarten."
+  ],
+  "volume-5-s13": [
+    "Tokyo’s fee support, long rural journeys and infant shortages in urban growth areas reflect different constraints. A national average cannot capture them all. The regional volume supplies consistently defined context, but families still need municipal and centre-level information.",
+    "The report does not select one philosophy or ownership form for every family. Quality, timing, affordability, language and support can have different priorities. Complete profiles help readers recognise relevant differences rather than replace first-hand understanding with brand rankings."
+  ],
+  "volume-7-s1": [
+    "Centres provide education and care to children; suppliers provide materials, systems and services to centres, families or public bodies. Both may be in the same transaction chain: supplier revenue is part of centre costs and cannot simply be added to final market size without defining the method.",
+    "The supply chain includes content and professional resources, materials and space, meals and health, staffing and training, management software, family convenience, capital and property. Large companies may span several stages. Classification should follow activities and products rather than assign every business the group’s name-based category."
+  ],
+  "volume-7-s2": [
+    "Monthly picture books connect centres, children and families through everyday life, seasons, stories and scientific exploration. Froebel-kan and Child Honsya illustrate this channel. Publications are children’s reading materials and resources for teachers and family relationships.",
+    "Falling subscriptions may reflect fewer children, different choices or changing channels. One publisher’s sales cannot establish shrinking demand across early childhood services. Distinguish age groups, institutional subscriptions, household purchases and digital products; publication sales are not enrolment counts."
+  ],
+  "volume-7-s3": [
+    "Purchasing materials requires safety, cleaning, durability, age suitability, accessibility and educational purpose. Expensive or imported products do not suit every child automatically. Central purchasing can reduce some transaction costs while preserving teachers’ ability to adapt to children.",
+    "Intellectual property and supply relationships also matter. Distributing a brand does not imply ownership of development or copyright; selling an assessment tool does not imply responsibility for accreditation. Record production, licensing, distribution and service roles rather than treating every catalogue item as proprietary technology."
+  ],
+  "volume-7-s4": [
+    "Construction and refurbishment involve buildings, fire safety, hygiene, outdoor areas, movement routes, furniture and materials. Environment services from companies such as BorneLund show work beyond individual product sales. Compliance with some supplier standards does not automatically complete local licensing.",
+    "Spaces require long-term maintenance. Opening-day photographs do not establish lasting quality: storage, wear, cleaning and training affect use. Budgets should include implementation and maintenance, not just initial design fees."
+  ],
+  "volume-7-s5": [
+    "Meal provision connects menus, procurement, cooking, delivery and individual support. Outsourcing does not remove centres’ responsibilities for child information, distribution and observation while eating. Allergies and other health needs require professional arrangements, not just a uniform menu.",
+    "Diapers, wipes, bedding and laundry illustrate services built around everyday routines. BABY JOB shows convenience from reduced preparation and handovers, dependent on stock and continued use. Subscription charges and one-off purchase prices require the same period and actual usage for comparison."
+  ],
+  "volume-7-s6": [
+    "The workforce chain includes initial education, examinations and registration, recruitment, agency staffing, assistants and professional learning. A recruitment platform is not necessarily responsible for centre quality; a training attendance certificate is not a national qualification.",
+    "Third-party staffing requires checks on permitted roles, qualifications, hours and responsibilities. Lower recruitment costs do not necessarily improve retention; stable teams and management support remain important. Training attendance counts are not unique teacher numbers."
+  ],
+  "volume-7-s7": [
+    "Common workflows include attendance, health communication, planning records, family notices, staff rosters, fees and administrative reporting. CoDMON, Lookmee and Hai Cheese! have different origins and product mixes. Similar functions do not mean identical data structures, contracts or services.",
+    "Implementation has costs: data cleaning, parent accounts, teacher training and parallel systems may initially increase work. Later savings depend on actually reducing duplicate entry, not simply launching more functions."
+  ],
+  "volume-7-s8": [
+    "One centre may subscribe to management software, photographs, sensors and payment tools, or purchase several modules from one supplier. Installations, contracts, customer institutions and deduplicated sites are different units. Adding company figures can double-count; software market shares need their survey definitions.",
+    "Figure J21 describes principal research roles, not an overall ranking combining software installations and provider groups. Any later market survey must be checked for comparable facility coverage, exclusion or inclusion of free customers and reporting dates."
+  ],
+  "volume-7-s9": [
+    "Photo sales may generate payments from families, while centre systems may charge institutions. Free tools may earn revenue through other services, but specific mechanisms require reading contracts. Photo transactions, commissions and software revenue should be recorded separately.",
+    "Images and development records serve different purposes. Educational records require context and interpretation; photo collections show selected moments. Photo quantities are not educational quality. Training, promotion or other reuse of children’s photographs requires appropriate authorisation under applicable rules and contracts."
+  ],
+  "volume-7-s10": [
+    "Sleep, access control, pickup and environmental sensors can assist management; none is a complete safety system. Faults, outages, thresholds and human responses need plans. Purchasing equipment requires clear use, maintenance, recording and escalation responsibilities.",
+    "Technology companies provide tools and training, while on-site responsibility depends on the facility and contract. Public-programme adoption of a product does not establish a guarantee of every child’s safety or replacement of all manual checks."
+  ],
+  "volume-7-s11": [
+    "Generative AI may draft notices, organise records, support search, analyse photographs or suggest individual support. Administrative writing, educational interpretation and health or safety judgement are distinct uses. Fluent model output does not establish factual accuracy.",
+    "Effectiveness can be assessed through actual staff hours, correction burdens, accuracy, understandable communication and participation, rather than generated word counts. Easier production of detailed records increases the need to prevent invented events and overinterpreted labels for children."
+  ],
+  "volume-7-s12": [
+    "Procurement requires more than price: exportability, interfaces, access, backups, retention, deletion and end-of-contract handling matter. Parents, employees, directors and group administrators need different permissions aligned with responsibilities.",
+    "Connections to administrative systems may reduce duplicate reporting without guaranteeing every field is correct. Errors in original attendance or child data can spread through automatic transfer. Governance requires checks from input to use, not only final backups."
+  ],
+  "volume-7-s13": [
+    "Public facilities and publicly supported projects may face budget, procurement and record-keeping requirements. A supplier’s ‘subsidy available’ statement indicates possible eligibility in some circumstances, not an automatic grant for every customer. Fiscal year, programme and expense category must match.",
+    "A public-sector case confirms a particular installation, not use by every local institution. Renewals, replacement products and module changes can make old cases outdated. Research should retain historical and current status rather than treat a supplier’s case library as a permanent register."
+  ],
+  "volume-7-s14": [
+    "One model competes through specialist content and lasting relationships, such as publishing and training; another through delivery and operations, such as space, consumables and meals; a third through data and continuous workflows, such as management systems. Companies can span all three, and product mixes change customer relationships.",
+    "These are the report’s case-based analytical categories, not official government industry classifications. Competitive models do not translate directly into educational quality. Supplier growth may help centres or add contractual and system complexity; these effects require separate examination."
+  ],
+  "volume-7-s15": [
+    "Future company records should include legal name, main products, customers, payer, ages served, operating scope and source dates. Missing values are not zero; unknown ownership cannot be inferred from similar brands. Distinguish profit and nonprofit entities, companies and products, and groups and subsidiaries.",
+    "The supply chain shapes everyday tools, teachers’ work, family communication and payments. A complete sector account still needs children’s services and public institutions, rather than selecting subjects only for technology popularity or funding announcements."
+  ]
+}

@@ -3,7 +3,5 @@ import SchoolDirectory from '../components/directory/SchoolDirectory'
 
 export default function CountryPage() {
   const country = useCountry()
-  return (
-    <SchoolDirectory country={country} />
-  )
+  return <SchoolDirectory country={country} />
 }

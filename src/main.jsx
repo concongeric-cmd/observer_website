@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router'
 import App from './App'
 import LanguageProvider from './context/LanguageProvider'
 import './index.css'
+import './styles/japan-research.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

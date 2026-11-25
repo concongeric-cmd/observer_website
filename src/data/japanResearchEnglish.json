@@ -1,0 +1,299 @@
+{
+  "volume-1-s1": [
+    "Japan’s preschool education and care sector is not a market of identical institutions. Kindergartens mainly belong to the school education system; nursery centres provide everyday care and education for families with recognised childcare needs; certified centres combine both functions. Small-scale and home-based childcare, employer-related facilities, temporary care, sick-child care and unlicensed services also operate. They may serve similar ages while following different entry rules, public funding arrangements, eligibility criteria and staffing requirements.",
+    "Four participants shape the sector: central government sets frameworks and subsidy rules; municipalities assess need, coordinate admissions and plan local provision; legal entities establish and operate facilities; and families use services. Local government does more than issue a licence, and providers do not determine all their revenue simply by setting tuition freely.",
+    "This report treats early childhood education and care as services from birth to primary-school entry, listing school-age after-school care separately as a related business. Extracurricular English, learning materials, publishing, software, meals and family support form a related supply chain and cannot simply be added to formal school provision. Where companies also provide after-school, eldercare or staffing services, group revenue is not equivalent to early childhood revenue.",
+    "The report’s eight volumes cover history and institutions, markets and funding, regulation and staffing, curriculum and quality, family needs, selected companies, the supply chain and prefectures. The original Chinese explanations retain important Japanese names to support source checking. Charts and structured information identify sources and reporting periods, distinguishing estimates, provisional figures, plans and actual results."
+  ],
+  "volume-1-s2": [
+    {
+      "columnsEn": [
+        "Facility",
+        "Japanese name",
+        "Main function",
+        "Typical eligibility",
+        "What the name alone does not establish"
+      ],
+      "rowsEn": [
+        [
+          "Kindergarten",
+          "Yōchien",
+          "Preschool education",
+          "Generally age three and older; admissions depend on the facility and system",
+          "Whether sufficiently long care hours are offered or all costs are free"
+        ],
+        [
+          "Nursery centre",
+          "Hoikusho",
+          "Everyday care and education together",
+          "Childcare need must be recognised under local rules",
+          "It does not mean care without education"
+        ],
+        [
+          "Certified centre for early childhood education and care",
+          "Nintei kodomoen",
+          "Education, care and family support together",
+          "Eligibility categories depend on age and need",
+          "Not all certified centres have the same legal form"
+        ]
+      ]
+    },
+    "Certified centres have four forms: integrated kindergarten–nursery, kindergarten-based, nursery-based and locally discretionary. Their existing facilities, establishment requirements and organisational forms differ. ‘Certified centre’ is a system category, not a brand or a common parent company. Integrated centres have both school and child-welfare status, requiring attention to education and care obligations.",
+    "An unlicensed childcare facility is not necessarily illegal. Being outside the licensed-facility and associated benefit framework does not remove notification, safety or supervision requirements. Some bilingual or employer-related facilities may fall in this category, but status must be checked against records for the specific site. Labels such as ‘international’, ‘preschool’ or ‘kindergarten’ do not establish legal status."
+  ],
+  "volume-1-s3": [
+    "The kindergarten attached to Tokyo Women’s Normal School opened in 1876, an important milestone in Japan’s modern kindergarten development. Ochanomizu University’s attached kindergarten retains this history in its official account. Early provision was closely linked to teacher preparation: kindergartens were places for children’s education and for developing methods, materials and professional knowledge.",
+    "This history does not mean modern nursery centres simply grew out of kindergartens. School education and care responding to family life and employment had different institutional origins and developed alongside each other. An early attached school’s practices cannot represent educational opportunities in every region at the time, or the teaching styles of all contemporary centres.",
+    "Historical research must distinguish educational ideas from actual access. Emphasising play, environments and children’s activities did not mean every child could attend. Facility locations, family resources and local administrative capacity determined how widely those ideas entered everyday life. This helps explain the later importance of public funding and local planning."
+  ],
+  "volume-1-s4": [
+    "After the war, kindergartens and nursery centres developed under school education and child-welfare frameworks. Admissions purposes, administrative responsibilities, qualifications and service hours differed. This does not mean children learned in one type and were merely looked after in the other: modern childcare guidelines explicitly integrate education and nurturing care.",
+    "Changes in women’s employment, family structures and population distribution created pressure between existing categories and family needs. One family might need longer care alongside age-appropriate education; another might not need full-time care but still need peer interaction and parenting support. Integration developed in response to these varied needs, rather than simply combining two signs on a building.",
+    "The report does not infer the full historical effects of a system from today’s usage. Reform launches, local implementation and facility conversion may occur at different times. Where continuous statistics are unavailable, it does not interpolate a complete growth curve from a few observations."
+  ],
+  "volume-1-s5": [
+    "Certified centres provided an organisational route for connecting education and care. The new child and child-rearing support system implemented in 2015 placed facility benefits and community-based childcare in a new funding and service framework. Existing kindergartens or nursery centres can convert after meeting requirements, so growth in certified-centre numbers is not equivalent to the same number of newly built facilities.",
+    "There were 11,212 certified centres in April 2025, up 729 from 10,483 in 2024. Growth includes conversions, reclassification and new openings. Adding the entire increase to existing nursery and kindergarten totals would double-count some facilities.",
+    "Changes in certified-centre numbers. Source: J04. Distinguish conversions from new establishments.",
+    "Integration also changes how parents interact with administration. Age, educational or childcare need, hours and fee relief may involve different eligibility decisions. Company research must follow these classifications: different sites within one group can operate under different facility systems. A parent company’s industry classification does not establish every site’s institutional status."
+  ],
+  "volume-1-s6": [
+    {
+      "columnsEn": [
+        "Education and childcare benefit category",
+        "Age and need",
+        "Typical service",
+        "Limits of interpretation"
+      ],
+      "rowsEn": [
+        [
+          "Category 1",
+          "Age three and older, mainly educational use",
+          "Kindergartens and the educational component of certified centres",
+          "Does not automatically cover all extended care"
+        ],
+        [
+          "Category 2",
+          "Age three and older, with recognised childcare need",
+          "Nursery centres and the childcare component of certified centres",
+          "Hours and admission coordination depend on local assessment"
+        ],
+        [
+          "Category 3",
+          "Under age three, with recognised childcare need",
+          "Nursery centres, certified centres and community-based care",
+          "Fees and relief also depend on household and local conditions"
+        ]
+      ]
+    },
+    "These are the education and childcare benefit categories. They must not be confused with the newer recognition numbers associated with fee relief. Parents may see similarly named categories such as ‘new Category 2’; the relevant benefit and service must be checked for that particular procedure.",
+    "Children with different eligibility categories may share educational activities in the same certified centre while having different attendance hours and family arrangements. Centres must manage naps, transport, meals and teacher continuity. Eligibility is an administrative and funding distinction, not a ranking of children’s ability, family educational background or educational quality."
+  ],
+  "volume-1-s7": [
+    "Fee relief for early childhood education and care, introduced in October 2019, changed eligible families’ core service charges without making all costs zero. Meals, transport, activities and additional services may still be charged. Conditions and ceilings differ for kindergartens inside and outside the new system, unlicensed facilities and extended care.",
+    "The Children and Families Agency was established in April 2023, reorganising child-policy coordination and some administrative functions. MEXT retains responsibilities including school education, and local governments still perform much implementation. A new agency does not mean every early childhood service now has one licence system or appears in one statistical table.",
+    "In fiscal 2026, the universal childcare access scheme was implemented as a new benefit across municipalities nationwide. It adds a support route for children not attending regular facilities. It does not remove every eligibility condition for long-term childcare or guarantee every family an unlimited full-day place."
+  ],
+  "volume-1-s8": [
+    {
+      "columnsEn": ["Period", "Development", "Implication"],
+      "rowsEn": [
+        [
+          "1876",
+          "Kindergarten attached to Tokyo Women’s Normal School opens",
+          "An important starting point for modern kindergarten and professional preparation"
+        ],
+        [
+          "Post-war",
+          "School education and child welfare develop under separate frameworks",
+          "A basis for understanding kindergarten and nursery-centre differences"
+        ],
+        [
+          "April 2015",
+          "New child and child-rearing support system implemented",
+          "Benefits and community-based services enter a new framework"
+        ],
+        [
+          "FY2018",
+          "Education and childcare frameworks announced in 2017 take effect",
+          "Developmental descriptions align across the three main facility types"
+        ],
+        [
+          "October 2019",
+          "Early childhood education and care fee relief begins",
+          "Reduces eligible service charges, rather than eliminating all expenses"
+        ],
+        [
+          "April 2023",
+          "Children and Families Agency established",
+          "Strengthens coordination without removing all divisions of responsibility"
+        ],
+        [
+          "FY2024",
+          "Staffing standards improve for ages three and four–five",
+          "Staffing and financial support become priorities for quality reform"
+        ],
+        [
+          "FY2025",
+          "Universal childcare access scheme becomes institutionalised",
+          "Moves from trials towards a formal system"
+        ],
+        [
+          "FY2026",
+          "New universal childcare access benefit implemented nationwide",
+          "A new, limited-hours service route for children not attending regular provision"
+        ]
+      ]
+    }
+  ],
+  "volume-1-s9": [
+    "Japan’s providers include public facilities, school corporations, social welfare corporations, for-profit corporations and other entities. ‘Private’ cannot simply be translated as ‘for-profit chain’. The 2025 certified-centre statistics list 5,668 social welfare corporation facilities, 3,545 school corporation facilities and 182 for-profit facilities. These figures concern that specific facility category, not the number or share of companies in the whole childcare market.",
+    "Founders of certified centres, 2025. Source: J04. Private provision is not synonymous with for-profit chains; these shares do not describe the whole childcare market.",
+    "Organisational form affects funding, governance and assets but cannot replace quality assessment. Public status does not automatically mean every service is more available, and for-profit status does not automatically mean poorer classroom quality. Founder type, licence category, staffing, inspections and actual interactions must be examined separately."
+  ],
+  "volume-1-s10": [
+    "Education statistics often use 1 May, while childcare provision statistics often use 1 April. Company financial years may end in March, May, September or December. The report preserves these differences rather than labelling every figure ‘2026’. Certified centres’ education- and childcare-category children may also enter different statistical systems, requiring checks for duplication before totals are combined.",
+    "Each figure identifies its subject, period, scope and status. Capacity is not usage; waiting lists do not capture all unmet demand; group revenue is not household spending; and platform installations are not unique centres. Clear boundaries prevent a sector overview from becoming a contradictory collection of numbers."
+  ],
+  "volume-2-s1": [
+    "MHLW’s annual summary of vital statistics records 671,236 births in 2025 and 686,173 in 2024; the report lists total fertility rates of 1.14 and 1.15 respectively. This publication series is kept separate from preliminary totals with different nationality or place-of-occurrence coverage. Births indicate future age cohorts, not total current enrolment.",
+    "Births in Japan, 2024 and 2025. Source: J02. Births are not current enrolment.",
+    "Falling births feed progressively into infant, toddler and preschool classes. Facilities do not immediately shrink in proportion to published birth figures: age-specific service use, parental employment, childcare leave, migration and existing children’s continued attendance affect actual numbers. Workforce supply and facility leases also adjust at different speeds.",
+    "Market forecasts must distinguish child population, the proportion using services and resources per unit of service. Fewer children do not necessarily mean an immediate fall in company revenue: wider service use, public-price changes or a different business mix may partly offset demographic pressure. Revenue growth does not necessarily mean coverage has improved either."
+  ],
+  "volume-2-s2": [
+    {
+      "columnsEn": [
+        "Measure",
+        "1 April 2026",
+        "Change from previous year",
+        "Scope"
+      ],
+      "rowsEn": [
+        [
+          "Childcare facilities",
+          "40,046 sites",
+          "Up 71",
+          "Official nursery-centre and related-service group, not all early childhood facilities"
+        ],
+        [
+          "Capacity",
+          "3,016,417 places",
+          "Down 12,865",
+          "Capacity, not actual attendance"
+        ],
+        [
+          "Children using services",
+          "2,646,756 children",
+          "Down 31,661",
+          "Actual usage in the same population"
+        ],
+        [
+          "Official waiting children",
+          "2,435 children",
+          "Up 181",
+          "Official definition"
+        ],
+        [
+          "Capacity utilisation",
+          "Published national figure: 87.7%",
+          "Down 0.7 percentage points",
+          "National ratio, not the situation at every centre"
+        ]
+      ]
+    },
+    "These figures come from the Children and Families Agency’s 2026 summary and supplementary tables. The release identifies them as provisional and subject to revision; that status is retained. The four absolute totals were reconciled against the regional totals in supplementary material 3.",
+    "Childcare capacity and usage, 2025–2026. Source: J01. This population is not all kindergartens; the difference is not bookable vacancies.",
+    "Capacity minus children using services is 369,661: the national arithmetic difference within this statistical population. It is not a list of immediately bookable vacancies. Places cannot move freely between locations, ages, opening hours or staffing conditions; some facilities may be unable to accept more children because of workforce constraints."
+  ],
+  "volume-2-s3": [
+    "The official series records 26,081 waiting children in April 2017, falling to 2,254 in 2025 and rising to 2,435 in 2026. The long-term decline reflects changes in admission capacity, population and usage arrangements. The reversal in 2026 shows that expanding national capacity has not permanently eliminated the issue.",
+    "Official waiting children over time. Source: J01. This administrative definition does not capture all unmet demand.",
+    "Waiting-child statistics have an administrative definition. Families unable to obtain their first choice, seeking only particular centres, remaining on childcare leave or in other circumstances may be classified separately. Official waiting counts cannot be called the entire demand gap. Nor should every other category automatically be added as ‘hidden waiting’, because categories may involve preferences, substitute services or different statistical treatment.",
+    "Companies may use broader definitions when citing waiting figures. Researchers should return to the original tables and specify inclusions, exclusions and duplication. An investor-oriented ‘potential demand’ figure must not replace the official series without its definition."
+  ],
+  "volume-2-s4": [
+    "The 2026 material records 1,113 waiting children in Tokyo, about 45.7% of the national total, followed by Hyogo with 200, Nara with 147 and Saitama with 140. Absolute counts do not directly rank local governance. Larger regions differ in application volumes, employment, facility distribution and age mix.",
+    "Fifteen prefectures with the largest official waiting counts. Source: J01; prefectures reconstructed by the report. Absolute counts are not waiting rates or governance scores.",
+    "Waiting rates and absolute waiting counts answer different questions. Regional profiles retain capacity, usage, utilisation and changes in waiting rather than letting one measure represent all provision. Zero official waiting may reflect adequate provision, falling population or lower service use. Other data are needed; zero does not mean no family faces difficulties."
+  ],
+  "volume-2-s5": [
+    "Japan’s preschool services involve public operating benefits, local subsidies, household charges, company contracts, unlicensed services and supply-chain purchasing. Commercial market studies may count only centre revenue or also extracurricular education, toys, publishing and family support. This report does not combine differently defined market estimates or treat one commercial growth forecast as a certain prediction for the whole sector.",
+    "Public funding and company revenue can describe different sides of the same transaction. Adding government operating payments again after they enter provider revenue would double-count them. Materials and software are both centre expenses and supplier revenue; supply-chain totals must specify whether they measure final spending or turnover at every stage."
+  ],
+  "volume-2-s6": [
+    "The new system supports eligible education and care facilities through facility benefits and services such as small-scale care through community-based benefits. Family eligibility, facility approval and public payments are connected. Childcare operations are embedded in local plans and public resources rather than being governed entirely by what parents will pay.",
+    "Payment forms and accounting arrangements can differ between public nursery centres, private nursery centres and other facilities. Not all public payments are the same ‘per-child subsidy’, and providers do not necessarily receive identical sums for children of the same age in different institutions. Facility type, locality, capacity, age and supplement eligibility must be checked."
+  ],
+  "volume-2-s7": [
+    "Official unit prices are an important starting point for understanding revenue within the system. Calculations reflect facility and service type, location, size, ages and staffing, including base amounts and applicable supplements. They are not a nationally uniform parent tuition table or a centre’s entire profit.",
+    "Operational interpretation: rules that increase staffing or improve pay may increase both operating resources and expenditure. Revenue growth may partly fund mandatory personnel costs. Looking only at revenue increases, without staffing, payment periods and conditions, can misrepresent profitability.",
+    "The 2026 official-price reforms include small-scale care limited to children aged three and older, support supplements for sparsely populated areas and transitional arrangements for age-three staffing. These changes have specific eligibility limits; they are not an identical price rise for every centre. A company’s reported average price increase is not the actual increase at every facility nationwide."
+  ],
+  "volume-2-s8": [
+    {
+      "columnsEn": [
+        "Service situation",
+        "Core national conditions or ceiling",
+        "Further checks"
+      ],
+      "rowsEn": [
+        [
+          "Core charges for ages three–five within the system",
+          "Fee relief when system conditions are met",
+          "Class age, facility, meals and other actual expenses"
+        ],
+        [
+          "Relevant kindergarten charges outside the new system",
+          "Up to JPY 25,700 per month",
+          "Facility category and recognition procedures"
+        ],
+        [
+          "Extended kindergarten care",
+          "Conditions include days used × JPY 450; up to JPY 11,300 per month",
+          "Recognised childcare need and actual expense"
+        ],
+        [
+          "Eligible unlicensed and related care, ages three–five",
+          "Up to JPY 37,000 per month",
+          "Childcare need, facility eligibility and notification"
+        ],
+        [
+          "Eligible unlicensed and related care, ages zero–two in tax-exempt households",
+          "Up to JPY 42,000 per month",
+          "Household eligibility and facility conditions"
+        ]
+      ]
+    },
+    "This table summarises national scheme outlines. Ceilings apply to particular circumstances; they are not automatic uniform cash payments or standard centre prices. The JPY 25,700 ceiling for kindergartens outside the new system is not a common tuition rate for all kindergartens.",
+    "Monthly ceilings for selected fee-relief situations. Source: J06. Eligibility conditions apply; extended care also involves conditions such as days used × JPY 450.",
+    "Local governments may add support. From September 2025, Tokyo supports municipalities in extending relief for first-child childcare fees and related charges. Tokyo’s policy is not a nationwide rule, and specific municipal, facility and application requirements still matter."
+  ],
+  "volume-2-s9": [
+    "Family budgets should separate core service charges, meals, buses, extended hours, activities, supplies and optional classes. National relief reduces particular charges, without necessarily covering English classes, transport or all actual expenses. Families also face non-bill costs: pickup schedules, illness-related absence and work arrangements.",
+    "The word ‘free’ can describe different actual household expenses across localities. Fee comparisons must hold age, days per week, daily hours, available relief and optional services constant. One household’s bill cannot establish a typical national cost without hiding eligibility and local-subsidy differences."
+  ],
+  "volume-2-s10": [
+    "Centre costs include staff, rent or buildings, meals, maintenance, insurance, training, administration and digital systems. Labour is usually central, but this report does not replace actual accounts with an unverified uniform percentage. Age mix, utilisation and opening hours change personnel costs as a share of revenue.",
+    "Age-based staffing standards impose different constraints, so staffing does not fall perfectly in proportion to child numbers. A class with fewer children may still need basic opening, handover and safety positions. Marginal costs may change more significantly when a class or staffing threshold is crossed. Falling revenue can therefore affect small centres more than national average utilisation suggests."
+  ],
+  "volume-2-s11": [
+    "Hospitals, companies or municipalities may establish childcare and contract professional providers to operate it. Contracts allocate space, equipment, staff, costs, hours, quality and responsibilities. Contract revenue is not necessarily all parent tuition, and the facility founder need not be the legal employer of on-site staff.",
+    "Competition often concerns continuity, staff supply, bids and service design. The lowest bid is not necessarily the lowest total cost: turnover, temporary cover and contract changes also cost money. Price adjustment, compensation for unfilled places and additional care depend on the individual contract."
+  ],
+  "volume-2-s12": [
+    "Areas with shrinking populations may maintain services through smaller facilities, consolidation and multiple functions. Closure counts alone do not show whether outcomes are good or bad. Keeping oversized buildings may be unsustainable; closures that make travel impractical may damage access. Alternatives, transport and continuity of children’s relationships must be considered together.",
+    "Provider exits also involve leases, staff arrangements, publicly subsidised assets and transfers to other centres. Consolidation among for-profit providers and mergers among nonprofit entities have different legal arrangements; not all are ‘chain acquisitions’. Growth in a company’s managed facilities does not necessarily add net national supply."
+  ],
+  "volume-2-s13": [
+    "Japanese company disclosures often present operating profit, ordinary profit, profit attributable to owners and EBITDA together. Facility subsidies can be recognised in different accounts or periods. Comparing margins without the notes can mistake accounting differences for operational differences. Financial years also vary; the report uses separate panels for each period instead of a single annual profitability ranking.",
+    "Group finances of four companies in different reporting periods. Sources: J27, J29, J30 and J31. Panels use independent scales; Teno covers half a year and the figures include applicable non-early-childhood businesses.",
+    "Operating disclosures help explain resource use, but anonymisation, coverage and reporting dates matter. Site-information services such as Kokode Search and company financial statements describe different levels: the former helps explain individual facilities, the latter the group. They complement rather than replace each other."
+  ],
+  "volume-2-s14": [
+    "MEXT’s provisional FY2026 School Basic Survey, dated 1 May, lists 7,922 kindergartens with 627,450 children and 7,956 integrated certified centres with 881,892 children. Confirmed FY2025 figures were 8,225 kindergartens with 689,609 children and 7,673 integrated certified centres with 875,976 children. Falling kindergarten enrolment alongside certified-centre growth does not establish that every child leaving kindergarten transferred to a certified centre.",
+    "Children enrolled in the School Basic Survey, 2025–2026. Sources: J03 and J45. Category conversion is not net national expansion; 2026 figures are provisional.",
+    "School statistics and the Agency’s April statistics differ in date, categories and survey framework. The 7,673 integrated centres in May 2025 cannot be combined with the April count of 7,470 as one period-end total, nor can the difference be called new construction in one month. School figures are kept separate from childcare usage to avoid double-counting certified centres’ educational and childcare components.",
+    "The 2026 school figures remain provisional. Later confirmed or revised data should replace the relevant records, rather than leaving numbers unchanged while updating the heading. Certified-centre growth involves organisational reclassification as well as possible additional provision; assessing actual benefit requires child- and site-level evidence."
+  ]
+}

@@ -49,7 +49,7 @@ export const pedagogyCurriculum = {
       {
         publisher: '文部科学省 · Ministry of Education, Culture, Sports, Science and Technology',
         title: ['幼稚園教育要领', 'Kindergarten Course of Study'],
-        url: 'https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/you/index.htm',
+        url: 'https://www.mext.go.jp/a_menu/shotou/youchien/1258019.htm',
       },
       {
         publisher: '厚生労働省 · Ministry of Health, Labour and Welfare',
@@ -117,7 +117,7 @@ export const pedagogyCurriculum = {
       {
         publisher: 'Office of Head Start · U.S. Department of Health and Human Services',
         title: ['Head Start Early Learning Outcomes Framework', 'Head Start Early Learning Outcomes Framework'],
-        url: 'https://headstart.gov/interactive-head-start-early-learning-outcomes-framework-ages-birth-five?redirect=eclkc',
+        url: 'https://headstart.gov/interactive-head-start-early-learning-outcomes-framework-ages-birth-five',
       },
     ],
     note: [

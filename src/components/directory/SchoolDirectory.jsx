@@ -5,7 +5,7 @@ import useLanguage from '../../hooks/useLanguage'
 import SchoolCard from './SchoolCard'
 import { MissingDataPanel } from '../common/MissingData'
 export default function SchoolDirectory({ country }) {
-  const { pair, english } = useLanguage()
+  const { pair, english, text } = useLanguage()
   const [params, setParams] = useSearchParams()
   const records = schools.filter((s) => s.country === country.slug)
   const filters = {
@@ -15,10 +15,18 @@ export default function SchoolDirectory({ country }) {
   }
   const results = filterSchools(records, filters)
   const regions = [
-    ...new Map(records.filter((s) => s.region && s.location?.some(Boolean)).map((s) => [s.region, s.location])).entries(),
+    ...new Map(
+      records
+        .filter((s) => s.region && s.location?.some(Boolean))
+        .map((s) => [s.region, s.location]),
+    ).entries(),
   ]
   const approaches = [
-    ...new Map(records.filter((s) => s.approach && s.approachLabel?.some(Boolean)).map((s) => [s.approach, s.approachLabel])).entries(),
+    ...new Map(
+      records
+        .filter((s) => s.approach && s.approachLabel?.some(Boolean))
+        .map((s) => [s.approach, s.approachLabel]),
+    ).entries(),
   ]
   const update = (key, value) =>
     setParams(
@@ -62,20 +70,20 @@ export default function SchoolDirectory({ country }) {
         <CustomSelect
           label={pair('地区', 'Region')}
           value={filters.region}
-          placeholder={english ? 'All regions / 全部地区' : '全部地区 / All regions'}
+          placeholder={text('全部地区', 'All regions')}
           options={[
-            ['all', english ? 'All regions / 全部地区' : '全部地区 / All regions'],
-            ...regions.map(([id, label]) => [id, english ? label[1] : label[0]]),
+            ['all', text('全部地区', 'All regions')],
+            ...regions.map(([id, label]) => [id, text(...label)]),
           ]}
           onChange={(value) => update('region', value)}
         />
         <CustomSelect
           label={pair('教育理念', 'Approach')}
           value={filters.approach}
-          placeholder={english ? 'All approaches / 全部理念' : '全部理念 / All approaches'}
+          placeholder={text('全部理念', 'All approaches')}
           options={[
-            ['all', english ? 'All approaches / 全部理念' : '全部理念 / All approaches'],
-            ...approaches.map(([id, label]) => [id, english ? label[1] : label[0]]),
+            ['all', text('全部理念', 'All approaches')],
+            ...approaches.map(([id, label]) => [id, text(...label)]),
           ]}
           onChange={(value) => update('approach', value)}
         />
@@ -90,16 +98,18 @@ export default function SchoolDirectory({ country }) {
       </div>
       {!records.length ? (
         <MissingDataPanel title={['园所目录', 'School directory']} />
-      ) : !results.length && (
-        <div className="empty-state">
-          {pair(
-            '暂无匹配园所，请调整搜索或筛选。',
-            'No matching schools. Adjust the search or filters.',
-          )}
-          <button onClick={() => setParams({})}>
-            {pair('显示全部样本', 'Show all samples')}
-          </button>
-        </div>
+      ) : (
+        !results.length && (
+          <div className="empty-state">
+            {pair(
+              '暂无匹配园所，请调整搜索或筛选。',
+              'No matching schools. Adjust the search or filters.',
+            )}
+            <button onClick={() => setParams({})}>
+              {pair('显示全部样本', 'Show all samples')}
+            </button>
+          </div>
+        )
       )}
       <p className="directory-disclaimer">
         {pair(

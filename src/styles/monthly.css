@@ -18,7 +18,7 @@
 }
 .monthly-header > p {
   max-width: 810px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.9;
   color: #718167;
 }
@@ -26,7 +26,7 @@
   gap: 10px;
 }
 .monthly-header > p .pair > span:last-child {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
 }
 .monthly-status {
@@ -34,7 +34,7 @@
   margin-top: 23px;
   border-radius: 12px;
   padding: 9px 13px;
-  font-size: 10px;
+  font-size: var(--text-small);
   background: #ecefdf;
   color: #7a805b;
 }
@@ -67,7 +67,7 @@
   gap: 8px;
   flex: 1;
   min-width: 125px;
-  font-size: 10px;
+  font-size: var(--text-small);
   color: #75876a;
 }
 .monthly-filters .custom-select {
@@ -90,7 +90,7 @@
   padding: 10px;
   color: #496340;
   font: inherit;
-  font-size: 11px;
+  font-size: var(--text-small);
   width: 100%;
   min-width: 0;
 }
@@ -99,7 +99,7 @@
   min-width: 100%;
 }
 .monthly-filters .custom-select-option {
-  font-size: 11px;
+  font-size: var(--text-small);
 }
 .monthly-filters > .directory-reset {
   align-self: end;
@@ -140,7 +140,7 @@
   opacity: 0.8;
 }
 .monthly-empty p {
-  font-size: 12px;
+  font-size: var(--text-small);
   color: #7e8c72;
   line-height: 1.9;
   max-width: 510px;
@@ -149,16 +149,16 @@
   gap: 10px;
 }
 .monthly-empty p .pair > span:last-child {
-  font-size: 12px;
+  font-size: var(--text-small);
   line-height: 1.8;
 }
 .monthly-empty > span:last-child {
-  font-size: 9px;
+  font-size: var(--text-small);
   color: #8c987e;
   margin-top: 23px;
 }
 .monthly-review-note {
-  font-size: 10px;
+  font-size: var(--text-small);
   color: #8b987c;
   line-height: 1.9;
   margin-top: 20px;
@@ -180,7 +180,7 @@
   opacity: 0.8;
 }
 .monthly-guide > p {
-  font-size: 10px;
+  font-size: var(--text-small);
   color: #8b987d;
   line-height: 1.9;
   margin-bottom: 22px;
@@ -194,15 +194,15 @@
 }
 .monthly-guide-field > span {
   font-family: Georgia, serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #9caf87;
 }
 .monthly-guide-field h3 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 .monthly-guide-field p {
-  font-size: 10px;
+  font-size: var(--text-small);
   color: #819474;
   line-height: 1.8;
   margin-top: 8px;
@@ -229,16 +229,16 @@
   border-bottom: 1px solid #e2e8db;
 }
 .monthly-entry dt {
-  font-size: 10px;
+  font-size: var(--text-small);
   color: #839574;
 }
 .monthly-entry dd {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   margin: 10px 0;
 }
 .monthly-entry > p {
-  font-size: 10px;
+  font-size: var(--text-small);
   color: #809274;
   margin-top: 20px;
 }
@@ -247,7 +247,7 @@
   flex-direction: column;
   gap: 14px;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: var(--text-small);
 }
 .monthly-entry-links > a {
   overflow-wrap: anywhere;
